@@ -219,3 +219,229 @@ System memory in use after: 87.8 MB.
 Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 2291.
 Total: 6.012200 ms (FindLiveObjects: 0.471500 ms CreateObjectMapping: 0.245800 ms MarkObjects: 5.246200 ms  DeleteObjects: 0.045500 ms)
 
+========================================================================
+Received Import Request.
+  Time since last request: 4024.550274 seconds.
+  path: Assets/Melee Enemy.prefab
+  artifactKey: Guid(69e2302548ecee84ea136c80e734d7b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Melee Enemy.prefab using Guid(69e2302548ecee84ea136c80e734d7b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '38762e0e1b920ae655beab54b0ddab2c') in 0.078899 seconds
+  Import took 0.082425 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 21.535166 seconds.
+  path: Assets/RandomEnemySpawner.cs
+  artifactKey: Guid(cd9ce8f266e35d9418f17c25e8030255) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RandomEnemySpawner.cs using Guid(cd9ce8f266e35d9418f17c25e8030255) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9fd7b500b8ddda71bf69a2e14382980a') in 0.006343 seconds
+  Import took 0.022885 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001229 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.31 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.737 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.31 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1806 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 87.7 MB.
+System memory in use after: 87.8 MB.
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 2296.
+Total: 1.648100 ms (FindLiveObjects: 0.142600 ms CreateObjectMapping: 0.053200 ms MarkObjects: 1.437300 ms  DeleteObjects: 0.014100 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000977 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.32 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.742 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.31 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1806 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 87.7 MB.
+System memory in use after: 87.8 MB.
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 2300.
+Total: 1.705600 ms (FindLiveObjects: 0.159900 ms CreateObjectMapping: 0.060600 ms MarkObjects: 1.464500 ms  DeleteObjects: 0.019300 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 178.405098 seconds.
+  path: Assets/Melee Enemy.prefab
+  artifactKey: Guid(69e2302548ecee84ea136c80e734d7b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Melee Enemy.prefab using Guid(69e2302548ecee84ea136c80e734d7b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '08204a754c3b2686560f35b6b3ea6345') in 0.063448 seconds
+  Import took 0.085409 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 52.488488 seconds.
+  path: Assets/Player.prefab
+  artifactKey: Guid(2d3df6a3741122c4aaae65b31cee994a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Player.prefab using Guid(2d3df6a3741122c4aaae65b31cee994a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8967ae7e1868ddc828c195b0acb356d0') in 0.010367 seconds
+  Import took 0.013486 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.949062 seconds.
+  path: Assets/Melee Enemy.prefab
+  artifactKey: Guid(69e2302548ecee84ea136c80e734d7b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Melee Enemy.prefab using Guid(69e2302548ecee84ea136c80e734d7b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eb94b92707d5dbce3e45cc25095b5ae3') in 0.009575 seconds
+  Import took 0.025355 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000957 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.31 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.719 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.31 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1806 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 87.7 MB.
+System memory in use after: 87.8 MB.
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 2305.
+Total: 1.549100 ms (FindLiveObjects: 0.137300 ms CreateObjectMapping: 0.052400 ms MarkObjects: 1.343700 ms  DeleteObjects: 0.014900 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 39.701387 seconds.
+  path: Assets/Player.prefab
+  artifactKey: Guid(2d3df6a3741122c4aaae65b31cee994a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Player.prefab using Guid(2d3df6a3741122c4aaae65b31cee994a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '04b2ba11a9130ede0b66d90d3962f8bf') in 0.049359 seconds
+  Import took 0.057161 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001056 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.32 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.737 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.32 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1806 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 87.7 MB.
+System memory in use after: 87.8 MB.
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 2310.
+Total: 1.569500 ms (FindLiveObjects: 0.142900 ms CreateObjectMapping: 0.054600 ms MarkObjects: 1.356900 ms  DeleteObjects: 0.014500 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 117.979825 seconds.
+  path: Assets/Melee Enemy.prefab
+  artifactKey: Guid(69e2302548ecee84ea136c80e734d7b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Melee Enemy.prefab using Guid(69e2302548ecee84ea136c80e734d7b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '517dae013a1b1512dd498f9b0fbb1796') in 0.051729 seconds
+  Import took 0.072612 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000922 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.31 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.730 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.31 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1806 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 87.7 MB.
+System memory in use after: 87.8 MB.
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 2315.
+Total: 5.686000 ms (FindLiveObjects: 0.529800 ms CreateObjectMapping: 0.380900 ms MarkObjects: 4.723400 ms  DeleteObjects: 0.048600 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000996 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.32 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.753 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.32 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1806 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 87.7 MB.
+System memory in use after: 87.8 MB.
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 2319.
+Total: 1.636300 ms (FindLiveObjects: 0.138100 ms CreateObjectMapping: 0.051200 ms MarkObjects: 1.435000 ms  DeleteObjects: 0.011200 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 99.931370 seconds.
+  path: Assets/Melee Enemy 1.prefab
+  artifactKey: Guid(17b50be4a71cd5b49ac230896f496f9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Melee Enemy 1.prefab using Guid(17b50be4a71cd5b49ac230896f496f9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fea80d34929d44bf6c6caaa6561bd5cc') in 0.048237 seconds
+  Import took 0.051177 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000989 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.34 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.723 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.31 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1806 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 87.7 MB.
+System memory in use after: 87.9 MB.
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 2324.
+Total: 3.680200 ms (FindLiveObjects: 0.364900 ms CreateObjectMapping: 0.176100 ms MarkObjects: 3.106000 ms  DeleteObjects: 0.031100 ms)
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
