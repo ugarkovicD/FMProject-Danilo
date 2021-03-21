@@ -7,7 +7,7 @@ public class characterCombat : MonoBehaviour
     public Transform AttackPoint;
     public Transform AttackPointLeft;
     public float attackRange = 1;
-    public LayerMask enemieLayer;
+    public LayerMask EnemyLayer;
     public int attackDamage = 1;
     public int HeavyAttackDamage = 3;
     private float timebtwHits;
@@ -80,7 +80,7 @@ public class characterCombat : MonoBehaviour
     void Attack()
     {
         //detect enemies
-        Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(AttackPoint.position, attackRange, enemieLayer);
+        Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(AttackPoint.position, attackRange, EnemyLayer);
 
         //damage them
         foreach(Collider2D enemy in hitEnemies)
@@ -93,7 +93,7 @@ public class characterCombat : MonoBehaviour
     void AttackLeft()
     {
         //detect enemies
-        Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(AttackPointLeft.position, attackRange, enemieLayer);
+        Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(AttackPointLeft.position, attackRange, EnemyLayer);
 
         //damage them
         foreach (Collider2D enemy in hitEnemies)
@@ -106,7 +106,7 @@ public class characterCombat : MonoBehaviour
     void HeavyAttack()
     {
         //detect enemies
-        Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(AttackPoint.position, attackRange, enemieLayer);
+        Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(AttackPoint.position, attackRange, EnemyLayer);
 
         //damage them
         foreach (Collider2D enemy in hitEnemies)
@@ -119,7 +119,7 @@ public class characterCombat : MonoBehaviour
     void HeavyAttackLeft()
     {
         //detect enemies
-        Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(AttackPointLeft.position, attackRange, enemieLayer);
+        Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(AttackPointLeft.position, attackRange, EnemyLayer);
 
         //damage them
         foreach (Collider2D enemy in hitEnemies)

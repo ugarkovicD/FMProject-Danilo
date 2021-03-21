@@ -8,6 +8,7 @@ public class Enemy : MonoBehaviour
     public float speed = 5;
     public Rigidbody2D rb;
     private Vector2 movement;
+    public float currenthealth = 5;
     // Start is called before the first frame update
     void Start()
     {
