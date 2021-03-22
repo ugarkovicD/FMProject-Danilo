@@ -26,7 +26,7 @@ public class characterCombat : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (CharacterHealth.facingRight == true)
+        if (movement.facingRight == true)
         {
             if (timebtwHits <= 0)
             {
@@ -37,7 +37,7 @@ public class characterCombat : MonoBehaviour
                 }
             }
         }
-        if (CharacterHealth.facingLeft == true)
+        if (movement.facingLeft == true)
         {
             if (timebtwHits <= 0)
             {
@@ -54,7 +54,7 @@ public class characterCombat : MonoBehaviour
             timebtwHits -= Time.deltaTime;
         }
 
-        if (CharacterHealth.facingRight == true)
+        if (movement.facingRight == true)
         {
             if (timebtwHits <= 0)
             {
@@ -65,7 +65,7 @@ public class characterCombat : MonoBehaviour
                 }
             }
         }     
-        if (CharacterHealth.facingLeft == true)
+        if (movement.facingLeft == true)
         {
             if (timebtwHits <= 0)
             {

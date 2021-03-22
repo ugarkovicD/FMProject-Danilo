@@ -14,15 +14,11 @@ public class CharacterHealth : MonoBehaviour
     public Sprite health4;
     public Sprite health5;
     public Image healthImage;
-    public static bool facingRight;
-    public static bool facingLeft;
 
     // Start is called before the first frame update
     void Start()
     {
         healthImage.sprite = health5;
-        facingRight = true;
-        facingLeft = false;
         currenthp = 5;
     }
     // Update is called once per frame
