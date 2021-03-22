@@ -588,7 +588,7 @@ MonoBehaviour:
   playerFollow: {fileID: 88390761}
   currentHealth: 3
   startTimeBewShots: 3
-  projectile: {fileID: 7811882329530544914, guid: ef500eeda47186c48be96bf034b30b5c, type: 3}
+  projectile: {fileID: 6083632215917366515, guid: e113185fdfde6ef49932e1c5c8d315c5, type: 3}
 --- !u!212 &807217152
 SpriteRenderer:
   m_ObjectHideFlags: 0
