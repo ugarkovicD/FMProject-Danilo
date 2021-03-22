@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Character : MonoBehaviour
+public class CharacterHealth : MonoBehaviour
 {
     //Health
     public static float currenthp;
@@ -14,10 +14,6 @@ public class Character : MonoBehaviour
     public Sprite health4;
     public Sprite health5;
     public Image healthImage;
-
-    private float speed = 5;
-    public Rigidbody2D rb;
-
     public static bool facingRight;
     public static bool facingLeft;
 
@@ -55,19 +51,7 @@ public class Character : MonoBehaviour
         if (currenthp == 0)
         {
             healthImage.sprite = health0;
-        }
-        if (Input.GetKey(KeyCode.D))
-        {
-            transform.position += new Vector3(speed * Time.deltaTime, 0, 0);
-            facingRight = true;
-            facingLeft = false;
-        }
-        if (Input.GetKey(KeyCode.A))
-        {
-            transform.position -= new Vector3(speed * Time.deltaTime, 0, 0);
-            facingRight = false;
-            facingLeft = true;
-        }     
+        }   
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {

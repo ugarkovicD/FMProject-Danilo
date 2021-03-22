@@ -2,14 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Boss : MonoBehaviour
+public class RangedEnemy : MonoBehaviour
 {
     //shielding runthrough Ability
     public Transform playerRotation;
     //movement
-    public float MoveSpeed;
-    public float stoppingDistance;
-    public float retreatDistance;
+    public float MoveSpeed = 2;
+    public float stoppingDistance = 5;
+    public float retreatDistance = 4;
     public Transform playerFollow;
     public float currentHealth = 3;
     //shooting

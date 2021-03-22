@@ -26,7 +26,7 @@ public class characterCombat : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Character.facingRight == true)
+        if (CharacterHealth.facingRight == true)
         {
             if (timebtwHits <= 0)
             {
@@ -37,7 +37,7 @@ public class characterCombat : MonoBehaviour
                 }
             }
         }
-        if (Character.facingLeft == true)
+        if (CharacterHealth.facingLeft == true)
         {
             if (timebtwHits <= 0)
             {
@@ -54,7 +54,7 @@ public class characterCombat : MonoBehaviour
             timebtwHits -= Time.deltaTime;
         }
 
-        if (Character.facingRight == true)
+        if (CharacterHealth.facingRight == true)
         {
             if (timebtwHits <= 0)
             {
@@ -65,7 +65,7 @@ public class characterCombat : MonoBehaviour
                 }
             }
         }     
-        if (Character.facingLeft == true)
+        if (CharacterHealth.facingLeft == true)
         {
             if (timebtwHits <= 0)
             {
@@ -85,7 +85,7 @@ public class characterCombat : MonoBehaviour
         //damage them
         foreach(Collider2D enemy in hitEnemies)
         { 
-            enemy.GetComponent<Boss>().TakeDamage(attackDamage);
+            enemy.GetComponent<RangedEnemy>().TakeDamage(attackDamage);
             Debug.Log("we hit" + enemy.name + 1);
             damaged1.Play();
         }
@@ -98,7 +98,7 @@ public class characterCombat : MonoBehaviour
         //damage them
         foreach (Collider2D enemy in hitEnemies)
         {
-            enemy.GetComponent<Boss>().TakeDamage(attackDamage);
+            enemy.GetComponent<RangedEnemy>().TakeDamage(attackDamage);
             Debug.Log("we hit" + enemy.name + 1);
             damaged1.Play();
         }
@@ -111,7 +111,7 @@ public class characterCombat : MonoBehaviour
         //damage them
         foreach (Collider2D enemy in hitEnemies)
         {
-            enemy.GetComponent<Boss>().TakeDamage(HeavyAttackDamage);
+            enemy.GetComponent<RangedEnemy>().TakeDamage(HeavyAttackDamage);
             Debug.Log("we hard hit" + enemy.name + 3 +"damage");
             damaged3.Play();
         }
@@ -124,7 +124,7 @@ public class characterCombat : MonoBehaviour
         //damage them
         foreach (Collider2D enemy in hitEnemies)
         {
-            enemy.GetComponent<Boss>().TakeDamage(HeavyAttackDamage);
+            enemy.GetComponent<RangedEnemy>().TakeDamage(HeavyAttackDamage);
             Debug.Log("we hard hit" + enemy.name + 3 + "damage");
             damaged3.Play();
         }
