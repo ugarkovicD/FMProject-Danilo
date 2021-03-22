@@ -42,9 +42,13 @@ public class BombProjectile : MonoBehaviour
     public void bombExplode()
     {
         bombtimer -= 1 * Time.deltaTime;
-        if (bombtimer < 0 && inRadius == true)
+        if (bombtimer < 0)
         {
-            
+            if (inRadius == true)
+            {
+            CharacterHealth.currenthp -= 2;
+            }
+            Destroy(gameObject);
         }
     }
 }
