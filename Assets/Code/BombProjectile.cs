@@ -27,11 +27,11 @@ public class BombProjectile : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        while (collision.name == "Player")
+        if (collision.name == "Player")
         {
             inRadius = true;
         }
-    }
+    }  
     private void OnTriggerExit2D(Collider2D collision)
     {
         if (collision.name == "Player")

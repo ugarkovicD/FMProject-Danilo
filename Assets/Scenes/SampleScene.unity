@@ -237,8 +237,8 @@ GameObject:
   - component: {fileID: 88390761}
   - component: {fileID: 88390760}
   - component: {fileID: 88390762}
-  - component: {fileID: 88390763}
   - component: {fileID: 88390764}
+  - component: {fileID: 88390763}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -341,11 +341,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 88390759}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9f5d86f62c1c3f742ad400ef0b05d623, type: 3}
+  m_Script: {fileID: 11500000, guid: 9f8317968e8612b4a8a33f23d08493cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speedBoostTimer: 0
-  HealthIncrease: 2
+  speed: 7
+  distance: 1
 --- !u!61 &88390764
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -588,7 +588,7 @@ MonoBehaviour:
   playerFollow: {fileID: 88390761}
   currentHealth: 3
   startTimeBewShots: 3
-  projectile: {fileID: 6083632215917366515, guid: e113185fdfde6ef49932e1c5c8d315c5, type: 3}
+  projectile: {fileID: 2615094223456173150, guid: e113185fdfde6ef49932e1c5c8d315c5, type: 3}
 --- !u!212 &807217152
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -687,6 +687,7 @@ MonoBehaviour:
   Spawnpool:
   - {fileID: 1640943144}
   - {fileID: 86449409}
+  - {fileID: 807217150}
   quad: {fileID: 229029059}
 --- !u!4 &1168426740
 Transform:
