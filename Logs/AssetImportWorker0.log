@@ -1,0 +1,251 @@
+Using pre-set license
+Built from '2020.2/staging' branch; Version is '2020.2.7f1 (c53830e277f1) revision 12924976'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10 Enterprise; OS build 18363.1379; Version 1909; 64bit' Language: 'en' Physical Memory: 16332 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+ COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2020.2.7f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+D:/Danilo/FMProject-Danilo
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+53059
+Successfully changed project path to: D:/Danilo/FMProject-Danilo
+D:/Danilo/FMProject-Danilo
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 32.19 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2020.2.7f1 (c53830e277f1)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.2.7f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path D:/Danilo/FMProject-Danilo/Assets
+GfxDevice: creating device client; threaded=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce GTX 1660 (ID=0x2184)
+    Vendor:   
+    VRAM:     5991 MB
+    Driver:   27.21.14.5206
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.2.7f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.2.7f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.2.7f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56104
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.2.7f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.001173 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 30.30 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.943 seconds
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.000935 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 31.09 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.817 seconds
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
+Refreshing native plugins compatible for Editor in 0.31 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1826 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 85.0 MB.
+System memory in use after: 85.1 MB.
+
+Unloading 19 unused Assets to reduce memory usage. Loaded Objects now: 2274.
+Total: 1.859300 ms (FindLiveObjects: 0.164800 ms CreateObjectMapping: 0.071600 ms MarkObjects: 1.545800 ms  DeleteObjects: 0.076400 ms)
+
+========================================================================
+Received Import Request.
+  path: Assets/DungeonRooms/BasementEmpty.unity
+  artifactKey: Guid(e156332e5dfee0f40a8a3055baae47b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DungeonRooms/BasementEmpty.unity using Guid(e156332e5dfee0f40a8a3055baae47b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9bed4e540f6ecfd51406ea5f1fbf183a') in 0.027736 seconds
+  Import took 0.034262 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000268 seconds.
+  path: Assets/DungeonRooms/BasementBasic1.unity
+  artifactKey: Guid(d123dbdf14fc8124094fcef3cac9b967) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DungeonRooms/BasementBasic1.unity using Guid(d123dbdf14fc8124094fcef3cac9b967) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0882dc8a9444f2d8c9f841af2e4aac52') in 0.005431 seconds
+  Import took 0.008282 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.548471 seconds.
+  path: Assets/DungeonRooms/BasementEnd.unity
+  artifactKey: Guid(d842aef1499c7144783a2ca915dd740a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DungeonRooms/BasementEnd.unity using Guid(d842aef1499c7144783a2ca915dd740a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '385d23df69030f1e1d75f1a466281c0a') in 0.006725 seconds
+  Import took 0.010353 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.023597 seconds.
+  path: Assets/DungeonRooms/BasementMain.unity
+  artifactKey: Guid(dc15af8a883dbad43b332d46e2c9b29b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DungeonRooms/BasementMain.unity using Guid(dc15af8a883dbad43b332d46e2c9b29b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1c45cd6486d75c5399ef2743df48298e') in 0.005633 seconds
+  Import took 0.008287 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.659440 seconds.
+  path: Assets/DungeonRooms/BasementStart.unity
+  artifactKey: Guid(1f4bf153f1097cb4d9cb9ec80d330581) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DungeonRooms/BasementStart.unity using Guid(1f4bf153f1097cb4d9cb9ec80d330581) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6461d61adbf155f1a68e37323f97c934') in 0.005981 seconds
+  Import took 0.008493 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 46.579121 seconds.
+  path: Assets/DungeonGeneration/Door.cs
+  artifactKey: Guid(597f0b689aed50a41a489af65d2c4eca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DungeonGeneration/Door.cs using Guid(597f0b689aed50a41a489af65d2c4eca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c7f3f286ae6bd65da22cfd4087cf2181') in 0.017621 seconds
+  Import took 0.020069 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.008258 seconds.
+  path: Assets/DungeonGeneration/Door.cs
+  artifactKey: Guid(597f0b689aed50a41a489af65d2c4eca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DungeonGeneration/Door.cs using Guid(597f0b689aed50a41a489af65d2c4eca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c7f3f286ae6bd65da22cfd4087cf2181') in 0.004513 seconds
+  Import took 0.007024 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 11.922359 seconds.
+  path: Assets/DungeonGeneration/RoomController.cs
+  artifactKey: Guid(92e42847cc5bda5418f0a3db58ed47e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DungeonGeneration/RoomController.cs using Guid(92e42847cc5bda5418f0a3db58ed47e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '540f1ac2d8bccb9b549acca5b92a2c31') in 0.004778 seconds
+  Import took 0.007262 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.210621 seconds.
+  path: Assets/DungeonGeneration/DungeonGenerator.cs
+  artifactKey: Guid(8025b801e4636fe4b84afc77505fe71e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DungeonGeneration/DungeonGenerator.cs using Guid(8025b801e4636fe4b84afc77505fe71e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dde1d883a5f2ce2351f9a048e196e65d') in 0.004899 seconds
+  Import took 0.007491 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 68.872656 seconds.
+  path: Assets/DungeonGeneration/GridController.cs
+  artifactKey: Guid(ed6a652c6b71b2547a40473dfc84c7a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DungeonGeneration/GridController.cs using Guid(ed6a652c6b71b2547a40473dfc84c7a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '01020a17294cf338c28d727c3aeedeab') in 0.005525 seconds
+  Import took 0.008290 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.002105 seconds.
+  path: Assets/DungeonGeneration/GridController.cs
+  artifactKey: Guid(ed6a652c6b71b2547a40473dfc84c7a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DungeonGeneration/GridController.cs using Guid(ed6a652c6b71b2547a40473dfc84c7a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '01020a17294cf338c28d727c3aeedeab') in 0.004433 seconds
+  Import took 0.007026 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 242.294407 seconds.
+  path: Assets/DungeonGeneration/RoomController.cs
+  artifactKey: Guid(92e42847cc5bda5418f0a3db58ed47e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DungeonGeneration/RoomController.cs using Guid(92e42847cc5bda5418f0a3db58ed47e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e9eacc9177f088364dcfb4ef45ed2051') in 0.005411 seconds
+  Import took 0.008503 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.002668 seconds.
+  path: Assets/DungeonGeneration/RoomController.cs
+  artifactKey: Guid(92e42847cc5bda5418f0a3db58ed47e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DungeonGeneration/RoomController.cs using Guid(92e42847cc5bda5418f0a3db58ed47e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e9eacc9177f088364dcfb4ef45ed2051') in 0.005285 seconds
+  Import took 0.007965 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 108.520795 seconds.
+  path: Assets/DungeonGeneration/DungeonCrawler.cs
+  artifactKey: Guid(3bd0c21ccb450664cbe98e0ac012b936) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DungeonGeneration/DungeonCrawler.cs using Guid(3bd0c21ccb450664cbe98e0ac012b936) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b89a9032d62db691f62baae1f843c83f') in 0.005081 seconds
+  Import took 0.007801 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001067 seconds.
+  path: Assets/DungeonGeneration/DungeonCrawler.cs
+  artifactKey: Guid(3bd0c21ccb450664cbe98e0ac012b936) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DungeonGeneration/DungeonCrawler.cs using Guid(3bd0c21ccb450664cbe98e0ac012b936) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b89a9032d62db691f62baae1f843c83f') in 0.004370 seconds
+  Import took 0.006834 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.824306 seconds.
+  path: Assets/DungeonGeneration/DungeonCrawlerController.cs
+  artifactKey: Guid(e14ad5115ae57bc489bee1b5779db364) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DungeonGeneration/DungeonCrawlerController.cs using Guid(e14ad5115ae57bc489bee1b5779db364) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cc6fb44fa9e730bc0bcfa9c18391ac1b') in 0.004784 seconds
+  Import took 0.007524 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.410730 seconds.
+  path: Assets/DungeonGeneration/DungeonGenerationData.cs
+  artifactKey: Guid(b4bbcb120c17eb445a31163f2f16d17c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DungeonGeneration/DungeonGenerationData.cs using Guid(b4bbcb120c17eb445a31163f2f16d17c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd02cc4a9f4ff3f1dbb015d79d9f46082') in 0.005811 seconds
+  Import took 0.008921 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000318 seconds.
+  path: Assets/DungeonGeneration/DungeonGenerationData.cs
+  artifactKey: Guid(b4bbcb120c17eb445a31163f2f16d17c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DungeonGeneration/DungeonGenerationData.cs using Guid(b4bbcb120c17eb445a31163f2f16d17c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd02cc4a9f4ff3f1dbb015d79d9f46082') in 0.004967 seconds
+  Import took 0.007373 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 49.244846 seconds.
+  path: Assets/DungeonGeneration/Room.cs
+  artifactKey: Guid(7a2e0c1ada78b8b40bfbf7515d24bb30) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DungeonGeneration/Room.cs using Guid(7a2e0c1ada78b8b40bfbf7515d24bb30) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9222ebf60b0848a28442bd5bece87b2f') in 0.005137 seconds
+  Import took 0.007737 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1336.055991 seconds.
+  path: Assets/DungeonGeneration/Code that i deleted.txt
+  artifactKey: Guid(594d788075829db4496316d862a66b1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DungeonGeneration/Code that i deleted.txt using Guid(594d788075829db4496316d862a66b1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1e9298a6bd32d2d20c6518b0b650e86b') in 0.041094 seconds
+  Import took 0.044740 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 33.601832 seconds.
+  path: Assets/DungeonGeneration/Door.cs
+  artifactKey: Guid(597f0b689aed50a41a489af65d2c4eca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DungeonGeneration/Door.cs using Guid(597f0b689aed50a41a489af65d2c4eca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '388409f612820b50d938014a7ad045fa') in 0.004474 seconds
+  Import took 0.007062 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001380 seconds.
+  path: Assets/DungeonGeneration/Door.cs
+  artifactKey: Guid(597f0b689aed50a41a489af65d2c4eca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DungeonGeneration/Door.cs using Guid(597f0b689aed50a41a489af65d2c4eca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '388409f612820b50d938014a7ad045fa') in 0.003922 seconds
+  Import took 0.006467 seconds .
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
