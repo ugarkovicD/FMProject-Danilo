@@ -9,6 +9,7 @@ public class BombProjectile : MonoBehaviour
     public float speed;
     private Transform Player;
     private Vector2 target;
+    public ParticleSystem explosion;
     // Start is called before the first frame update
     void Start()
     {
@@ -23,6 +24,10 @@ public class BombProjectile : MonoBehaviour
         if (transform.position.x == target.x && transform.position.y == target.y)
         {
             bombExplode();
+        }
+        if (bombtimer < 0.5)
+        {
+            explosion.Play();
         }
     }
     private void OnTriggerEnter2D(Collider2D collision)
@@ -43,7 +48,7 @@ public class BombProjectile : MonoBehaviour
     {
         bombtimer -= 1 * Time.deltaTime;
         if (bombtimer < 0)
-        {
+        {           
             if (inRadius == true)
             {
             CharacterHealth.currenthp -= 2;

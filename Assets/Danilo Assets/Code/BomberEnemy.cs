@@ -13,23 +13,26 @@ public class BomberEnemy : MonoBehaviour
     public Transform playerFollow;
     public float currentHealth = 3;
     //shooting
-    private float timebtwShots;
-    public float startTimeBewShots;
     public GameObject projectile;
+    public int startWait;
+    public bool stop;
+    public float spawnmostWait = 6;
+    public float spawnleastWait =3;
+    private float spawnWait;
 
     private Rigidbody2D rb;
     // Start is called before the first frame update
     void Start()
     {
+        StartCoroutine(waitSpawn());
         rb = this.GetComponent<Rigidbody2D>();
-        startTimeBewShots = 2;
-        timebtwShots = startTimeBewShots;
         playerFollow = GameObject.FindGameObjectWithTag("Player").transform;
     }
 
     // Update is called once per frame
     void Update()
     {
+        spawnWait = Random.Range(spawnleastWait, spawnmostWait);
         if (Vector2.Distance(transform.position, playerFollow.position) > stoppingDistance)
         {
             transform.position = Vector2.MoveTowards(transform.position, playerFollow.position, MoveSpeed * Time.deltaTime); ;
@@ -42,15 +45,6 @@ public class BomberEnemy : MonoBehaviour
         {
             transform.position = Vector2.MoveTowards(transform.position, playerFollow.position, -MoveSpeed * Time.deltaTime);
         }
-        if (timebtwShots <= 0)
-        {
-            Instantiate(projectile, transform.position, Quaternion.identity);
-            timebtwShots = startTimeBewShots;
-        }
-        else
-        {
-            timebtwShots -= Time.deltaTime;
-        }
     }
     public void TakeDamage(int Damage)
     {
@@ -58,6 +52,15 @@ public class BomberEnemy : MonoBehaviour
         if (currentHealth <= 0)
         {
             Destroy(gameObject);
+        }
+    }
+    IEnumerator waitSpawn()
+    {
+        yield return new WaitForSeconds(startWait);
+        while (!stop)
+        {
+            Instantiate(projectile, transform.position, Quaternion.identity);
+            yield return new WaitForSeconds(spawnWait);
         }
     }
 }
