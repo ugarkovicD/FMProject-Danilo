@@ -42,7 +42,7 @@ public class GridController : MonoBehaviour
             }
         }
 
-        GetComponentInParent<ObjectRoomSpawner>();
+        GetComponentInParent<ObjectRoomSpawner>().InitialiseObjectSpawning();
     }
 
 }
