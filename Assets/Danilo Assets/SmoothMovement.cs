@@ -11,10 +11,12 @@ public class SmoothMovement : MonoBehaviour
     public static bool facingDown;
     public static bool facingRight;
     public static bool facingLeft;
+    public float distanceDash = 2;
+    public int speedDash = 22;
     // Update is called once per frame
     void Update()
     {
-        transform.position = Vector2.MoveTowards(transform.position, targetPos, speed * Time.deltaTime);
+        //walking
         if (Input.GetKeyDown(KeyCode.RightArrow))
         {
             targetPos = new Vector2(transform.position.x + distance, transform.position.y);
@@ -46,6 +48,28 @@ public class SmoothMovement : MonoBehaviour
             facingLeft = false;
             facingRight = false;
             facingDown = true;
+        }
+        //dashing
+        transform.position = Vector2.MoveTowards(transform.position, targetPos, speedDash * Time.deltaTime);
+        if (Input.GetKeyDown(KeyCode.LeftShift))
+        {
+            
+            if (facingDown ==true)
+            {
+                targetPos = new Vector2(transform.position.x, transform.position.y - distanceDash);
+            }
+            if (facingUp == true)
+            {
+                targetPos = new Vector2(transform.position.x, transform.position.y + distanceDash);
+            }
+            if (facingRight == true)
+            {
+                targetPos = new Vector2(transform.position.x + distanceDash, transform.position.y);
+            }
+            if (facingLeft == true)
+            {
+                targetPos = new Vector2(transform.position.x - distanceDash, transform.position.y);
+            }
         }
     }
 }
