@@ -8,8 +8,8 @@ public class characterCombat : MonoBehaviour
     public Transform AttackPointLeft;
     public float attackRange = 1;
     public LayerMask EnemyLayer;
-    public int attackDamage = 1;
-    public int HeavyAttackDamage = 3;
+    public int attackDamage = 20;
+    public int HeavyAttackDamage = 40;
     private float timebtwHits;
     public float startTimebtwHits = 0.75f;
     public float startTimebtwHitsHeavy = 1.5f;
@@ -84,10 +84,21 @@ public class characterCombat : MonoBehaviour
 
         //damage them
         foreach(Collider2D enemy in hitEnemies)
-        { 
-            enemy.GetComponent<RangedEnemy>().TakeDamage(attackDamage);
-            Debug.Log("we hit" + enemy.name + 1);
-            damaged1.Play();
+        {          
+            if (enemy.name == "Melee Enemy")
+            {
+                enemy.GetComponent<Enemy>().TakeDamage(attackDamage);
+            }
+            if (enemy.name == "Ranged Enemy")
+            {
+                enemy.GetComponent<RangedEnemy>().TakeDamage(attackDamage);
+            }
+            if (enemy.name == "Bomber Enemy")
+            {
+                enemy.GetComponent<BomberEnemy>().TakeDamage(attackDamage);
+            }
+            Debug.Log("we hit" + enemy.name);
+            damaged1.Play(); 
         }
     }
     void AttackLeft()
@@ -98,7 +109,6 @@ public class characterCombat : MonoBehaviour
         //damage them
         foreach (Collider2D enemy in hitEnemies)
         {
-            enemy.GetComponent<RangedEnemy>().TakeDamage(attackDamage);
             Debug.Log("we hit" + enemy.name + 1);
             damaged1.Play();
         }

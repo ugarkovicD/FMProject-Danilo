@@ -11,7 +11,6 @@ public class BomberEnemy : MonoBehaviour
     public float stoppingDistance = 5;
     public float retreatDistance = 4;
     public Transform playerFollow;
-    public float currentHealth = 3;
     //shooting
     public GameObject projectile;
     public int startWait;
@@ -21,6 +20,8 @@ public class BomberEnemy : MonoBehaviour
     private float spawnWait;
 
     private Rigidbody2D rb;
+    public int maxHealth = 100;
+    public float currentHealth;
     // Start is called before the first frame update
     void Start()
     {

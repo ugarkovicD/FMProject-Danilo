@@ -8,10 +8,12 @@ public class Enemy : MonoBehaviour
     public float speed = 5;
     public Rigidbody2D rb;
     private Vector2 movement;
-    public float currenthealth = 5;
+    public int maxHealth = 100;
+    public float currentHealth;
     // Start is called before the first frame update
     void Start()
     {
+        currentHealth = maxHealth;
         rb = this.GetComponent<Rigidbody2D>();
     }
 
@@ -37,6 +39,14 @@ public class Enemy : MonoBehaviour
         if (other.CompareTag("Bullet"))
         {
             Destroy(this.gameObject);
+        }
+    }
+    public void TakeDamage(int Damage)
+    {
+        currentHealth -= Damage;
+        if (currentHealth <= 0)
+        {
+            Destroy(gameObject);
         }
     }
 }

@@ -11,16 +11,18 @@ public class RangedEnemy : MonoBehaviour
     public float stoppingDistance = 5;
     public float retreatDistance = 4;
     public Transform playerFollow;
-    public float currentHealth = 3;
     //shooting
     private float timebtwShots;
     public float startTimeBewShots;
     public GameObject projectile;
 
     private Rigidbody2D rb;
+    public int maxHealth = 100;
+    public float currentHealth;
     // Start is called before the first frame update
     void Start()
     {
+        currentHealth = maxHealth;
         rb = this.GetComponent<Rigidbody2D>();
         startTimeBewShots = 2;
         timebtwShots = startTimeBewShots;
