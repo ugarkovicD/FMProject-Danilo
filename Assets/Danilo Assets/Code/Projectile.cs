@@ -28,6 +28,7 @@ public class Projectile : MonoBehaviour
         if (collision.name == "Player")
         {
             Destroy(gameObject);
+            CharacterHealth.currenthp -= 1;
         }
     }
     private void OnCollisionEnter(Collision collision)

@@ -11,8 +11,8 @@ public class characterCombat : MonoBehaviour
     public int attackDamage = 20;
     public int HeavyAttackDamage = 40;
     private float timebtwHits;
-    public float startTimebtwHits = 0.75f;
-    public float startTimebtwHitsHeavy = 1.5f;
+    private float startTimebtwHits = 0.25f;
+    private float startTimebtwHitsHeavy = 0.6f;
     public ParticleSystem damaged3;
     public ParticleSystem damaged1;
     
@@ -26,7 +26,7 @@ public class characterCombat : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (movement.facingRight == true)
+        if (SmoothMovement.facingRight == true)
         {
             if (timebtwHits <= 0)
             {
@@ -37,7 +37,7 @@ public class characterCombat : MonoBehaviour
                 }
             }
         }
-        if (movement.facingLeft == true)
+        if (SmoothMovement.facingLeft == true)
         {
             if (timebtwHits <= 0)
             {
@@ -48,13 +48,7 @@ public class characterCombat : MonoBehaviour
                 }
             }
         }
-
-        if (timebtwHits >= 0) 
-        {
-            timebtwHits -= Time.deltaTime;
-        }
-
-        if (movement.facingRight == true)
+        if (SmoothMovement.facingRight == true)
         {
             if (timebtwHits <= 0)
             {
@@ -65,7 +59,7 @@ public class characterCombat : MonoBehaviour
                 }
             }
         }     
-        if (movement.facingLeft == true)
+        if (SmoothMovement.facingLeft == true)
         {
             if (timebtwHits <= 0)
             {
@@ -75,7 +69,11 @@ public class characterCombat : MonoBehaviour
                     timebtwHits = startTimebtwHitsHeavy;
                 }
             }
-        }      
+        }
+        if (timebtwHits >= 0)
+        {
+            timebtwHits -= Time.deltaTime;
+        }
     }
     void Attack()
     {
@@ -98,7 +96,7 @@ public class characterCombat : MonoBehaviour
                 enemy.GetComponent<BomberEnemy>().TakeDamage(attackDamage);
             }
             Debug.Log("we hit" + enemy.name);
-            damaged1.Play(); 
+            damaged1.Play();
         }
     }
     void AttackLeft()
