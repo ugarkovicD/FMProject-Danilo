@@ -23,14 +23,7 @@ public class Projectile : MonoBehaviour
             Destroy(gameObject);
         }
     }
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.name == "Player")
-        {
-            Destroy(gameObject);
-            CharacterHealth.currenthp -= 1;
-        }
-    }
+    
     private void OnCollisionEnter(Collision collision)
     {
         Destroy(gameObject);

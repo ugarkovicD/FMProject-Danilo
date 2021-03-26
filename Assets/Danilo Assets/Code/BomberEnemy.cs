@@ -25,6 +25,7 @@ public class BomberEnemy : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        currentHealth = 100;
         StartCoroutine(waitSpawn());
         rb = this.GetComponent<Rigidbody2D>();
         playerFollow = GameObject.FindGameObjectWithTag("Player").transform;

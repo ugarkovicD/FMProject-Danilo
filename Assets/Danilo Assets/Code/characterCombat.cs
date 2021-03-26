@@ -83,19 +83,22 @@ public class characterCombat : MonoBehaviour
         //damage them
         foreach(Collider2D enemy in hitEnemies)
         {          
-            if (enemy.name == "Melee Enemy")
+            if (enemy.CompareTag("MeleeEnemy"))
             {
                 enemy.GetComponent<Enemy>().TakeDamage(attackDamage);
+                Debug.Log("we hit" + enemy.name + "kurac");
             }
-            if (enemy.name == "Ranged Enemy")
+            if (enemy.CompareTag("RangedEnemy"))
             {
                 enemy.GetComponent<RangedEnemy>().TakeDamage(attackDamage);
+                Debug.Log("we hit" + enemy.name + "kurac");
             }
-            if (enemy.name == "Bomber Enemy")
+            if (enemy.CompareTag("BomberEnemy"))
             {
                 enemy.GetComponent<BomberEnemy>().TakeDamage(attackDamage);
+
+            Debug.Log("we hit" + enemy.name +"kurac");
             }
-            Debug.Log("we hit" + enemy.name);
             damaged1.Play();
         }
     }
@@ -107,7 +110,7 @@ public class characterCombat : MonoBehaviour
         //damage them
         foreach (Collider2D enemy in hitEnemies)
         {
-            Debug.Log("we hit" + enemy.name + 1);
+            Debug.Log("we hit" + enemy.name + 100);
             damaged1.Play();
         }
     }

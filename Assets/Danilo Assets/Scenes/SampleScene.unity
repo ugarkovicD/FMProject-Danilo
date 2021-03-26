@@ -167,7 +167,7 @@ GameObject:
   - component: {fileID: 86449413}
   m_Layer: 6
   m_Name: Ranged Enemy
-  m_TagString: Untagged
+  m_TagString: RangedEnemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -192,7 +192,6 @@ MonoBehaviour:
   startTimeBewShots: 0
   projectile: {fileID: 7811882329530544914, guid: ef500eeda47186c48be96bf034b30b5c, type: 3}
   maxHealth: 100
-  currentHealth: 0
 --- !u!212 &86449411
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -414,6 +413,7 @@ MonoBehaviour:
   speedDash: 27
   dashing: 0
   dashTimer: 0
+  ArivedOnTarget: 0
 --- !u!61 &88390764
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -447,7 +447,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 88390759}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a6f17c7d70add1042b595603daf39868, type: 3}
   m_Name: 
@@ -477,7 +477,7 @@ MonoBehaviour:
   EnemyLayer:
     serializedVersion: 2
     m_Bits: 64
-  attackDamage: 1
+  attackDamage: 20
   HeavyAttackDamage: 3
   damaged3: {fileID: 0}
   damaged1: {fileID: 0}
@@ -792,7 +792,7 @@ GameObject:
   - component: {fileID: 807217154}
   m_Layer: 6
   m_Name: Bomber Enemy
-  m_TagString: Untagged
+  m_TagString: BomberEnemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -820,7 +820,7 @@ MonoBehaviour:
   spawnmostWait: 6
   spawnleastWait: 3
   maxHealth: 100
-  currentHealth: 3
+  currentHealth: 0
 --- !u!212 &807217152
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1058,7 +1058,7 @@ GameObject:
   - component: {fileID: 1640943149}
   m_Layer: 6
   m_Name: Melee Enemy
-  m_TagString: Untagged
+  m_TagString: MeleeEnemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1100,7 +1100,6 @@ MonoBehaviour:
   speed: 2
   rb: {fileID: 1640943145}
   maxHealth: 100
-  currentHealth: 0
 --- !u!212 &1640943147
 SpriteRenderer:
   m_ObjectHideFlags: 0

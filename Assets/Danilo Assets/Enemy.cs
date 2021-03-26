@@ -9,11 +9,11 @@ public class Enemy : MonoBehaviour
     public Rigidbody2D rb;
     private Vector2 movement;
     public int maxHealth = 100;
-    public float currentHealth;
+    private float currentHealth;
     // Start is called before the first frame update
     void Start()
     {
-        currentHealth = maxHealth;
+        currentHealth = 100;
         rb = this.GetComponent<Rigidbody2D>();
     }
 

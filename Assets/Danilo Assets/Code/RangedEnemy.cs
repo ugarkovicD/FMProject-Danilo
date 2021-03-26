@@ -18,11 +18,11 @@ public class RangedEnemy : MonoBehaviour
 
     private Rigidbody2D rb;
     public int maxHealth = 100;
-    public float currentHealth;
+    private float currentHealth;
     // Start is called before the first frame update
     void Start()
     {
-        currentHealth = maxHealth;
+        currentHealth = 100;
         rb = this.GetComponent<Rigidbody2D>();
         startTimeBewShots = 2;
         timebtwShots = startTimeBewShots;
