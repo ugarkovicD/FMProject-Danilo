@@ -19,8 +19,21 @@ public class SmoothMovement : MonoBehaviour
     //Passive items and Notches for item ammount
     public bool haveSpace;
     public int NotchesAmmount;
-    public  
+    public bool collidingItem;
+    //items
+    public GameObject itemStrength;
+    public GameObject itemSpeed;
+    public GameObject itemDashSpeed;
+    public GameObject itemCooldown;
+    public GameObject itemAttackSpeed;
+    public GameObject itemDashLength;
+    public GameObject itemHealth;
+    public GameObject itemMana;
 
+    void Start()
+    {
+        haveSpace = true;
+    }
     // Update is called once per frame
     void Update()
     {        
@@ -99,6 +112,13 @@ public class SmoothMovement : MonoBehaviour
         if (Input.GetKeyUp(KeyCode.LeftShift))
         {
             dashing = false;
+        }
+    }
+    void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.name == "Square 16")
+        {
+            Destroy(collision.gameObject);
         }
     }
 }
