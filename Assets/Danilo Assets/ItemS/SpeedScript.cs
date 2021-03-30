@@ -19,7 +19,10 @@ public class SpeedScript : MonoBehaviour
     {
         if (collision.name == "Player")
         {
-            character
+            if (input.GetKeyDown("E"))
+            {
+                if ()
+            }
         }
     }
 }

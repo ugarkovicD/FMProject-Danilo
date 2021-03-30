@@ -16,6 +16,11 @@ public class SmoothMovement : MonoBehaviour
     public bool dashing;
     public float dashTimer;
     public bool ArivedOnTarget;
+    //Passive items and Notches for item ammount
+    public bool haveSpace;
+    public int NotchesAmmount;
+    public  
+
     // Update is called once per frame
     void Update()
     {        

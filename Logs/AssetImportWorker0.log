@@ -839,3 +839,4 @@ Received Import Request.
 Start importing Assets/Danilo Assets/ItemS/SpeedScript.cs using Guid(8d47cdd3fbcd7414d9f68f91ebbd4926) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cf8c5ac35812155053b1a576c26767fd') in 0.003818 seconds
   Import took 0.006565 seconds .
 
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
