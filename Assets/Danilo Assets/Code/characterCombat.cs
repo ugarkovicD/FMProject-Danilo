@@ -6,6 +6,8 @@ public class characterCombat : MonoBehaviour
 {
     public Transform AttackPoint;
     public Transform AttackPointLeft;
+    public Transform AttackPointUp;
+    public Transform AttackPointDown;
     public float attackRange = 1;
     public LayerMask EnemyLayer;
     public int attackDamage = 20;
@@ -26,6 +28,30 @@ public class characterCombat : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+        //Attack
+        if (SmoothMovement.facingDown == true)
+        {
+            if (timebtwHits <= 0)
+            {
+                if (Input.GetButtonDown("Fire1"))
+                {
+                    AttackDown();
+                    timebtwHits = startTimebtwHits;
+                }
+            }
+        }
+        if (SmoothMovement.facingUp == true)
+        {
+            if (timebtwHits <= 0)
+            {
+                if (Input.GetButtonDown("Fire1"))
+                {
+                    AttackUp();
+                    timebtwHits = startTimebtwHits;
+                }
+            }
+        }
         if (SmoothMovement.facingRight == true)
         {
             if (timebtwHits <= 0)
@@ -48,6 +74,8 @@ public class characterCombat : MonoBehaviour
                 }
             }
         }
+
+        //Heavy Attack
         if (SmoothMovement.facingRight == true)
         {
             if (timebtwHits <= 0)
@@ -110,7 +138,76 @@ public class characterCombat : MonoBehaviour
         //damage them
         foreach (Collider2D enemy in hitEnemies)
         {
-            Debug.Log("we hit" + enemy.name + 100);
+            if (enemy.CompareTag("MeleeEnemy"))
+            {
+                enemy.GetComponent<Enemy>().TakeDamage(attackDamage);
+                Debug.Log("we hit" + enemy.name + "kurac");
+            }
+            if (enemy.CompareTag("RangedEnemy"))
+            {
+                enemy.GetComponent<RangedEnemy>().TakeDamage(attackDamage);
+                Debug.Log("we hit" + enemy.name + "kurac");
+            }
+            if (enemy.CompareTag("BomberEnemy"))
+            {
+                enemy.GetComponent<BomberEnemy>().TakeDamage(attackDamage);
+
+                Debug.Log("we hit" + enemy.name + "kurac");
+            }
+            damaged1.Play();
+        }
+    }
+    void AttackUp()
+    {
+        //detect enemies
+        Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(AttackPointUp.position, attackRange, EnemyLayer);
+
+        //damage them
+        foreach (Collider2D enemy in hitEnemies)
+        {
+            if (enemy.CompareTag("MeleeEnemy"))
+            {
+                enemy.GetComponent<Enemy>().TakeDamage(attackDamage);
+                Debug.Log("we hit" + enemy.name + "kurac");
+            }
+            if (enemy.CompareTag("RangedEnemy"))
+            {
+                enemy.GetComponent<RangedEnemy>().TakeDamage(attackDamage);
+                Debug.Log("we hit" + enemy.name + "kurac");
+            }
+            if (enemy.CompareTag("BomberEnemy"))
+            {
+                enemy.GetComponent<BomberEnemy>().TakeDamage(attackDamage);
+
+                Debug.Log("we hit" + enemy.name + "kurac");
+            }
+            damaged1.Play();
+        }
+    }
+    void AttackDown()
+    {
+        //detect enemies
+        Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(AttackPointDown.position, attackRange, EnemyLayer);
+
+        //damage them
+        foreach (Collider2D enemy in hitEnemies)
+        {
+            if (enemy.CompareTag("MeleeEnemy"))
+            {
+                enemy.GetComponent<Enemy>().TakeDamage(attackDamage);
+                Debug.Log("we hit" + enemy.name + "kurac");
+            }
+            if (enemy.CompareTag("RangedEnemy"))
+            {
+                enemy.GetComponent<RangedEnemy>().TakeDamage(attackDamage);
+                Debug.Log("we hit" + enemy.name + "kurac");
+            }
+            if (enemy.CompareTag("BomberEnemy"))
+            {
+                enemy.GetComponent<BomberEnemy>().TakeDamage(attackDamage);
+
+                Debug.Log("we hit" + enemy.name + "kurac");
+            }
             damaged1.Play();
         }
     }
@@ -144,5 +241,7 @@ public class characterCombat : MonoBehaviour
     {
         Gizmos.DrawWireSphere(AttackPoint.position, attackRange);
         Gizmos.DrawWireSphere(AttackPointLeft.position, attackRange);
+        Gizmos.DrawWireSphere(AttackPointUp.position, attackRange);
+        Gizmos.DrawWireSphere(AttackPointDown.position, attackRange);
     }
 }

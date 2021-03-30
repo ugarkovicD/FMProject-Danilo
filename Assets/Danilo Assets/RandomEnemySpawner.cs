@@ -6,7 +6,7 @@ public class RandomEnemySpawner : MonoBehaviour
 {
     public int numberToSpawn;
     public List<GameObject> Spawnpool;
-    public GameObject quad;
+    public GameObject SpawnArea;
     // Start is called before the first frame update
     void Start()
     {
@@ -25,7 +25,7 @@ public class RandomEnemySpawner : MonoBehaviour
     {
         int randomEnemy = 0;
         GameObject toSpawn;
-        MeshCollider c = quad.GetComponent<MeshCollider>();
+        MeshCollider c = SpawnArea.GetComponent<MeshCollider>();
 
         float screenX, screenY;
         Vector2 pos;
