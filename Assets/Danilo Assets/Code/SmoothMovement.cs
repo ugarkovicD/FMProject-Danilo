@@ -30,7 +30,7 @@ public class SmoothMovement : MonoBehaviour
     public GameObject itemDashLength;
     public GameObject itemHealth;
     public GameObject itemMana;
-    //slowed
+    //kurac
     public static float SlowedTimer = 0;
     public static bool slowed;
 
