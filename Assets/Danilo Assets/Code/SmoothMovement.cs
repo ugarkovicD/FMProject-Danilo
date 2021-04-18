@@ -156,8 +156,8 @@ public class SmoothMovement : MonoBehaviour
         {
             Destroy(collision.gameObject);
         }
-        //attackSpeed
-        if (collision.name == "DamageItemUPG(Clone)")
+        //Armor
+        if (collision.name == "ArmorItemUPG(Clone)")
         {
             Destroy(collision.gameObject);
         }
