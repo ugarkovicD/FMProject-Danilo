@@ -404,16 +404,27 @@ MonoBehaviour:
   m_GameObject: {fileID: 88390759}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9f8317968e8612b4a8a33f23d08493cc, type: 3}
+  m_Script: {fileID: 11500000, guid: 3f4519e31ff85824298c168ed551f574, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 7
+  MaxSpeed: 7
   distance: 1
   distanceDash: 3
   speedDash: 27
   dashing: 0
   dashTimer: 0
   ArivedOnTarget: 0
+  haveSpace: 0
+  NotchesAmmount: 0
+  collidingItem: 0
+  itemStrength: {fileID: 0}
+  itemSpeed: {fileID: 0}
+  itemDashSpeed: {fileID: 0}
+  itemCooldown: {fileID: 0}
+  itemAttackSpeed: {fileID: 0}
+  itemDashLength: {fileID: 0}
+  itemHealth: {fileID: 0}
+  itemMana: {fileID: 0}
 --- !u!61 &88390764
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -479,7 +490,6 @@ MonoBehaviour:
   EnemyLayer:
     serializedVersion: 2
     m_Bits: 64
-  attackDamage: 20
   HeavyAttackDamage: 3
   damaged3: {fileID: 0}
   damaged1: {fileID: 0}
@@ -509,16 +519,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 89611346}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cd9ce8f266e35d9418f17c25e8030255, type: 3}
+  m_Script: {fileID: 11500000, guid: 46d6dc9443d15ed488e5932aa2bb60bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   numberToSpawn: 1
   Spawnpool:
   - {fileID: 3998270487766751367, guid: ef55283c7d9d25a4facb483c1ec7507c, type: 3}
-  - {fileID: 8052559587148224803, guid: a8048bad2e4a5a749a35d4476598b654, type: 3}
   - {fileID: 264480904775670938, guid: 626b2fd98291050448d331fd38691012, type: 3}
-  - {fileID: 3617336460691481597, guid: 1b9ba16bbdcbbbe4bb5c208a62fa63b8, type: 3}
   - {fileID: 1766764253255964764, guid: a90dd1785dac21b4ab2828cdaf51b0bf, type: 3}
+  - {fileID: 3617336460691481597, guid: 1b9ba16bbdcbbbe4bb5c208a62fa63b8, type: 3}
+  - {fileID: 8052559587148224803, guid: a8048bad2e4a5a749a35d4476598b654, type: 3}
   SpawnArea: {fileID: 2131677849}
 --- !u!4 &89611348
 Transform:
@@ -528,8 +538,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 89611346}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.527421, y: 1.4238019, z: -0.9033499}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 1.3174, y: 1.4238019, z: -0.9033499}
+  m_LocalScale: {x: 0.8625, y: 1, z: 1}
   m_Children:
   - {fileID: 2131677853}
   m_Father: {fileID: 0}
@@ -995,7 +1005,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cd9ce8f266e35d9418f17c25e8030255, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  numberToSpawn: 10
+  numberToSpawn: 1
   Spawnpool:
   - {fileID: 1640943144}
   - {fileID: 86449409}
@@ -1009,8 +1019,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1168426738}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.29682243, y: 0.40841442, z: -0.2681637}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0.28673, y: 0.45278, z: -0.30034}
+  m_LocalScale: {x: 0.966, y: 1.12, z: 1.12}
   m_Children:
   - {fileID: 229029063}
   m_Father: {fileID: 0}
@@ -1154,7 +1164,6 @@ MonoBehaviour:
   player: {fileID: 88390761}
   speed: 2
   rb: {fileID: 1640943145}
-  maxHealth: 100
 --- !u!212 &1640943147
 SpriteRenderer:
   m_ObjectHideFlags: 0
