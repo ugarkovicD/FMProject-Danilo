@@ -5,10 +5,9 @@ using UnityEngine;
 public class Enemy : MonoBehaviour
 {
     public Transform player;
-    public float speed = 5;
+    public float speed = 2;
     public Rigidbody2D rb;
     private Vector2 movement;
-    public int maxHealth = 100;
     private float currentHealth;
     // Start is called before the first frame update
     void Start()
@@ -36,9 +35,10 @@ public class Enemy : MonoBehaviour
     }
     public void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Bullet"))
+        if (other.CompareTag("Player"))
         {
-            Destroy(this.gameObject);
+            CharacterHealth.currenthp -= 1;
+            Debug.Log("Health = " + CharacterHealth.currenthp);
         }
     }
     public void TakeDamage(int Damage)

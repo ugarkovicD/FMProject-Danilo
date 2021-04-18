@@ -51,8 +51,8 @@ public class BombProjectile : MonoBehaviour
         {           
             if (inRadius == true)
             {
-            CharacterHealth.currenthp -= 2;
-                Debug.Log("health =" + CharacterHealth.currenthp);
+                 CharacterHealth.currenthp -= 2;
+                 Debug.Log("health =" + CharacterHealth.currenthp);
             }
             Destroy(gameObject);
         }

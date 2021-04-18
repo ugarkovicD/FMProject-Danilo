@@ -10,7 +10,7 @@ public class characterCombat : MonoBehaviour
     public Transform AttackPointDown;
     public float attackRange = 1;
     public LayerMask EnemyLayer;
-    public int attackDamage = 20;
+    public static int attackDamage = 20;
     public int HeavyAttackDamage = 40;
     private float timebtwHits;
     private float startTimebtwHits = 0.25f;

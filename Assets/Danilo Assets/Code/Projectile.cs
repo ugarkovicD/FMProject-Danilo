@@ -23,9 +23,16 @@ public class Projectile : MonoBehaviour
             Destroy(gameObject);
         }
     }
-    
-    private void OnCollisionEnter(Collision collision)
+
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        Destroy(gameObject);
+        if (collision.name == "Player")
+        {
+            CharacterHealth.currenthp -= 1;
+            Destroy(gameObject);
+            Debug.Log("Slowed");
+            SmoothMovement.slowed = true;
+            SmoothMovement.SlowedTimer = 3;
+        }
     }
 }

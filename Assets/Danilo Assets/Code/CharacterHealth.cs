@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class CharacterHealth : MonoBehaviour
 {
     //Health
+    public static float maxHp;
     public static float currenthp;
     public Sprite health0;
     public Sprite health1;
@@ -18,12 +19,17 @@ public class CharacterHealth : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        maxHp = 10;
+        currenthp = 10;
         healthImage.sprite = health5;
-        currenthp = 5;
     }
     // Update is called once per frame
     void Update()
     {
+        if (currenthp >= maxHp)
+        {
+            currenthp = maxHp;
+        }
         if (currenthp == 5)
         {
             healthImage.sprite = health5;
@@ -55,6 +61,11 @@ public class CharacterHealth : MonoBehaviour
         {
             currenthp -= 1;
             Debug.Log("Health" + currenthp);
-        }       
+        }
+        if (collision.name == "HealthItemUPG(Clone)")
+        {
+            Destroy(collision.gameObject);
+            maxHp += 1;
+        }
     }
 }

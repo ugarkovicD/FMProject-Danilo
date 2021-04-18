@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class SmoothMovement : MonoBehaviour
 {
-    public float speed = 7;
+    public float MaxSpeed;
+    public static float speed = 7;
     private Vector2 targetPos;
     public float distance = 1;
     public static bool facingUp;
@@ -29,14 +30,31 @@ public class SmoothMovement : MonoBehaviour
     public GameObject itemDashLength;
     public GameObject itemHealth;
     public GameObject itemMana;
+    //slowed
+    public static float SlowedTimer = 0;
+    public static bool slowed;
 
     void Start()
     {
+        MaxSpeed = 7;
         haveSpace = true;
+        speed = MaxSpeed;
     }
     // Update is called once per frame
     void Update()
-    {        
+    {
+        //Slow
+        if (slowed == true)
+        {
+            SlowedTimer -= 1 * Time.deltaTime;
+            speed = 4;
+        }
+        if (SlowedTimer <= 0)
+        {
+            slowed = false;
+            speed = MaxSpeed;
+        }
+
         //walking
         if (dashing == false) 
         {
@@ -116,7 +134,30 @@ public class SmoothMovement : MonoBehaviour
     }
     void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.name == "Square 16")
+        //damage
+        if (collision.name == "DamageItemUPG(Clone)")
+        {
+            Destroy(collision.gameObject);
+            characterCombat.attackDamage += 30;
+        }
+        //speed
+        if (collision.name == "SpeedItemUPG(Clone)")
+        {
+            Destroy(collision.gameObject);
+            MaxSpeed += 1.2f;
+        }
+        //mana
+        if (collision.name == "ManaItemUPG(Clone)")
+        {
+            Destroy(collision.gameObject);
+        }
+        //cooldown
+        if (collision.name == "CooldownItemUPG(Clone)")
+        {
+            Destroy(collision.gameObject);
+        }
+        //attackSpeed
+        if (collision.name == "DamageItemUPG(Clone)")
         {
             Destroy(collision.gameObject);
         }
