@@ -21,16 +21,7 @@ public class SmoothMovement : MonoBehaviour
     public bool haveSpace;
     public int NotchesAmmount;
     public bool collidingItem;
-    //items
-    public GameObject itemStrength;
-    public GameObject itemSpeed;
-    public GameObject itemDashSpeed;
-    public GameObject itemCooldown;
-    public GameObject itemAttackSpeed;
-    public GameObject itemDashLength;
-    public GameObject itemHealth;
-    public GameObject itemMana;
-    //kurac
+    //Slowed
     public static float SlowedTimer = 0;
     public static bool slowed;
 
