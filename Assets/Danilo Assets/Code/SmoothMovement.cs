@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class SmoothMovement : MonoBehaviour
 {
+    public Camera cameraObject;
     public float MaxSpeed;
     public static float speed = 7;
     private Vector2 targetPos;
@@ -34,6 +35,7 @@ public class SmoothMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        cameraObject.transform.position = new Vector3(transform.position.x, transform.position.y, cameraObject.transform.position.z);
         //Slow
         if (slowed == true)
         {
@@ -151,6 +153,10 @@ public class SmoothMovement : MonoBehaviour
         if (collision.name == "ArmorItemUPG(Clone)")
         {
             Destroy(collision.gameObject);
+        }
+        if (collision.name == "Portal")
+        {
+            RoomGeneration.PlayerWentToOtherRoom = true;
         }
     }
 }
