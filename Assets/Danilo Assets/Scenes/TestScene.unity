@@ -531,8 +531,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 89611346}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.3174, y: 1.4238019, z: -0.9033499}
-  m_LocalScale: {x: 0.8625, y: 1, z: 1}
+  m_LocalPosition: {x: 0.77917, y: 1.6207, z: -1.0245}
+  m_LocalScale: {x: 0.770302, y: 1.3325675, z: 1.1341}
   m_Children:
   - {fileID: 2131677853}
   m_Father: {fileID: 0}
@@ -1178,8 +1178,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1168426738}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.28673, y: 0.45278, z: -0.30034}
-  m_LocalScale: {x: 0.966, y: 1.12, z: 1.12}
+  m_LocalPosition: {x: -0.26523, y: 0.52524, z: -0.30034}
+  m_LocalScale: {x: 0.7697813, y: 1.316, z: 1.12}
   m_Children:
   - {fileID: 229029063}
   m_Father: {fileID: 0}
@@ -1575,6 +1575,7 @@ MonoBehaviour:
   - {fileID: 9210838678786084482, guid: b96553249eaafb54abeaf241fb4de408, type: 3}
   - {fileID: 2777906719838216674, guid: 64cb3dbdbe8499340a6c74dc7fbb1a95, type: 3}
   rand: 1
+  SpawnPoint: {x: 0, y: 0, z: 0}
 --- !u!4 &2143374596
 Transform:
   m_ObjectHideFlags: 0
@@ -1602,7 +1603,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4104283658985431052, guid: 19eb259b99ff9fc41aee65243620482c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -12
+      value: -0.6
       objectReference: {fileID: 0}
     - target: {fileID: 4104283659071317156, guid: 19eb259b99ff9fc41aee65243620482c, type: 3}
       propertyPath: m_Name
@@ -1651,6 +1652,10 @@ PrefabInstance:
     - target: {fileID: 4104283659071317157, guid: 19eb259b99ff9fc41aee65243620482c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5473037356819988111, guid: 19eb259b99ff9fc41aee65243620482c, type: 3}
+      propertyPath: m_Name
+      value: WallDestroyed
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 19eb259b99ff9fc41aee65243620482c, type: 3}

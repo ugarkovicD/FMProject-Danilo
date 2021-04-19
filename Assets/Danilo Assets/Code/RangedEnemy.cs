@@ -60,6 +60,7 @@ public class RangedEnemy : MonoBehaviour
         if (currentHealth <= 0)
         {
             Destroy(gameObject);
+            RandomEnemySpawner.NumberOfEnemies -= 1;
         }
     }
 }

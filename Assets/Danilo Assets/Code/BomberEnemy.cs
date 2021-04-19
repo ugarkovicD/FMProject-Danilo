@@ -54,6 +54,7 @@ public class BomberEnemy : MonoBehaviour
         if (currentHealth <= 0)
         {
             Destroy(gameObject);
+            RandomEnemySpawner.NumberOfEnemies -= 1;
         }
     }
     IEnumerator waitSpawn()

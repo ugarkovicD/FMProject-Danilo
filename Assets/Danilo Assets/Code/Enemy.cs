@@ -47,6 +47,7 @@ public class Enemy : MonoBehaviour
         if (currentHealth <= 0)
         {
             Destroy(gameObject);
+            RandomEnemySpawner.NumberOfEnemies -= 1;
         }
     }
 }

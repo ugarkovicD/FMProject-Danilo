@@ -156,7 +156,7 @@ public class SmoothMovement : MonoBehaviour
         }
         if (collision.name == "Portal")
         {
-            RoomGeneration.PlayerWentToOtherRoom = true;
+
         }
     }
 }
