@@ -9,6 +9,7 @@ public class RoomGeneration : MonoBehaviour
     private bool spawned;
     public Vector3 SpawnPoint;
     public static bool EnemiesDead;
+    public Transform SpawnPoint2;
     // Start is called before the first frame update
     void Start()
     {
@@ -34,9 +35,9 @@ public class RoomGeneration : MonoBehaviour
         if (spawned == false)
         {
              rand = Random.Range(0, rooms.Length);
-             Instantiate(rooms[rand],SpawnPoint,Quaternion.identity);
+             Instantiate(rooms[rand],SpawnPoint2.position,Quaternion.identity);
              spawned = true;
-             Debug.Log("SPAWNED A ROOM");        
+             Debug.Log("SPAWNED A ROOM");
         }
     }
 }

@@ -25,12 +25,14 @@ public class SmoothMovement : MonoBehaviour
     //Slowed
     public static float SlowedTimer = 0;
     public static bool slowed;
+    public static float speedSlowed;
 
     void Start()
     {
         MaxSpeed = 7;
         haveSpace = true;
         speed = MaxSpeed;
+        speedSlowed = 4;
     }
     // Update is called once per frame
     void Update()
@@ -40,7 +42,7 @@ public class SmoothMovement : MonoBehaviour
         if (slowed == true)
         {
             SlowedTimer -= 1 * Time.deltaTime;
-            speed = 4;
+            speed = speedSlowed;
         }
         if (SlowedTimer <= 0)
         {
@@ -138,6 +140,7 @@ public class SmoothMovement : MonoBehaviour
         {
             Destroy(collision.gameObject);
             MaxSpeed += 1.2f;
+            speedSlowed += 1;
         }
         //mana
         if (collision.name == "ManaItemUPG(Clone)")
