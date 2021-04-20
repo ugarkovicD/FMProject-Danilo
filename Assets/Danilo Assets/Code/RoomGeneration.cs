@@ -22,6 +22,11 @@ public class RoomGeneration : MonoBehaviour
         {
             EnemiesDead = true;
         }
+        if (Input.GetKeyDown(KeyCode.O))
+        {
+            spawned = false;
+            Invoke("Spawn", 0.1f);
+        }
     }
     // Update is called once per frame
     void Spawn()

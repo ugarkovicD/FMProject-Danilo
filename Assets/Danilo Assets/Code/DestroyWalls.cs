@@ -18,6 +18,7 @@ public class DestroyWalls : MonoBehaviour
     {
         if (RoomGeneration.EnemiesDead == true)
         {
+            Destroy(GameObject.FindGameObjectWithTag("DestroyableWall"));
             Destroy(DestroyableWall);
             Destroy(DestroyableWall2);
             Destroy(DestroyableWall3);

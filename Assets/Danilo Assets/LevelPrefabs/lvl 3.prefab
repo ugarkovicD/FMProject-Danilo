@@ -122,7 +122,7 @@ GameObject:
   - component: {fileID: 1230018466995772620}
   m_Layer: 0
   m_Name: DestroyableWall
-  m_TagString: Wall
+  m_TagString: DestroyableWall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1376,6 +1376,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DestroyableWall: {fileID: 923803891846960297}
   DestroyableWall2: {fileID: 9210838678968961580}
+  DestroyableWall3: {fileID: 0}
 --- !u!1 &9210838678968961580
 GameObject:
   m_ObjectHideFlags: 0
@@ -1389,7 +1390,7 @@ GameObject:
   - component: {fileID: 1437926787286919531}
   m_Layer: 0
   m_Name: DestroyableWall
-  m_TagString: Wall
+  m_TagString: DestroyableWall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
