@@ -1317,7 +1317,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9210838678786084483}
-  - component: {fileID: 2752010473166971959}
   m_Layer: 0
   m_Name: lvl 3
   m_TagString: Untagged
@@ -1362,21 +1361,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2752010473166971959
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9210838678786084482}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0364f64a0b239694ba80d745a3e7224c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  DestroyableWall: {fileID: 923803891846960297}
-  DestroyableWall2: {fileID: 9210838678968961580}
-  DestroyableWall3: {fileID: 0}
 --- !u!1 &9210838678968961580
 GameObject:
   m_ObjectHideFlags: 0

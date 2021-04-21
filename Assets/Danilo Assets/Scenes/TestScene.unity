@@ -1354,7 +1354,7 @@ MonoBehaviour:
   - {fileID: 4104283659071317156, guid: 19eb259b99ff9fc41aee65243620482c, type: 3}
   - {fileID: 9210838678786084482, guid: b96553249eaafb54abeaf241fb4de408, type: 3}
   - {fileID: 2777906719838216674, guid: 64cb3dbdbe8499340a6c74dc7fbb1a95, type: 3}
-  rand: 1
+  rand: 0
   SpawnPoint: {x: 0.1, y: 0.1, z: 0}
   SpawnPoint2: {fileID: 2143374596}
 --- !u!4 &2143374596

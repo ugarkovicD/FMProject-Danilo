@@ -10,6 +10,15 @@ public class RoomGeneration : MonoBehaviour
     public Vector3 SpawnPoint;
     public static bool EnemiesDead;
     public Transform SpawnPoint2;
+
+    //Checking Which room is Spawned
+    public static bool Room1;
+    public static bool Room2;
+    public static bool Room3;
+    public static bool Room4;
+    public static bool Room5;
+    public static bool Room6;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -19,6 +28,30 @@ public class RoomGeneration : MonoBehaviour
 
     void Update()
     {
+        if (rand == 1)
+        {
+            Room1 = true;
+        }
+        if (rand == 2)
+        {
+            Room2 = true;
+        }
+        if (rand == 3)
+        {
+            Room3 = true;
+        }
+        if (rand == 4)
+        {
+            Room4 = true;
+        }
+        if (rand == 5)
+        {
+            Room5 = true;
+        }
+        if (rand == 6)
+        {
+            Room6 = true;
+        }
         if (RandomEnemySpawner.NumberOfEnemies <= 0)
         {
             EnemiesDead = true;
