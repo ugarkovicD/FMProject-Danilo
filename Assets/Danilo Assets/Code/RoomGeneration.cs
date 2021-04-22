@@ -17,7 +17,6 @@ public class RoomGeneration : MonoBehaviour
     public static bool Room3;
     public static bool Room4;
     public static bool Room5;
-    public static bool Room6;
 
     // Start is called before the first frame update
     void Start()
@@ -28,29 +27,29 @@ public class RoomGeneration : MonoBehaviour
 
     void Update()
     {
-        if (rand == 1)
+        if (SmoothMovement.DestroyAndSpawnLevel == true)
+        {
+            Invoke("Spawn", 0.1f);
+        }
+        if (rand == 0)
         {
             Room1 = true;
         }
-        if (rand == 2)
+        if (rand == 1)
         {
             Room2 = true;
         }
-        if (rand == 3)
+        if (rand == 2)
         {
             Room3 = true;
         }
-        if (rand == 4)
+        if (rand == 3)
         {
             Room4 = true;
         }
-        if (rand == 5)
+        if (rand == 4)
         {
             Room5 = true;
-        }
-        if (rand == 6)
-        {
-            Room6 = true;
         }
         if (RandomEnemySpawner.NumberOfEnemies <= 0)
         {
@@ -63,7 +62,7 @@ public class RoomGeneration : MonoBehaviour
         }
     }
     // Update is called once per frame
-    void Spawn()
+    public void Spawn()
     {
         if (spawned == false)
         {

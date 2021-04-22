@@ -27,6 +27,8 @@ public class SmoothMovement : MonoBehaviour
     public static bool slowed;
     public static float speedSlowed;
 
+    public static bool DestroyAndSpawnLevel;
+
     void Start()
     {
         MaxSpeed = 7;
@@ -157,9 +159,9 @@ public class SmoothMovement : MonoBehaviour
         {
             Destroy(collision.gameObject);
         }
-        if (collision.name == "Portal")
+        if (collision.name == "TeleportPrefab(Clone)")
         {
-
+            DestroyAndSpawnLevel = true;
         }
     }
 }

@@ -7,7 +7,6 @@ public class RandomEnemySpawner : MonoBehaviour
     public int numberToSpawn;
     public List<GameObject> Spawnpool;
     public GameObject SpawnArea;
-    private GameObject templates;
     public static float NumberOfEnemies;
     // Start is called before the first frame update
     void Start()

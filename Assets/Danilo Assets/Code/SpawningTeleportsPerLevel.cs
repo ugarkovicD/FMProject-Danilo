@@ -16,27 +16,23 @@ public class SpawningTeleportsPerLevel : MonoBehaviour
     {
         if (RoomGeneration.Room1 == true)
         {
-            SpawnTeleportRoom1();
+            Invoke("SpawnTeleportRoom1",0.1f);
         }
         if (RoomGeneration.Room2 == true)
         {
-            SpawnTeleportRoom2();
+            Invoke("SpawnTeleportRoom2", 0.1f);
         }
         if (RoomGeneration.Room3 == true)
         {
-            SpawnTeleportRoom3();
+            Invoke("SpawnTeleportRoom3", 0.1f);
         }
         if (RoomGeneration.Room4 == true)
         {
-            SpawnTeleportRoom4();
+            Invoke("SpawnTeleportRoom4", 0.1f);
         }
         if (RoomGeneration.Room5 == true)
         {
-            SpawnTeleportRoom5();
-        }
-        if (RoomGeneration.Room6 == true)
-        {
-            SpawnTeleportRoom6();
+            Invoke("SpawnTeleportRoom5", 0.1f);
         }
     }
     void SpawnTeleportRoom1()
@@ -49,21 +45,28 @@ public class SpawningTeleportsPerLevel : MonoBehaviour
     }
     void SpawnTeleportRoom2()
     {
-
+        if (RoomGeneration.EnemiesDead == true)
+        {
+            Instantiate(teleportPrefab, Teleport3.position, Teleport3.rotation);
+            Instantiate(teleportPrefab, Teleport4.position, Teleport4.rotation);
+        }
     }
     void SpawnTeleportRoom3()
     {
-
+        if (RoomGeneration.EnemiesDead == true)
+        {
+            Instantiate(teleportPrefab, Teleport3.position, Teleport3.rotation);
+            Instantiate(teleportPrefab, Teleport4.position, Teleport4.rotation);
+        }
     }
     void SpawnTeleportRoom4()
     {
-
+        if (RoomGeneration.EnemiesDead == true)
+        {
+            Instantiate(teleportPrefab, Teleport5.position, Teleport5.rotation);
+        }
     }
     void SpawnTeleportRoom5()
-    {
-
-    }
-    void SpawnTeleportRoom6()
     {
 
     }
