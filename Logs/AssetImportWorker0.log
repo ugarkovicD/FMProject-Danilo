@@ -1032,3 +1032,4 @@ Received Import Request.
 Start importing Assets/Danilo Assets/eryne assets/environment stff/texture brain left edge .png using Guid(5694bcfc8b2f0834f9a7883de813268f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '91b269dfc973390b9f4b8e449bdbbe2e') in 0.015827 seconds
   Import took 0.018562 seconds .
 
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
