@@ -11,302 +11,1025 @@ C:\Program Files\Unity\Hub\Editor\2020.2.7f1\Editor\Unity.exe
 -name
 AssetImportWorker0
 -projectPath
-D:/eryne/neww/FMProject-Danilo
+D:/eryne/pee/FMProject-Danilo
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-52725
-Successfully changed project path to: D:/eryne/neww/FMProject-Danilo
-D:/eryne/neww/FMProject-Danilo
+49713
+Successfully changed project path to: D:/eryne/pee/FMProject-Danilo
+D:/eryne/pee/FMProject-Danilo
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 33.79 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 32.57 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.2.7f1 (c53830e277f1)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.2.7f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path D:/eryne/neww/FMProject-Danilo/Assets
+[Subsystems] Discovering subsystems at path D:/eryne/pee/FMProject-Danilo/Assets
 GfxDevice: creating device client; threaded=0
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
     Renderer: NVIDIA GeForce GTX 1660 (ID=0x2184)
     Vendor:   
     VRAM:     5991 MB
-    Driver:   27.21.14.5167
+    Driver:   27.21.14.5206
 Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.2.7f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.2.7f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.2.7f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56044
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56332
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.2.7f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.001189 seconds.
+Registered in 0.001114 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 32.41 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 32.03 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.968 seconds
+- Completed reload, in  0.960 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.001040 seconds.
+Registered in 0.000977 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 33.60 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 31.92 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.842 seconds
+- Completed reload, in  0.805 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
-Refreshing native plugins compatible for Editor in 0.34 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 0.46 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 1835 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 85.4 MB.
-System memory in use after: 85.5 MB.
+System memory in use before: 85.3 MB.
+System memory in use after: 85.4 MB.
 
 Unloading 19 unused Assets to reduce memory usage. Loaded Objects now: 2282.
-Total: 1.846200 ms (FindLiveObjects: 0.173500 ms CreateObjectMapping: 0.075400 ms MarkObjects: 1.538400 ms  DeleteObjects: 0.058200 ms)
+Total: 1.855200 ms (FindLiveObjects: 0.217100 ms CreateObjectMapping: 0.112900 ms MarkObjects: 1.466300 ms  DeleteObjects: 0.057500 ms)
 
 ========================================================================
 Received Import Request.
-  path: Assets/Danilo Assets/LevelPrefabs/lvl 3.prefab
-  artifactKey: Guid(b96553249eaafb54abeaf241fb4de408) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Danilo Assets/LevelPrefabs/lvl 3.prefab using Guid(b96553249eaafb54abeaf241fb4de408) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '22c98737e4a529ec033124834876bd24') in 0.086610 seconds
-  Import took 0.089437 seconds .
+  path: Assets/Scenes
+  artifactKey: Guid(511eb8380cad4e54981cf05a56855c6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes using Guid(511eb8380cad4e54981cf05a56855c6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'db1a692339c8aed6ea5172891a49a70c') in 0.006658 seconds
+  Import took 0.009061 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000217 seconds.
-  path: Assets/Danilo Assets/LevelPrefabs/lvl 3 1.prefab
-  artifactKey: Guid(19eb259b99ff9fc41aee65243620482c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Danilo Assets/LevelPrefabs/lvl 3 1.prefab using Guid(19eb259b99ff9fc41aee65243620482c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5ff1df3b1281f3d4bf41f382c3ab13ed') in 0.012495 seconds
-  Import took 0.015185 seconds .
+  Time since last request: 0.000231 seconds.
+  path: Assets/Danilo Assets/Bullet.prefab
+  artifactKey: Guid(ef500eeda47186c48be96bf034b30b5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Danilo Assets/Bullet.prefab using Guid(ef500eeda47186c48be96bf034b30b5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3d23736c206d5f88798d563610e7b454') in 0.096138 seconds
+  Import took 0.098639 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000246 seconds.
+  Time since last request: 0.000163 seconds.
+  path: Assets/Danilo Assets/BombProjectile.prefab
+  artifactKey: Guid(e113185fdfde6ef49932e1c5c8d315c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Danilo Assets/BombProjectile.prefab using Guid(e113185fdfde6ef49932e1c5c8d315c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f23b148b2070cd612af600fba906e5ef') in 0.091206 seconds
+  Import took 0.093757 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.657240 seconds.
   path: Assets/Danilo Assets/LevelPrefabs/lvl 2.prefab
   artifactKey: Guid(2222a70c831ce4e40ba0305574877b40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Danilo Assets/LevelPrefabs/lvl 2.prefab using Guid(2222a70c831ce4e40ba0305574877b40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fc27059f38d92d5bdd26a4332fe56fd9') in 0.012402 seconds
-  Import took 0.015300 seconds .
+Start importing Assets/Danilo Assets/LevelPrefabs/lvl 2.prefab using Guid(2222a70c831ce4e40ba0305574877b40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fc27059f38d92d5bdd26a4332fe56fd9') in 0.012556 seconds
+  Import took 0.015624 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000212 seconds.
+  Time since last request: 0.000235 seconds.
+  path: Assets/Danilo Assets/LevelPrefabs/lvl 3.prefab
+  artifactKey: Guid(b96553249eaafb54abeaf241fb4de408) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Danilo Assets/LevelPrefabs/lvl 3.prefab using Guid(b96553249eaafb54abeaf241fb4de408) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a8645cfa996e963933797cbbce73d4d6') in 0.011548 seconds
+  Import took 0.014117 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000245 seconds.
+  path: Assets/Danilo Assets/LevelPrefabs/lvl 3 1.prefab
+  artifactKey: Guid(19eb259b99ff9fc41aee65243620482c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Danilo Assets/LevelPrefabs/lvl 3 1.prefab using Guid(19eb259b99ff9fc41aee65243620482c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '47ac4815aeaf0d44c07c5ca775fb61e3') in 0.013470 seconds
+  Import took 0.016421 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000170 seconds.
   path: Assets/Danilo Assets/LevelPrefabs/lvl1.prefab
   artifactKey: Guid(64cb3dbdbe8499340a6c74dc7fbb1a95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Danilo Assets/LevelPrefabs/lvl1.prefab using Guid(64cb3dbdbe8499340a6c74dc7fbb1a95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3dd7c96b6e29ba65ceeb1511cd5c4081') in 0.012529 seconds
-  Import took 0.015265 seconds .
+Start importing Assets/Danilo Assets/LevelPrefabs/lvl1.prefab using Guid(64cb3dbdbe8499340a6c74dc7fbb1a95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4e0bf04e3847e89a0ac74253776584f7') in 0.058429 seconds
+  Import took 0.062458 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.001128 seconds.
+  Time since last request: 29.103508 seconds.
   path: Assets/Danilo Assets/LevelPrefabs/lvl1.prefab
   artifactKey: Guid(64cb3dbdbe8499340a6c74dc7fbb1a95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Danilo Assets/LevelPrefabs/lvl1.prefab using Guid(64cb3dbdbe8499340a6c74dc7fbb1a95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3dd7c96b6e29ba65ceeb1511cd5c4081') in 0.010954 seconds
-  Import took 0.013790 seconds .
+Start importing Assets/Danilo Assets/LevelPrefabs/lvl1.prefab using Guid(64cb3dbdbe8499340a6c74dc7fbb1a95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bb06413fc317a571f9b3dfdfa7e2c40e') in 0.041285 seconds
+  Import took 0.045994 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 7.553374 seconds.
-  path: Assets/Danilo Assets/Scenes/TestScene.unity
-  artifactKey: Guid(2cda990e2423bbf4892e6590ba056729) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Danilo Assets/Scenes/TestScene.unity using Guid(2cda990e2423bbf4892e6590ba056729) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0096f5ec0a54878c22e65b3f080683eb') in 0.005228 seconds
-  Import took 0.008172 seconds .
+  Time since last request: 10.816142 seconds.
+  path: Assets/Danilo Assets/LevelPrefabs/lvl1.prefab
+  artifactKey: Guid(64cb3dbdbe8499340a6c74dc7fbb1a95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Danilo Assets/LevelPrefabs/lvl1.prefab using Guid(64cb3dbdbe8499340a6c74dc7fbb1a95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00fe76a5ce4182690d1cbd996328552d') in 0.041137 seconds
+  Import took 0.045965 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.006378 seconds.
-  path: Assets/Danilo Assets/Scenes/TestScene.unity
-  artifactKey: Guid(2cda990e2423bbf4892e6590ba056729) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Danilo Assets/Scenes/TestScene.unity using Guid(2cda990e2423bbf4892e6590ba056729) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0096f5ec0a54878c22e65b3f080683eb') in 0.004545 seconds
-  Import took 0.007665 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001077 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.36 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.758 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.40 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1825 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 88.1 MB.
-System memory in use after: 88.2 MB.
-
-Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 2293.
-Total: 1.627400 ms (FindLiveObjects: 0.144600 ms CreateObjectMapping: 0.054700 ms MarkObjects: 1.414900 ms  DeleteObjects: 0.012400 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.000971 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.32 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.759 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.35 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1825 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 88.1 MB.
-System memory in use after: 88.3 MB.
-
-Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 2297.
-Total: 1.792500 ms (FindLiveObjects: 0.182400 ms CreateObjectMapping: 0.063400 ms MarkObjects: 1.531600 ms  DeleteObjects: 0.014400 ms)
+  Time since last request: 7.014910 seconds.
+  path: Assets/Danilo Assets/LevelPrefabs/lvl1.prefab
+  artifactKey: Guid(64cb3dbdbe8499340a6c74dc7fbb1a95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Danilo Assets/LevelPrefabs/lvl1.prefab using Guid(64cb3dbdbe8499340a6c74dc7fbb1a95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'da54a364e7b52ed16ffc241b4c837024') in 0.036204 seconds
+  Import took 0.040771 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 210.688170 seconds.
-  path: Assets/Danilo Assets
-  artifactKey: Guid(c713bf638f0ca2543a1deccd34d1a2b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Danilo Assets using Guid(c713bf638f0ca2543a1deccd34d1a2b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1c16c5b249f9b61b98aa745aa5493aea') in 0.008893 seconds
-  Import took 0.011722 seconds .
+  Time since last request: 26.334020 seconds.
+  path: Assets/Danilo Assets/LevelPrefabs/lvl1.prefab
+  artifactKey: Guid(64cb3dbdbe8499340a6c74dc7fbb1a95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Danilo Assets/LevelPrefabs/lvl1.prefab using Guid(64cb3dbdbe8499340a6c74dc7fbb1a95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5bff258182ad60c2c0fdc2e85fb93e59') in 0.039214 seconds
+  Import took 0.044476 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 9.787010 seconds.
-  path: Assets/Danilo Assets/eryne assets
-  artifactKey: Guid(700237f21eb474c4d8ce242639d6eb1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Danilo Assets/eryne assets using Guid(700237f21eb474c4d8ce242639d6eb1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ef8abc57ae152177e33c78c43e0ed883') in 0.004493 seconds
-  Import took 0.007664 seconds .
+  Time since last request: 6.419328 seconds.
+  path: Assets/Danilo Assets/LevelPrefabs/lvl1.prefab
+  artifactKey: Guid(64cb3dbdbe8499340a6c74dc7fbb1a95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Danilo Assets/LevelPrefabs/lvl1.prefab using Guid(64cb3dbdbe8499340a6c74dc7fbb1a95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b8a0b37652ccd732593c224857d52903') in 0.037092 seconds
+  Import took 0.042811 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 11.984200 seconds.
+  Time since last request: 2.185394 seconds.
+  path: Assets/Danilo Assets/LevelPrefabs/lvl1.prefab
+  artifactKey: Guid(64cb3dbdbe8499340a6c74dc7fbb1a95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Danilo Assets/LevelPrefabs/lvl1.prefab using Guid(64cb3dbdbe8499340a6c74dc7fbb1a95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4a2927a9cbba159c58116e32682338aa') in 0.038312 seconds
+  Import took 0.043037 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.405261 seconds.
+  path: Assets/Danilo Assets/LevelPrefabs/lvl1.prefab
+  artifactKey: Guid(64cb3dbdbe8499340a6c74dc7fbb1a95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Danilo Assets/LevelPrefabs/lvl1.prefab using Guid(64cb3dbdbe8499340a6c74dc7fbb1a95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '61a20cb40cd4eebd6324567a6423861c') in 0.037682 seconds
+  Import took 0.042133 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.379673 seconds.
+  path: Assets/Danilo Assets/LevelPrefabs/lvl1.prefab
+  artifactKey: Guid(64cb3dbdbe8499340a6c74dc7fbb1a95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Danilo Assets/LevelPrefabs/lvl1.prefab using Guid(64cb3dbdbe8499340a6c74dc7fbb1a95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '178d772b0f19903330596025682bdaaa') in 0.036416 seconds
+  Import took 0.041008 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.972699 seconds.
+  path: Assets/Danilo Assets/LevelPrefabs/lvl1.prefab
+  artifactKey: Guid(64cb3dbdbe8499340a6c74dc7fbb1a95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Danilo Assets/LevelPrefabs/lvl1.prefab using Guid(64cb3dbdbe8499340a6c74dc7fbb1a95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e6cff8aa7734c63fa3ff0f0bec6757fd') in 0.038584 seconds
+  Import took 0.043116 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.169310 seconds.
+  path: Assets/Danilo Assets/LevelPrefabs/lvl1.prefab
+  artifactKey: Guid(64cb3dbdbe8499340a6c74dc7fbb1a95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Danilo Assets/LevelPrefabs/lvl1.prefab using Guid(64cb3dbdbe8499340a6c74dc7fbb1a95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6dd36ab12f565d5c201a3bcd2eb9db10') in 0.038002 seconds
+  Import took 0.042521 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.175983 seconds.
+  path: Assets/Danilo Assets/LevelPrefabs/lvl1.prefab
+  artifactKey: Guid(64cb3dbdbe8499340a6c74dc7fbb1a95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Danilo Assets/LevelPrefabs/lvl1.prefab using Guid(64cb3dbdbe8499340a6c74dc7fbb1a95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5469019810cbf084f8e3109784e86a87') in 0.037377 seconds
+  Import took 0.041839 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 34.600083 seconds.
+  path: Assets/Danilo Assets/LevelPrefabs/lvl1.prefab
+  artifactKey: Guid(64cb3dbdbe8499340a6c74dc7fbb1a95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Danilo Assets/LevelPrefabs/lvl1.prefab using Guid(64cb3dbdbe8499340a6c74dc7fbb1a95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8cea26e0b5d14f1e3b0989fec6c103c0') in 0.038671 seconds
+  Import took 0.043465 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.561484 seconds.
+  path: Assets/Danilo Assets/LevelPrefabs/lvl1.prefab
+  artifactKey: Guid(64cb3dbdbe8499340a6c74dc7fbb1a95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Danilo Assets/LevelPrefabs/lvl1.prefab using Guid(64cb3dbdbe8499340a6c74dc7fbb1a95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1e6e00b70b046505836be812ec4fba6f') in 0.037741 seconds
+  Import took 0.042347 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.575446 seconds.
+  path: Assets/Danilo Assets/LevelPrefabs/lvl1.prefab
+  artifactKey: Guid(64cb3dbdbe8499340a6c74dc7fbb1a95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Danilo Assets/LevelPrefabs/lvl1.prefab using Guid(64cb3dbdbe8499340a6c74dc7fbb1a95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e36d635c0a760471bfbebed1bf61d06c') in 0.037008 seconds
+  Import took 0.041582 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.999403 seconds.
+  path: Assets/Danilo Assets/LevelPrefabs/lvl1.prefab
+  artifactKey: Guid(64cb3dbdbe8499340a6c74dc7fbb1a95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Danilo Assets/LevelPrefabs/lvl1.prefab using Guid(64cb3dbdbe8499340a6c74dc7fbb1a95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '29ff9315502d2b21513758c4190cc6f1') in 0.037427 seconds
+  Import took 0.042093 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.187023 seconds.
+  path: Assets/Danilo Assets/LevelPrefabs/lvl1.prefab
+  artifactKey: Guid(64cb3dbdbe8499340a6c74dc7fbb1a95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Danilo Assets/LevelPrefabs/lvl1.prefab using Guid(64cb3dbdbe8499340a6c74dc7fbb1a95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b129f7517094d92420dbf1e34b1f0fc7') in 0.036984 seconds
+  Import took 0.041836 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.966105 seconds.
+  path: Assets/Danilo Assets/LevelPrefabs/lvl1.prefab
+  artifactKey: Guid(64cb3dbdbe8499340a6c74dc7fbb1a95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Danilo Assets/LevelPrefabs/lvl1.prefab using Guid(64cb3dbdbe8499340a6c74dc7fbb1a95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ef05644215485b097620368236509767') in 0.047783 seconds
+  Import took 0.053765 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.414627 seconds.
+  path: Assets/Danilo Assets/LevelPrefabs/lvl1.prefab
+  artifactKey: Guid(64cb3dbdbe8499340a6c74dc7fbb1a95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Danilo Assets/LevelPrefabs/lvl1.prefab using Guid(64cb3dbdbe8499340a6c74dc7fbb1a95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ec8d0aba39af9fde1d3e245ade55c7d5') in 0.039008 seconds
+  Import took 0.043676 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 14.677066 seconds.
+  path: Assets/Danilo Assets/LevelPrefabs/lvl1.prefab
+  artifactKey: Guid(64cb3dbdbe8499340a6c74dc7fbb1a95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Danilo Assets/LevelPrefabs/lvl1.prefab using Guid(64cb3dbdbe8499340a6c74dc7fbb1a95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd03e918222a41594e9f695be8b8366e8') in 0.038050 seconds
+  Import took 0.042511 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.614001 seconds.
+  path: Assets/Danilo Assets/LevelPrefabs/lvl1.prefab
+  artifactKey: Guid(64cb3dbdbe8499340a6c74dc7fbb1a95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Danilo Assets/LevelPrefabs/lvl1.prefab using Guid(64cb3dbdbe8499340a6c74dc7fbb1a95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'af1f3e9e4572d958691add360c16cd27') in 0.038867 seconds
+  Import took 0.043590 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.785093 seconds.
+  path: Assets/Danilo Assets/LevelPrefabs/lvl1.prefab
+  artifactKey: Guid(64cb3dbdbe8499340a6c74dc7fbb1a95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Danilo Assets/LevelPrefabs/lvl1.prefab using Guid(64cb3dbdbe8499340a6c74dc7fbb1a95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0d16eba46107a007656a51f96af38f9f') in 0.040341 seconds
+  Import took 0.044863 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.639106 seconds.
+  path: Assets/Danilo Assets/LevelPrefabs/lvl1.prefab
+  artifactKey: Guid(64cb3dbdbe8499340a6c74dc7fbb1a95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Danilo Assets/LevelPrefabs/lvl1.prefab using Guid(64cb3dbdbe8499340a6c74dc7fbb1a95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bfc1fff4f47c04f508bec44579b3aaf9') in 0.041716 seconds
+  Import took 0.047431 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.991446 seconds.
+  path: Assets/Danilo Assets/LevelPrefabs/lvl1.prefab
+  artifactKey: Guid(64cb3dbdbe8499340a6c74dc7fbb1a95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Danilo Assets/LevelPrefabs/lvl1.prefab using Guid(64cb3dbdbe8499340a6c74dc7fbb1a95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '82d4932d68e0acaf5f92fadbbd8bdb7d') in 0.038179 seconds
+  Import took 0.042822 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.376332 seconds.
+  path: Assets/Danilo Assets/LevelPrefabs/lvl1.prefab
+  artifactKey: Guid(64cb3dbdbe8499340a6c74dc7fbb1a95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Danilo Assets/LevelPrefabs/lvl1.prefab using Guid(64cb3dbdbe8499340a6c74dc7fbb1a95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '941d4f05845cbac1acd4e83a5bb04e42') in 0.040759 seconds
+  Import took 0.045594 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.221645 seconds.
+  path: Assets/Danilo Assets/LevelPrefabs/lvl1.prefab
+  artifactKey: Guid(64cb3dbdbe8499340a6c74dc7fbb1a95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Danilo Assets/LevelPrefabs/lvl1.prefab using Guid(64cb3dbdbe8499340a6c74dc7fbb1a95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ef40d50c6b91d0e5baf765e9a7bf7efe') in 0.040176 seconds
+  Import took 0.044714 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.195541 seconds.
+  path: Assets/Danilo Assets/LevelPrefabs/lvl1.prefab
+  artifactKey: Guid(64cb3dbdbe8499340a6c74dc7fbb1a95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Danilo Assets/LevelPrefabs/lvl1.prefab using Guid(64cb3dbdbe8499340a6c74dc7fbb1a95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '53cb442d5e70a26ac72e66e7837ed88b') in 0.039590 seconds
+  Import took 0.044378 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 17.101144 seconds.
+  path: Assets/Danilo Assets/LevelPrefabs/lvl1.prefab
+  artifactKey: Guid(64cb3dbdbe8499340a6c74dc7fbb1a95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Danilo Assets/LevelPrefabs/lvl1.prefab using Guid(64cb3dbdbe8499340a6c74dc7fbb1a95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '30ee9686f69f71e17e15bc6222e1472c') in 0.041177 seconds
+  Import took 0.046006 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 14.706578 seconds.
+  path: Assets/Danilo Assets/LevelPrefabs/lvl1.prefab
+  artifactKey: Guid(64cb3dbdbe8499340a6c74dc7fbb1a95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Danilo Assets/LevelPrefabs/lvl1.prefab using Guid(64cb3dbdbe8499340a6c74dc7fbb1a95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '88e479cb1dd4c3f8ec37c4a8d29f3440') in 0.042970 seconds
+  Import took 0.047730 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 17.474103 seconds.
+  path: Assets/Danilo Assets/LevelPrefabs/lvl1.prefab
+  artifactKey: Guid(64cb3dbdbe8499340a6c74dc7fbb1a95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Danilo Assets/LevelPrefabs/lvl1.prefab using Guid(64cb3dbdbe8499340a6c74dc7fbb1a95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f719cb6010094310cc629187d31472de') in 0.041774 seconds
+  Import took 0.046755 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.015551 seconds.
+  path: Assets/Danilo Assets/LevelPrefabs/lvl1.prefab
+  artifactKey: Guid(64cb3dbdbe8499340a6c74dc7fbb1a95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Danilo Assets/LevelPrefabs/lvl1.prefab using Guid(64cb3dbdbe8499340a6c74dc7fbb1a95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '02dff76d101d9c2ef6b976c28113d476') in 0.040039 seconds
+  Import took 0.044938 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 17.546579 seconds.
+  path: Assets/Danilo Assets/LevelPrefabs/lvl1.prefab
+  artifactKey: Guid(64cb3dbdbe8499340a6c74dc7fbb1a95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Danilo Assets/LevelPrefabs/lvl1.prefab using Guid(64cb3dbdbe8499340a6c74dc7fbb1a95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0132d50d43c205bf1fc04bb55bda3d37') in 0.043683 seconds
+  Import took 0.048486 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 13.067759 seconds.
+  path: Assets/Danilo Assets/LevelPrefabs/lvl1.prefab
+  artifactKey: Guid(64cb3dbdbe8499340a6c74dc7fbb1a95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Danilo Assets/LevelPrefabs/lvl1.prefab using Guid(64cb3dbdbe8499340a6c74dc7fbb1a95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b038ee0b567f86408c2d395aef43df08') in 0.042486 seconds
+  Import took 0.047368 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.598371 seconds.
+  path: Assets/Danilo Assets/LevelPrefabs/lvl1.prefab
+  artifactKey: Guid(64cb3dbdbe8499340a6c74dc7fbb1a95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Danilo Assets/LevelPrefabs/lvl1.prefab using Guid(64cb3dbdbe8499340a6c74dc7fbb1a95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '64b8a147b530ac9dab59a3cc1cb52dbe') in 0.041660 seconds
+  Import took 0.046438 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 12.230906 seconds.
+  path: Assets/Danilo Assets/LevelPrefabs/lvl1.prefab
+  artifactKey: Guid(64cb3dbdbe8499340a6c74dc7fbb1a95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Danilo Assets/LevelPrefabs/lvl1.prefab using Guid(64cb3dbdbe8499340a6c74dc7fbb1a95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3f961ea069714b3c1d0dec440833091d') in 0.043998 seconds
+  Import took 0.048842 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 14.312814 seconds.
+  path: Assets/Danilo Assets/LevelPrefabs/lvl1.prefab
+  artifactKey: Guid(64cb3dbdbe8499340a6c74dc7fbb1a95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Danilo Assets/LevelPrefabs/lvl1.prefab using Guid(64cb3dbdbe8499340a6c74dc7fbb1a95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a72b5ed05eb140f1f6bf32e8c57ebfd9') in 0.042075 seconds
+  Import took 0.046905 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.221716 seconds.
+  path: Assets/Danilo Assets/LevelPrefabs/lvl1.prefab
+  artifactKey: Guid(64cb3dbdbe8499340a6c74dc7fbb1a95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Danilo Assets/LevelPrefabs/lvl1.prefab using Guid(64cb3dbdbe8499340a6c74dc7fbb1a95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7282747960766e20c6fcc2fa9e58b7ef') in 0.043090 seconds
+  Import took 0.048061 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 22.190669 seconds.
+  path: Assets/Danilo Assets/LevelPrefabs/lvl1.prefab
+  artifactKey: Guid(64cb3dbdbe8499340a6c74dc7fbb1a95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Danilo Assets/LevelPrefabs/lvl1.prefab using Guid(64cb3dbdbe8499340a6c74dc7fbb1a95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bbb657deb10b5f66f3c6af92a5c029da') in 0.042438 seconds
+  Import took 0.047394 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 12.881580 seconds.
+  path: Assets/Danilo Assets/LevelPrefabs/lvl1.prefab
+  artifactKey: Guid(64cb3dbdbe8499340a6c74dc7fbb1a95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Danilo Assets/LevelPrefabs/lvl1.prefab using Guid(64cb3dbdbe8499340a6c74dc7fbb1a95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '31d491c9753ebbfe688fa778e91bee9e') in 0.043928 seconds
+  Import took 0.048921 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.371414 seconds.
+  path: Assets/Danilo Assets/LevelPrefabs/lvl1.prefab
+  artifactKey: Guid(64cb3dbdbe8499340a6c74dc7fbb1a95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Danilo Assets/LevelPrefabs/lvl1.prefab using Guid(64cb3dbdbe8499340a6c74dc7fbb1a95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e40074d76fc52deb1ae08abcfc94cbf6') in 0.044788 seconds
+  Import took 0.049890 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.637513 seconds.
+  path: Assets/Danilo Assets/LevelPrefabs/lvl1.prefab
+  artifactKey: Guid(64cb3dbdbe8499340a6c74dc7fbb1a95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Danilo Assets/LevelPrefabs/lvl1.prefab using Guid(64cb3dbdbe8499340a6c74dc7fbb1a95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c12c59dc0c827f1325dffd607a625013') in 0.044328 seconds
+  Import took 0.049635 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 10.870912 seconds.
+  path: Assets/Danilo Assets/LevelPrefabs/lvl1.prefab
+  artifactKey: Guid(64cb3dbdbe8499340a6c74dc7fbb1a95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Danilo Assets/LevelPrefabs/lvl1.prefab using Guid(64cb3dbdbe8499340a6c74dc7fbb1a95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '80c7ec976bfb608d4f9bfe84dfbb74a0') in 0.058774 seconds
+  Import took 0.065633 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.530846 seconds.
+  path: Assets/Danilo Assets/LevelPrefabs/lvl1.prefab
+  artifactKey: Guid(64cb3dbdbe8499340a6c74dc7fbb1a95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Danilo Assets/LevelPrefabs/lvl1.prefab using Guid(64cb3dbdbe8499340a6c74dc7fbb1a95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2fce1692793be83e2f649ba02b8fd1fd') in 0.045517 seconds
+  Import took 0.050453 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 54.992572 seconds.
+  path: Assets/Danilo Assets/LevelPrefabs/lvl1.prefab
+  artifactKey: Guid(64cb3dbdbe8499340a6c74dc7fbb1a95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Danilo Assets/LevelPrefabs/lvl1.prefab using Guid(64cb3dbdbe8499340a6c74dc7fbb1a95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7f75ae2a8e534c0cc92563de479c2e28') in 0.044555 seconds
+  Import took 0.049511 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 19.297508 seconds.
+  path: Assets/Danilo Assets/LevelPrefabs/lvl1.prefab
+  artifactKey: Guid(64cb3dbdbe8499340a6c74dc7fbb1a95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Danilo Assets/LevelPrefabs/lvl1.prefab using Guid(64cb3dbdbe8499340a6c74dc7fbb1a95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b05c142e18557cc83dd8845db7801758') in 0.047257 seconds
+  Import took 0.052370 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.374235 seconds.
+  path: Assets/Danilo Assets/LevelPrefabs/lvl1.prefab
+  artifactKey: Guid(64cb3dbdbe8499340a6c74dc7fbb1a95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Danilo Assets/LevelPrefabs/lvl1.prefab using Guid(64cb3dbdbe8499340a6c74dc7fbb1a95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8e8f000310f80b114c768d68ebdf0bac') in 0.043923 seconds
+  Import took 0.049098 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.802269 seconds.
+  path: Assets/Danilo Assets/LevelPrefabs/lvl1.prefab
+  artifactKey: Guid(64cb3dbdbe8499340a6c74dc7fbb1a95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Danilo Assets/LevelPrefabs/lvl1.prefab using Guid(64cb3dbdbe8499340a6c74dc7fbb1a95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '530f66782833cf3b0cc9b98b5db615ce') in 0.046152 seconds
+  Import took 0.051210 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.600491 seconds.
+  path: Assets/Danilo Assets/LevelPrefabs/lvl1.prefab
+  artifactKey: Guid(64cb3dbdbe8499340a6c74dc7fbb1a95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Danilo Assets/LevelPrefabs/lvl1.prefab using Guid(64cb3dbdbe8499340a6c74dc7fbb1a95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '63f7d0388fcf9daae8cd3bec6110b848') in 0.044735 seconds
+  Import took 0.049892 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.011018 seconds.
+  path: Assets/Danilo Assets/LevelPrefabs/lvl1.prefab
+  artifactKey: Guid(64cb3dbdbe8499340a6c74dc7fbb1a95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Danilo Assets/LevelPrefabs/lvl1.prefab using Guid(64cb3dbdbe8499340a6c74dc7fbb1a95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0193be73e0afa6a6f7cb90e3849e2609') in 0.044426 seconds
+  Import took 0.049462 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.572068 seconds.
+  path: Assets/Danilo Assets/LevelPrefabs/lvl1.prefab
+  artifactKey: Guid(64cb3dbdbe8499340a6c74dc7fbb1a95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Danilo Assets/LevelPrefabs/lvl1.prefab using Guid(64cb3dbdbe8499340a6c74dc7fbb1a95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9fc4e40502d012b21056dc77e2a3cb6d') in 0.046637 seconds
+  Import took 0.052076 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.811020 seconds.
+  path: Assets/Danilo Assets/LevelPrefabs/lvl1.prefab
+  artifactKey: Guid(64cb3dbdbe8499340a6c74dc7fbb1a95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Danilo Assets/LevelPrefabs/lvl1.prefab using Guid(64cb3dbdbe8499340a6c74dc7fbb1a95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4b26ae9e8684cd12885b58b1cdbeb3a3') in 0.046838 seconds
+  Import took 0.052001 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.610447 seconds.
+  path: Assets/Danilo Assets/LevelPrefabs/lvl1.prefab
+  artifactKey: Guid(64cb3dbdbe8499340a6c74dc7fbb1a95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Danilo Assets/LevelPrefabs/lvl1.prefab using Guid(64cb3dbdbe8499340a6c74dc7fbb1a95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fcf157f0a6e2a2e85164129a9c062d3c') in 0.049058 seconds
+  Import took 0.054388 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 13.457425 seconds.
+  path: Assets/Danilo Assets/LevelPrefabs/lvl1.prefab
+  artifactKey: Guid(64cb3dbdbe8499340a6c74dc7fbb1a95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Danilo Assets/LevelPrefabs/lvl1.prefab using Guid(64cb3dbdbe8499340a6c74dc7fbb1a95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0865e869b3f82b55e56e42816ca02600') in 0.046446 seconds
+  Import took 0.051792 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.794265 seconds.
+  path: Assets/Danilo Assets/LevelPrefabs/lvl1.prefab
+  artifactKey: Guid(64cb3dbdbe8499340a6c74dc7fbb1a95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Danilo Assets/LevelPrefabs/lvl1.prefab using Guid(64cb3dbdbe8499340a6c74dc7fbb1a95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00d5777c33b25e6730c6598254acbbcc') in 0.047521 seconds
+  Import took 0.052748 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.197592 seconds.
+  path: Assets/Danilo Assets/LevelPrefabs/lvl1.prefab
+  artifactKey: Guid(64cb3dbdbe8499340a6c74dc7fbb1a95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Danilo Assets/LevelPrefabs/lvl1.prefab using Guid(64cb3dbdbe8499340a6c74dc7fbb1a95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '79943f0f7c7bf3e3a1cb558b62136f15') in 0.075039 seconds
+  Import took 0.087880 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.757202 seconds.
+  path: Assets/Danilo Assets/LevelPrefabs/lvl1.prefab
+  artifactKey: Guid(64cb3dbdbe8499340a6c74dc7fbb1a95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Danilo Assets/LevelPrefabs/lvl1.prefab using Guid(64cb3dbdbe8499340a6c74dc7fbb1a95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'af2a4fa97146dc053d1f9b1d1eebf3c0') in 0.046460 seconds
+  Import took 0.051607 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.795677 seconds.
+  path: Assets/Danilo Assets/LevelPrefabs/lvl1.prefab
+  artifactKey: Guid(64cb3dbdbe8499340a6c74dc7fbb1a95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Danilo Assets/LevelPrefabs/lvl1.prefab using Guid(64cb3dbdbe8499340a6c74dc7fbb1a95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9c4ef8d0437cffcee27833dcfbe5bdad') in 0.048489 seconds
+  Import took 0.053923 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.591806 seconds.
+  path: Assets/Danilo Assets/LevelPrefabs/lvl1.prefab
+  artifactKey: Guid(64cb3dbdbe8499340a6c74dc7fbb1a95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Danilo Assets/LevelPrefabs/lvl1.prefab using Guid(64cb3dbdbe8499340a6c74dc7fbb1a95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6dfb38da26f123cc84987cbc173bceda') in 0.049886 seconds
+  Import took 0.055987 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.970987 seconds.
+  path: Assets/Danilo Assets/LevelPrefabs/lvl1.prefab
+  artifactKey: Guid(64cb3dbdbe8499340a6c74dc7fbb1a95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Danilo Assets/LevelPrefabs/lvl1.prefab using Guid(64cb3dbdbe8499340a6c74dc7fbb1a95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8c573ea0d5c5aeb648a530714ff515c1') in 0.048362 seconds
+  Import took 0.053665 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.990989 seconds.
+  path: Assets/Danilo Assets/LevelPrefabs/lvl1.prefab
+  artifactKey: Guid(64cb3dbdbe8499340a6c74dc7fbb1a95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Danilo Assets/LevelPrefabs/lvl1.prefab using Guid(64cb3dbdbe8499340a6c74dc7fbb1a95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3c3cf25f3a60dec13c82b77011f383f4') in 0.047940 seconds
+  Import took 0.053402 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.765797 seconds.
+  path: Assets/Danilo Assets/LevelPrefabs/lvl1.prefab
+  artifactKey: Guid(64cb3dbdbe8499340a6c74dc7fbb1a95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Danilo Assets/LevelPrefabs/lvl1.prefab using Guid(64cb3dbdbe8499340a6c74dc7fbb1a95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '12cec57d236865501d5a7751113b79ff') in 0.047925 seconds
+  Import took 0.053140 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.787479 seconds.
+  path: Assets/Danilo Assets/LevelPrefabs/lvl1.prefab
+  artifactKey: Guid(64cb3dbdbe8499340a6c74dc7fbb1a95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Danilo Assets/LevelPrefabs/lvl1.prefab using Guid(64cb3dbdbe8499340a6c74dc7fbb1a95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8a2b6abaaa348bf34d877fb36a4a5f52') in 0.049685 seconds
+  Import took 0.055142 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.558646 seconds.
+  path: Assets/Danilo Assets/LevelPrefabs/lvl1.prefab
+  artifactKey: Guid(64cb3dbdbe8499340a6c74dc7fbb1a95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Danilo Assets/LevelPrefabs/lvl1.prefab using Guid(64cb3dbdbe8499340a6c74dc7fbb1a95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '341b4af6e2739817b79f702f6216e6c4') in 0.046552 seconds
+  Import took 0.052020 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.351951 seconds.
+  path: Assets/Danilo Assets/LevelPrefabs/lvl1.prefab
+  artifactKey: Guid(64cb3dbdbe8499340a6c74dc7fbb1a95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Danilo Assets/LevelPrefabs/lvl1.prefab using Guid(64cb3dbdbe8499340a6c74dc7fbb1a95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'caccee9ab910c5e8e313018f5387edb1') in 0.049118 seconds
+  Import took 0.054604 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.141442 seconds.
+  path: Assets/Danilo Assets/LevelPrefabs/lvl1.prefab
+  artifactKey: Guid(64cb3dbdbe8499340a6c74dc7fbb1a95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Danilo Assets/LevelPrefabs/lvl1.prefab using Guid(64cb3dbdbe8499340a6c74dc7fbb1a95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '07498347fe5e9539403ea8cabb810497') in 0.050018 seconds
+  Import took 0.055512 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.148223 seconds.
+  path: Assets/Danilo Assets/LevelPrefabs/lvl1.prefab
+  artifactKey: Guid(64cb3dbdbe8499340a6c74dc7fbb1a95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Danilo Assets/LevelPrefabs/lvl1.prefab using Guid(64cb3dbdbe8499340a6c74dc7fbb1a95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3317a27c2755f3e69ccab759e052b12f') in 0.050854 seconds
+  Import took 0.056413 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.146649 seconds.
+  path: Assets/Danilo Assets/LevelPrefabs/lvl1.prefab
+  artifactKey: Guid(64cb3dbdbe8499340a6c74dc7fbb1a95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Danilo Assets/LevelPrefabs/lvl1.prefab using Guid(64cb3dbdbe8499340a6c74dc7fbb1a95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '26a3bae53951c2b4a92fef9b45343fdc') in 0.049659 seconds
+  Import took 0.055107 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.146860 seconds.
+  path: Assets/Danilo Assets/LevelPrefabs/lvl1.prefab
+  artifactKey: Guid(64cb3dbdbe8499340a6c74dc7fbb1a95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Danilo Assets/LevelPrefabs/lvl1.prefab using Guid(64cb3dbdbe8499340a6c74dc7fbb1a95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c0f556c8f427e7949fe8f085b1c803da') in 0.050050 seconds
+  Import took 0.055572 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.143885 seconds.
+  path: Assets/Danilo Assets/LevelPrefabs/lvl1.prefab
+  artifactKey: Guid(64cb3dbdbe8499340a6c74dc7fbb1a95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Danilo Assets/LevelPrefabs/lvl1.prefab using Guid(64cb3dbdbe8499340a6c74dc7fbb1a95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a008718c7374916d214fd929c81bacbc') in 0.051433 seconds
+  Import took 0.056955 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.147346 seconds.
+  path: Assets/Danilo Assets/LevelPrefabs/lvl1.prefab
+  artifactKey: Guid(64cb3dbdbe8499340a6c74dc7fbb1a95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Danilo Assets/LevelPrefabs/lvl1.prefab using Guid(64cb3dbdbe8499340a6c74dc7fbb1a95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2b893035dc7de3841cbd027728b467f0') in 0.048615 seconds
+  Import took 0.053963 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.144300 seconds.
+  path: Assets/Danilo Assets/LevelPrefabs/lvl1.prefab
+  artifactKey: Guid(64cb3dbdbe8499340a6c74dc7fbb1a95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Danilo Assets/LevelPrefabs/lvl1.prefab using Guid(64cb3dbdbe8499340a6c74dc7fbb1a95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '93f7ebcc67ee0d651ad60a00b73aed6e') in 0.049756 seconds
+  Import took 0.055264 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.148109 seconds.
+  path: Assets/Danilo Assets/LevelPrefabs/lvl1.prefab
+  artifactKey: Guid(64cb3dbdbe8499340a6c74dc7fbb1a95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Danilo Assets/LevelPrefabs/lvl1.prefab using Guid(64cb3dbdbe8499340a6c74dc7fbb1a95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '45f2ccd8d60f9a803164425b0f8ed038') in 0.049501 seconds
+  Import took 0.054986 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.370763 seconds.
+  path: Assets/Danilo Assets/LevelPrefabs/lvl1.prefab
+  artifactKey: Guid(64cb3dbdbe8499340a6c74dc7fbb1a95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Danilo Assets/LevelPrefabs/lvl1.prefab using Guid(64cb3dbdbe8499340a6c74dc7fbb1a95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b6f661bbe132c9e363e1c8d786266edd') in 0.048920 seconds
+  Import took 0.054251 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.124944 seconds.
+  path: Assets/Danilo Assets/LevelPrefabs/lvl1.prefab
+  artifactKey: Guid(64cb3dbdbe8499340a6c74dc7fbb1a95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Danilo Assets/LevelPrefabs/lvl1.prefab using Guid(64cb3dbdbe8499340a6c74dc7fbb1a95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '011f64c47cb8f2e2c2e29f39c6d738f1') in 0.049947 seconds
+  Import took 0.055163 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.145098 seconds.
+  path: Assets/Danilo Assets/LevelPrefabs/lvl1.prefab
+  artifactKey: Guid(64cb3dbdbe8499340a6c74dc7fbb1a95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Danilo Assets/LevelPrefabs/lvl1.prefab using Guid(64cb3dbdbe8499340a6c74dc7fbb1a95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9e608f291052b36cf094daaac2f4fecd') in 0.050674 seconds
+  Import took 0.055965 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.142683 seconds.
+  path: Assets/Danilo Assets/LevelPrefabs/lvl1.prefab
+  artifactKey: Guid(64cb3dbdbe8499340a6c74dc7fbb1a95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Danilo Assets/LevelPrefabs/lvl1.prefab using Guid(64cb3dbdbe8499340a6c74dc7fbb1a95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ae58d87d0dc3a0f0fc6d3bcc54214759') in 0.051306 seconds
+  Import took 0.056761 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.150214 seconds.
+  path: Assets/Danilo Assets/LevelPrefabs/lvl1.prefab
+  artifactKey: Guid(64cb3dbdbe8499340a6c74dc7fbb1a95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Danilo Assets/LevelPrefabs/lvl1.prefab using Guid(64cb3dbdbe8499340a6c74dc7fbb1a95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0aedd48cda7269ef543d20fd6e099768') in 0.048871 seconds
+  Import took 0.054261 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.144601 seconds.
+  path: Assets/Danilo Assets/LevelPrefabs/lvl1.prefab
+  artifactKey: Guid(64cb3dbdbe8499340a6c74dc7fbb1a95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Danilo Assets/LevelPrefabs/lvl1.prefab using Guid(64cb3dbdbe8499340a6c74dc7fbb1a95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '71c9e5847f31f81c7f1752bd6bd47606') in 0.048187 seconds
+  Import took 0.053657 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.146642 seconds.
+  path: Assets/Danilo Assets/LevelPrefabs/lvl1.prefab
+  artifactKey: Guid(64cb3dbdbe8499340a6c74dc7fbb1a95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Danilo Assets/LevelPrefabs/lvl1.prefab using Guid(64cb3dbdbe8499340a6c74dc7fbb1a95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aa6fe916c38a424db03533c30703fef6') in 0.049434 seconds
+  Import took 0.054698 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.147597 seconds.
+  path: Assets/Danilo Assets/LevelPrefabs/lvl1.prefab
+  artifactKey: Guid(64cb3dbdbe8499340a6c74dc7fbb1a95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Danilo Assets/LevelPrefabs/lvl1.prefab using Guid(64cb3dbdbe8499340a6c74dc7fbb1a95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8f927acfbe2f08cbb768fcda3b7bfb1e') in 0.049448 seconds
+  Import took 0.055556 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.346267 seconds.
+  path: Assets/Danilo Assets/LevelPrefabs/lvl1.prefab
+  artifactKey: Guid(64cb3dbdbe8499340a6c74dc7fbb1a95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Danilo Assets/LevelPrefabs/lvl1.prefab using Guid(64cb3dbdbe8499340a6c74dc7fbb1a95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd8bf50510957babc58c5370b3a6fb3d2') in 0.046365 seconds
+  Import took 0.051852 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.347052 seconds.
+  path: Assets/Danilo Assets/LevelPrefabs/lvl1.prefab
+  artifactKey: Guid(64cb3dbdbe8499340a6c74dc7fbb1a95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Danilo Assets/LevelPrefabs/lvl1.prefab using Guid(64cb3dbdbe8499340a6c74dc7fbb1a95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '08629b89d0843d8629ee9847a18887d1') in 0.046624 seconds
+  Import took 0.052007 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.556437 seconds.
+  path: Assets/Danilo Assets/LevelPrefabs/lvl1.prefab
+  artifactKey: Guid(64cb3dbdbe8499340a6c74dc7fbb1a95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Danilo Assets/LevelPrefabs/lvl1.prefab using Guid(64cb3dbdbe8499340a6c74dc7fbb1a95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd049a705037950ed55ef88894064cbd9') in 0.047454 seconds
+  Import took 0.052813 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.754542 seconds.
+  path: Assets/Danilo Assets/LevelPrefabs/lvl1.prefab
+  artifactKey: Guid(64cb3dbdbe8499340a6c74dc7fbb1a95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Danilo Assets/LevelPrefabs/lvl1.prefab using Guid(64cb3dbdbe8499340a6c74dc7fbb1a95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5a912416d88b64849f1491b45bc3bdc8') in 0.047342 seconds
+  Import took 0.053017 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.151610 seconds.
+  path: Assets/Danilo Assets/LevelPrefabs/lvl1.prefab
+  artifactKey: Guid(64cb3dbdbe8499340a6c74dc7fbb1a95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Danilo Assets/LevelPrefabs/lvl1.prefab using Guid(64cb3dbdbe8499340a6c74dc7fbb1a95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '38d1194c8959b08e5806bc5a0431ff9a') in 0.047435 seconds
+  Import took 0.052782 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.551093 seconds.
+  path: Assets/Danilo Assets/LevelPrefabs/lvl1.prefab
+  artifactKey: Guid(64cb3dbdbe8499340a6c74dc7fbb1a95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Danilo Assets/LevelPrefabs/lvl1.prefab using Guid(64cb3dbdbe8499340a6c74dc7fbb1a95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5b9087fa9931288ea4fa823fa78632b2') in 0.047443 seconds
+  Import took 0.052712 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.751534 seconds.
+  path: Assets/Danilo Assets/LevelPrefabs/lvl1.prefab
+  artifactKey: Guid(64cb3dbdbe8499340a6c74dc7fbb1a95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Danilo Assets/LevelPrefabs/lvl1.prefab using Guid(64cb3dbdbe8499340a6c74dc7fbb1a95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd938d9dd5fe4f8ed9e442808c94803a7') in 0.047968 seconds
+  Import took 0.053524 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.192955 seconds.
+  path: Assets/Danilo Assets/LevelPrefabs/lvl1.prefab
+  artifactKey: Guid(64cb3dbdbe8499340a6c74dc7fbb1a95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Danilo Assets/LevelPrefabs/lvl1.prefab using Guid(64cb3dbdbe8499340a6c74dc7fbb1a95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f1ea791ad733e4653e55598daeddeacc') in 0.048235 seconds
+  Import took 0.053554 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.418540 seconds.
+  path: Assets/Danilo Assets/LevelPrefabs/lvl1.prefab
+  artifactKey: Guid(64cb3dbdbe8499340a6c74dc7fbb1a95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Danilo Assets/LevelPrefabs/lvl1.prefab using Guid(64cb3dbdbe8499340a6c74dc7fbb1a95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ef15a66ad97798da5ad86693aba03721') in 0.049535 seconds
+  Import took 0.055041 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.351083 seconds.
+  path: Assets/Danilo Assets/LevelPrefabs/lvl1.prefab
+  artifactKey: Guid(64cb3dbdbe8499340a6c74dc7fbb1a95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Danilo Assets/LevelPrefabs/lvl1.prefab using Guid(64cb3dbdbe8499340a6c74dc7fbb1a95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7b78f3ce38a9b96c011abed3dc0f9c77') in 0.048660 seconds
+  Import took 0.053965 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.996940 seconds.
+  path: Assets/Danilo Assets/LevelPrefabs/lvl1.prefab
+  artifactKey: Guid(64cb3dbdbe8499340a6c74dc7fbb1a95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Danilo Assets/LevelPrefabs/lvl1.prefab using Guid(64cb3dbdbe8499340a6c74dc7fbb1a95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b1e6ee5d2e310fa815afb9e1c62ca4a0') in 0.061938 seconds
+  Import took 0.067744 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.555616 seconds.
+  path: Assets/Danilo Assets/LevelPrefabs/lvl1.prefab
+  artifactKey: Guid(64cb3dbdbe8499340a6c74dc7fbb1a95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Danilo Assets/LevelPrefabs/lvl1.prefab using Guid(64cb3dbdbe8499340a6c74dc7fbb1a95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b62e0f83437c6381045111937cffef47') in 0.048794 seconds
+  Import took 0.054549 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 19.098419 seconds.
+  path: Assets/Danilo Assets/LevelPrefabs/lvl1.prefab
+  artifactKey: Guid(64cb3dbdbe8499340a6c74dc7fbb1a95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Danilo Assets/LevelPrefabs/lvl1.prefab using Guid(64cb3dbdbe8499340a6c74dc7fbb1a95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8a56068fb4c25a0dc4f59ee99ea4914f') in 0.049950 seconds
+  Import took 0.055602 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.836903 seconds.
+  path: Assets/Danilo Assets/LevelPrefabs/lvl1.prefab
+  artifactKey: Guid(64cb3dbdbe8499340a6c74dc7fbb1a95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Danilo Assets/LevelPrefabs/lvl1.prefab using Guid(64cb3dbdbe8499340a6c74dc7fbb1a95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '600af9f744af39daee79c75c78873775') in 0.050709 seconds
+  Import took 0.056429 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 10.236970 seconds.
+  path: Assets/Danilo Assets/LevelPrefabs/lvl1.prefab
+  artifactKey: Guid(64cb3dbdbe8499340a6c74dc7fbb1a95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Danilo Assets/LevelPrefabs/lvl1.prefab using Guid(64cb3dbdbe8499340a6c74dc7fbb1a95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4b5025b3f67b51319c48228ed56990fc') in 0.049477 seconds
+  Import took 0.055101 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 57.839086 seconds.
+  path: Assets/Danilo Assets/LevelPrefabs/lvl1.prefab
+  artifactKey: Guid(64cb3dbdbe8499340a6c74dc7fbb1a95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Danilo Assets/LevelPrefabs/lvl1.prefab using Guid(64cb3dbdbe8499340a6c74dc7fbb1a95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8020cf5b389af32d51f6516574ea8875') in 0.065550 seconds
+  Import took 0.072033 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 13.067151 seconds.
+  path: Assets/Danilo Assets/LevelPrefabs/lvl1.prefab
+  artifactKey: Guid(64cb3dbdbe8499340a6c74dc7fbb1a95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Danilo Assets/LevelPrefabs/lvl1.prefab using Guid(64cb3dbdbe8499340a6c74dc7fbb1a95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ef4543860c92dcd31b0a0c0b18443d4d') in 0.051542 seconds
+  Import took 0.057518 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.369242 seconds.
+  path: Assets/Danilo Assets/LevelPrefabs/lvl1.prefab
+  artifactKey: Guid(64cb3dbdbe8499340a6c74dc7fbb1a95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Danilo Assets/LevelPrefabs/lvl1.prefab using Guid(64cb3dbdbe8499340a6c74dc7fbb1a95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f53d0e58436a21d25ac23ed7a68881d2') in 0.050817 seconds
+  Import took 0.056230 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 13.064289 seconds.
+  path: Assets/Danilo Assets/LevelPrefabs/lvl1.prefab
+  artifactKey: Guid(64cb3dbdbe8499340a6c74dc7fbb1a95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Danilo Assets/LevelPrefabs/lvl1.prefab using Guid(64cb3dbdbe8499340a6c74dc7fbb1a95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '611a77a39bf8269e03b47ca47e336a28') in 0.073007 seconds
+  Import took 0.079432 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.402751 seconds.
+  path: Assets/Danilo Assets/LevelPrefabs/lvl1.prefab
+  artifactKey: Guid(64cb3dbdbe8499340a6c74dc7fbb1a95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Danilo Assets/LevelPrefabs/lvl1.prefab using Guid(64cb3dbdbe8499340a6c74dc7fbb1a95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '99390a201ae39c31ff3f80583b5df356') in 0.053108 seconds
+  Import took 0.058848 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 15.338709 seconds.
   path: Assets/Danilo Assets/eryne assets/environment stff
   artifactKey: Guid(b02c157344fa4de42ba4790831c1e5af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Danilo Assets/eryne assets/environment stff using Guid(b02c157344fa4de42ba4790831c1e5af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ce30b43b0edce0e7786f9dd21e93f672') in 0.004890 seconds
-  Import took 0.007618 seconds .
+Start importing Assets/Danilo Assets/eryne assets/environment stff using Guid(b02c157344fa4de42ba4790831c1e5af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7ce811a13b71863a348a5eca810ce7f7') in 0.005757 seconds
+  Import took 0.009199 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 29.238608 seconds.
-  path: Assets/Danilo Assets/eryne assets/environment stff/texture brain dark area.png
-  artifactKey: Guid(55a293d5a296d4246ae9fbf3f20d0fea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Danilo Assets/eryne assets/environment stff/texture brain dark area.png using Guid(55a293d5a296d4246ae9fbf3f20d0fea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '70bd89ce637f6bba7612b267f2b7c8c0') in 0.058843 seconds
-  Import took 0.061798 seconds .
+  Time since last request: 0.001092 seconds.
+  path: Assets/Danilo Assets/eryne assets/environment stff
+  artifactKey: Guid(b02c157344fa4de42ba4790831c1e5af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Danilo Assets/eryne assets/environment stff using Guid(b02c157344fa4de42ba4790831c1e5af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7ce811a13b71863a348a5eca810ce7f7') in 0.004550 seconds
+  Import took 0.007736 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000221 seconds.
-  path: Assets/Danilo Assets/eryne assets/environment stff/texture brain medium area.png
-  artifactKey: Guid(fb3c89722cc5cfc4098492b739014c20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Danilo Assets/eryne assets/environment stff/texture brain medium area.png using Guid(fb3c89722cc5cfc4098492b739014c20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fae1371eef59eb69c65f036749f5cec4') in 0.014180 seconds
-  Import took 0.016692 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000161 seconds.
-  path: Assets/Danilo Assets/eryne assets/environment stff/texture brain light areas.png
-  artifactKey: Guid(4fc6515adec712e40b67929af65216a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Danilo Assets/eryne assets/environment stff/texture brain light areas.png using Guid(4fc6515adec712e40b67929af65216a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2ebe77caec40e3d5a584402b2fc5e573') in 0.012825 seconds
-  Import took 0.015323 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 29.370016 seconds.
+  Time since last request: 0.089162 seconds.
   path: Assets/Danilo Assets/eryne assets/environment stff/texture brain bottom edge.png
   artifactKey: Guid(cc3f15a7f0300ad46ab66cb4653fe7aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Danilo Assets/eryne assets/environment stff/texture brain bottom edge.png using Guid(cc3f15a7f0300ad46ab66cb4653fe7aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5b8f33d830d3d2d31c5681d036ac33b0') in 0.019085 seconds
-  Import took 0.022038 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000217 seconds.
-  path: Assets/Danilo Assets/eryne assets/environment stff/texture brain top edge.png
-  artifactKey: Guid(f3f468fd35d5dd2448b4c56bca4d80cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Danilo Assets/eryne assets/environment stff/texture brain top edge.png using Guid(f3f468fd35d5dd2448b4c56bca4d80cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7a1fc44a72ee713fce105c8a4fdcdaec') in 0.014683 seconds
-  Import took 0.017403 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000217 seconds.
-  path: Assets/Danilo Assets/eryne assets/environment stff/texture brain right edge.png
-  artifactKey: Guid(b285419252e2c5b4b897d084c35bd02a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Danilo Assets/eryne assets/environment stff/texture brain right edge.png using Guid(b285419252e2c5b4b897d084c35bd02a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9184737f3799b57479c3462900b0c0eb') in 0.013627 seconds
-  Import took 0.016478 seconds .
+Start importing Assets/Danilo Assets/eryne assets/environment stff/texture brain bottom edge.png using Guid(cc3f15a7f0300ad46ab66cb4653fe7aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a8d0bc4906f22b383ffb1daf279d1a04') in 0.033345 seconds
+  Import took 0.036047 seconds .
 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000225 seconds.
-  path: Assets/Danilo Assets/eryne assets/environment stff/texture brain left edge .png
-  artifactKey: Guid(5694bcfc8b2f0834f9a7883de813268f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Danilo Assets/eryne assets/environment stff/texture brain left edge .png using Guid(5694bcfc8b2f0834f9a7883de813268f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5074e3c1867ebf36c3fe8ef54ee30ee4') in 0.013782 seconds
-  Import took 0.016928 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 13.951187 seconds.
   path: Assets/Danilo Assets/eryne assets/environment stff/texture brain bottom left corner.png
   artifactKey: Guid(556b3955af801484cb37bd6fd8d859d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Danilo Assets/eryne assets/environment stff/texture brain bottom left corner.png using Guid(556b3955af801484cb37bd6fd8d859d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '137f493efd3fc8351e30e679b23e165d') in 0.014997 seconds
-  Import took 0.018326 seconds .
+Start importing Assets/Danilo Assets/eryne assets/environment stff/texture brain bottom left corner.png using Guid(556b3955af801484cb37bd6fd8d859d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1986de1dcccf69b08897c4c420e8f749') in 0.014207 seconds
+  Import took 0.016728 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000262 seconds.
+  Time since last request: 0.000234 seconds.
+  path: Assets/Danilo Assets/eryne assets/environment stff/texture brain top edge.png
+  artifactKey: Guid(f3f468fd35d5dd2448b4c56bca4d80cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Danilo Assets/eryne assets/environment stff/texture brain top edge.png using Guid(f3f468fd35d5dd2448b4c56bca4d80cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9cf1a35f09e2cb1ee248968f1f735bfd') in 0.017089 seconds
+  Import took 0.019735 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000248 seconds.
+  path: Assets/Danilo Assets/eryne assets/environment stff/texture brain bottom left corner.png
+  artifactKey: Guid(556b3955af801484cb37bd6fd8d859d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Danilo Assets/eryne assets/environment stff/texture brain bottom left corner.png using Guid(556b3955af801484cb37bd6fd8d859d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1986de1dcccf69b08897c4c420e8f749') in 0.014473 seconds
+  Import took 0.017212 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000194 seconds.
+  path: Assets/Danilo Assets/eryne assets/environment stff/texture brain medium area.png
+  artifactKey: Guid(fb3c89722cc5cfc4098492b739014c20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Danilo Assets/eryne assets/environment stff/texture brain medium area.png using Guid(fb3c89722cc5cfc4098492b739014c20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '765806a8c45dd57a2aafce75fc609a1a') in 0.014827 seconds
+  Import took 0.017549 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000255 seconds.
   path: Assets/Danilo Assets/eryne assets/environment stff/texture brain top left corner.png
   artifactKey: Guid(3d9e65deb53163544bbce79c5b7b553e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Danilo Assets/eryne assets/environment stff/texture brain top left corner.png using Guid(3d9e65deb53163544bbce79c5b7b553e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '70fe493299fe0aa42ee2ecb30fca06a6') in 0.014284 seconds
-  Import took 0.016998 seconds .
+Start importing Assets/Danilo Assets/eryne assets/environment stff/texture brain top left corner.png using Guid(3d9e65deb53163544bbce79c5b7b553e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5bdaa152eb35d71cf4f2fdf75c80099d') in 0.014685 seconds
+  Import took 0.017340 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000241 seconds.
+  Time since last request: 0.000252 seconds.
   path: Assets/Danilo Assets/eryne assets/environment stff/texture brain bottom right corner.png
   artifactKey: Guid(1b31818fa46feb840a66a7847377d155) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Danilo Assets/eryne assets/environment stff/texture brain bottom right corner.png using Guid(1b31818fa46feb840a66a7847377d155) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '685ae3e5045fad83cb7a9a505cbef33f') in 0.014583 seconds
-  Import took 0.017321 seconds .
+Start importing Assets/Danilo Assets/eryne assets/environment stff/texture brain bottom right corner.png using Guid(1b31818fa46feb840a66a7847377d155) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e6ae67b742c72e67692bc2d0c87fc24c') in 0.015657 seconds
+  Import took 0.018887 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000217 seconds.
+  Time since last request: 0.000182 seconds.
   path: Assets/Danilo Assets/eryne assets/environment stff/texture brain top right corner.png
   artifactKey: Guid(98dad60e7057c004c8ef684d81ea1fbc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Danilo Assets/eryne assets/environment stff/texture brain top right corner.png using Guid(98dad60e7057c004c8ef684d81ea1fbc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd3b2abf4f8e7bd9ec9fd58778882e20b') in 0.016329 seconds
-  Import took 0.019117 seconds .
+Start importing Assets/Danilo Assets/eryne assets/environment stff/texture brain top right corner.png using Guid(98dad60e7057c004c8ef684d81ea1fbc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8bdda429b6f6fc30c68c86f0489bb9f7') in 0.014349 seconds
+  Import took 0.017010 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 109.530562 seconds.
-  path: Assets/Danilo Assets/eryne assets/environment stff/texture brain bottom edge.png
-  artifactKey: Guid(cc3f15a7f0300ad46ab66cb4653fe7aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Danilo Assets/eryne assets/environment stff/texture brain bottom edge.png using Guid(cc3f15a7f0300ad46ab66cb4653fe7aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '52d624fb424244873f81afc06fd3b5bd') in 0.024507 seconds
-  Import took 0.027638 seconds .
+  Time since last request: 0.000215 seconds.
+  path: Assets/Danilo Assets/eryne assets/environment stff/texture brain right edge.png
+  artifactKey: Guid(b285419252e2c5b4b897d084c35bd02a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Danilo Assets/eryne assets/environment stff/texture brain right edge.png using Guid(b285419252e2c5b4b897d084c35bd02a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '896fd61769fbd24c85841cb00d1db28d') in 0.015241 seconds
+  Import took 0.018236 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 150.781775 seconds.
-  path: Assets/Danilo Assets/eryne assets/environment stff/texture brain bottom edge.png
-  artifactKey: Guid(cc3f15a7f0300ad46ab66cb4653fe7aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Danilo Assets/eryne assets/environment stff/texture brain bottom edge.png using Guid(cc3f15a7f0300ad46ab66cb4653fe7aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bcbacf8dc9375da996be15414ea90153') in 0.018763 seconds
-  Import took 0.022230 seconds .
+  Time since last request: 0.000180 seconds.
+  path: Assets/Danilo Assets/eryne assets/environment stff/texture brain dark area.png
+  artifactKey: Guid(55a293d5a296d4246ae9fbf3f20d0fea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Danilo Assets/eryne assets/environment stff/texture brain dark area.png using Guid(55a293d5a296d4246ae9fbf3f20d0fea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '17c493a1d3cf02b56f26587b179854c1') in 0.017778 seconds
+  Import took 0.020624 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 329.289387 seconds.
-  path: Assets/Danilo Assets/LevelPrefabs/lvl1.prefab
-  artifactKey: Guid(64cb3dbdbe8499340a6c74dc7fbb1a95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Danilo Assets/LevelPrefabs/lvl1.prefab using Guid(64cb3dbdbe8499340a6c74dc7fbb1a95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c0183a2ed6b66f1e5bf9da14b919528b') in 0.031064 seconds
-  Import took 0.033928 seconds .
+  Time since last request: 0.000190 seconds.
+  path: Assets/Danilo Assets/eryne assets/environment stff/texture brain light areas.png
+  artifactKey: Guid(4fc6515adec712e40b67929af65216a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Danilo Assets/eryne assets/environment stff/texture brain light areas.png using Guid(4fc6515adec712e40b67929af65216a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cd207042de8f748af1c7885e07ac482e') in 0.015392 seconds
+  Import took 0.018082 seconds .
 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000194 seconds.
+  path: Assets/Danilo Assets/eryne assets/environment stff/texture brain left edge .png
+  artifactKey: Guid(5694bcfc8b2f0834f9a7883de813268f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Danilo Assets/eryne assets/environment stff/texture brain left edge .png using Guid(5694bcfc8b2f0834f9a7883de813268f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '91b269dfc973390b9f4b8e449bdbbe2e') in 0.015827 seconds
+  Import took 0.018562 seconds .
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
