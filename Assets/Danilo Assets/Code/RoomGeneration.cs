@@ -5,8 +5,8 @@ using UnityEngine;
 public class RoomGeneration : MonoBehaviour
 {
     public GameObject[] rooms;
-    public int rand;
-    private bool spawned;
+    public static int rand;
+    public static bool spawned;
     public Vector3 SpawnPoint;
     public static bool EnemiesDead;
     public Transform SpawnPoint2;
@@ -33,7 +33,7 @@ public class RoomGeneration : MonoBehaviour
         }
         if (rand == 0)
         {
-            Room1 = true;
+            Room1 = true; 
         }
         if (rand == 1)
         {

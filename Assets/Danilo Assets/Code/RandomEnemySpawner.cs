@@ -18,9 +18,13 @@ public class RandomEnemySpawner : MonoBehaviour
     void Update()
     {
        if (Input.GetKeyDown(KeyCode.G))
-        {
+       {
             spawnObjects();
-        }
+       }
+       if (RoomGeneration.spawned == true)
+       {
+            Invoke("spawnObjects",10);
+       }
     }
     public void spawnObjects()
     {

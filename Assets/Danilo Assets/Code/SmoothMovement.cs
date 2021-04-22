@@ -135,7 +135,7 @@ public class SmoothMovement : MonoBehaviour
         if (collision.name == "DamageItemUPG(Clone)")
         {
             Destroy(collision.gameObject);
-            characterCombat.attackDamage += 30;
+            characterCombat.attackDamage += 10;
         }
         //speed
         if (collision.name == "SpeedItemUPG(Clone)")
@@ -161,7 +161,10 @@ public class SmoothMovement : MonoBehaviour
         }
         if (collision.name == "TeleportPrefab(Clone)")
         {
-            DestroyAndSpawnLevel = true;
+            if (RoomGeneration.rand == 0)
+            {
+                Destroy(collision.name == "Room1");
+            }
         }
     }
 }
