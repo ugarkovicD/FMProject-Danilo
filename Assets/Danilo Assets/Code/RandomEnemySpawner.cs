@@ -21,10 +21,7 @@ public class RandomEnemySpawner : MonoBehaviour
        {
             spawnObjects();
        }
-       if (RoomGeneration.spawned == true)
-       {
-            Invoke("spawnObjects",10);
-       }
+       // add in when the room spawns, you spawn the enemies as well
     }
     public void spawnObjects()
     {

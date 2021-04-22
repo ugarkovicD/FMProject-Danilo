@@ -163,7 +163,6 @@ public class SmoothMovement : MonoBehaviour
         {
             if (RoomGeneration.rand == 0)
             {
-                Destroy(collision.name == "Room1");
             }
         }
     }
