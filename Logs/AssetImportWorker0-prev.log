@@ -11,19 +11,19 @@ C:\Program Files\Unity\Hub\Editor\2020.2.7f1\Editor\Unity.exe
 -name
 AssetImportWorker0
 -projectPath
-D:/Danilo/FMProject-Danilo
+D:/eryne/neww/FMProject-Danilo
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-60735
-Successfully changed project path to: D:/Danilo/FMProject-Danilo
-D:/Danilo/FMProject-Danilo
+52725
+Successfully changed project path to: D:/eryne/neww/FMProject-Danilo
+D:/eryne/neww/FMProject-Danilo
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 33.31 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 33.79 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.2.7f1 (c53830e277f1)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.2.7f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path D:/Danilo/FMProject-Danilo/Assets
+[Subsystems] Discovering subsystems at path D:/eryne/neww/FMProject-Danilo/Assets
 GfxDevice: creating device client; threaded=0
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
@@ -35,88 +35,278 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.2.7f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.2.7f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.2.7f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56008
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56044
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.2.7f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.001120 seconds.
+Registered in 0.001189 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 31.59 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 32.41 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.972 seconds
+- Completed reload, in  0.968 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.000913 seconds.
+Registered in 0.001040 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 31.50 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 33.60 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.818 seconds
+- Completed reload, in  0.842 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
-Refreshing native plugins compatible for Editor in 0.31 ms, found 1 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
+Refreshing native plugins compatible for Editor in 0.34 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 1835 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 85.6 MB.
-System memory in use after: 85.6 MB.
+System memory in use before: 85.4 MB.
+System memory in use after: 85.5 MB.
 
-Unloading 19 unused Assets to reduce memory usage. Loaded Objects now: 2284.
-Total: 1.923600 ms (FindLiveObjects: 0.165700 ms CreateObjectMapping: 0.068000 ms MarkObjects: 1.627300 ms  DeleteObjects: 0.061700 ms)
-
-========================================================================
-Received Import Request.
-  path: Assets/Danilo Assets/Code/RandomEnemySpawner.cs
-  artifactKey: Guid(cd9ce8f266e35d9418f17c25e8030255) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Danilo Assets/Code/RandomEnemySpawner.cs using Guid(cd9ce8f266e35d9418f17c25e8030255) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3a67742c36a1d037d693a0674290aefb') in 0.032501 seconds
-  Import took 0.035055 seconds .
+Unloading 19 unused Assets to reduce memory usage. Loaded Objects now: 2282.
+Total: 1.846200 ms (FindLiveObjects: 0.173500 ms CreateObjectMapping: 0.075400 ms MarkObjects: 1.538400 ms  DeleteObjects: 0.058200 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000237 seconds.
-  path: Assets/Danilo Assets/Code/RangedEnemy.cs
-  artifactKey: Guid(f4547db1c746152478ac4cb3b47d6968) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Danilo Assets/Code/RangedEnemy.cs using Guid(f4547db1c746152478ac4cb3b47d6968) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6a2eaa1d38834a725352054b281ec8cf') in 0.003884 seconds
-  Import took 0.006173 seconds .
+  path: Assets/Danilo Assets/LevelPrefabs/lvl 3.prefab
+  artifactKey: Guid(b96553249eaafb54abeaf241fb4de408) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Danilo Assets/LevelPrefabs/lvl 3.prefab using Guid(b96553249eaafb54abeaf241fb4de408) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '22c98737e4a529ec033124834876bd24') in 0.086610 seconds
+  Import took 0.089437 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000209 seconds.
-  path: Assets/Danilo Assets/Code/SpawningTeleportsPerLevel.cs
-  artifactKey: Guid(29cc950f43f5dad4ba1c0e55dccc1932) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Danilo Assets/Code/SpawningTeleportsPerLevel.cs using Guid(29cc950f43f5dad4ba1c0e55dccc1932) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b25f128d75fae725cbd315b9ab9c9000') in 0.003943 seconds
-  Import took 0.006217 seconds .
+  Time since last request: 0.000217 seconds.
+  path: Assets/Danilo Assets/LevelPrefabs/lvl 3 1.prefab
+  artifactKey: Guid(19eb259b99ff9fc41aee65243620482c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Danilo Assets/LevelPrefabs/lvl 3 1.prefab using Guid(19eb259b99ff9fc41aee65243620482c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5ff1df3b1281f3d4bf41f382c3ab13ed') in 0.012495 seconds
+  Import took 0.015185 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 270.963802 seconds.
-  path: Assets/Danilo Assets/Code/CharacterHealth.cs
-  artifactKey: Guid(a6f17c7d70add1042b595603daf39868) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Danilo Assets/Code/CharacterHealth.cs using Guid(a6f17c7d70add1042b595603daf39868) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '48718faeab1970dea061107169b6e240') in 0.006324 seconds
-  Import took 0.010904 seconds .
+  Time since last request: 0.000246 seconds.
+  path: Assets/Danilo Assets/LevelPrefabs/lvl 2.prefab
+  artifactKey: Guid(2222a70c831ce4e40ba0305574877b40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Danilo Assets/LevelPrefabs/lvl 2.prefab using Guid(2222a70c831ce4e40ba0305574877b40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fc27059f38d92d5bdd26a4332fe56fd9') in 0.012402 seconds
+  Import took 0.015300 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 2.464722 seconds.
-  path: Assets/Danilo Assets/Code/characterCombat.cs
-  artifactKey: Guid(c6ad3fd361a460f46bcaf47e67b2fb10) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Danilo Assets/Code/characterCombat.cs using Guid(c6ad3fd361a460f46bcaf47e67b2fb10) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '77585dfb5577399b1065810df173d26d') in 0.004943 seconds
-  Import took 0.007853 seconds .
+  Time since last request: 0.000212 seconds.
+  path: Assets/Danilo Assets/LevelPrefabs/lvl1.prefab
+  artifactKey: Guid(64cb3dbdbe8499340a6c74dc7fbb1a95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Danilo Assets/LevelPrefabs/lvl1.prefab using Guid(64cb3dbdbe8499340a6c74dc7fbb1a95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3dd7c96b6e29ba65ceeb1511cd5c4081') in 0.012529 seconds
+  Import took 0.015265 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.001812 seconds.
-  path: Assets/Danilo Assets/Code/characterCombat.cs
-  artifactKey: Guid(c6ad3fd361a460f46bcaf47e67b2fb10) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Danilo Assets/Code/characterCombat.cs using Guid(c6ad3fd361a460f46bcaf47e67b2fb10) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '77585dfb5577399b1065810df173d26d') in 0.004362 seconds
-  Import took 0.007211 seconds .
+  Time since last request: 0.001128 seconds.
+  path: Assets/Danilo Assets/LevelPrefabs/lvl1.prefab
+  artifactKey: Guid(64cb3dbdbe8499340a6c74dc7fbb1a95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Danilo Assets/LevelPrefabs/lvl1.prefab using Guid(64cb3dbdbe8499340a6c74dc7fbb1a95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3dd7c96b6e29ba65ceeb1511cd5c4081') in 0.010954 seconds
+  Import took 0.013790 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.553374 seconds.
+  path: Assets/Danilo Assets/Scenes/TestScene.unity
+  artifactKey: Guid(2cda990e2423bbf4892e6590ba056729) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Danilo Assets/Scenes/TestScene.unity using Guid(2cda990e2423bbf4892e6590ba056729) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0096f5ec0a54878c22e65b3f080683eb') in 0.005228 seconds
+  Import took 0.008172 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.006378 seconds.
+  path: Assets/Danilo Assets/Scenes/TestScene.unity
+  artifactKey: Guid(2cda990e2423bbf4892e6590ba056729) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Danilo Assets/Scenes/TestScene.unity using Guid(2cda990e2423bbf4892e6590ba056729) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0096f5ec0a54878c22e65b3f080683eb') in 0.004545 seconds
+  Import took 0.007665 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001077 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.36 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.758 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.40 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1825 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 88.1 MB.
+System memory in use after: 88.2 MB.
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 2293.
+Total: 1.627400 ms (FindLiveObjects: 0.144600 ms CreateObjectMapping: 0.054700 ms MarkObjects: 1.414900 ms  DeleteObjects: 0.012400 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000971 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.32 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.759 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.35 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1825 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 88.1 MB.
+System memory in use after: 88.3 MB.
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 2297.
+Total: 1.792500 ms (FindLiveObjects: 0.182400 ms CreateObjectMapping: 0.063400 ms MarkObjects: 1.531600 ms  DeleteObjects: 0.014400 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 210.688170 seconds.
+  path: Assets/Danilo Assets
+  artifactKey: Guid(c713bf638f0ca2543a1deccd34d1a2b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Danilo Assets using Guid(c713bf638f0ca2543a1deccd34d1a2b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1c16c5b249f9b61b98aa745aa5493aea') in 0.008893 seconds
+  Import took 0.011722 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.787010 seconds.
+  path: Assets/Danilo Assets/eryne assets
+  artifactKey: Guid(700237f21eb474c4d8ce242639d6eb1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Danilo Assets/eryne assets using Guid(700237f21eb474c4d8ce242639d6eb1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ef8abc57ae152177e33c78c43e0ed883') in 0.004493 seconds
+  Import took 0.007664 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 11.984200 seconds.
+  path: Assets/Danilo Assets/eryne assets/environment stff
+  artifactKey: Guid(b02c157344fa4de42ba4790831c1e5af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Danilo Assets/eryne assets/environment stff using Guid(b02c157344fa4de42ba4790831c1e5af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ce30b43b0edce0e7786f9dd21e93f672') in 0.004890 seconds
+  Import took 0.007618 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 29.238608 seconds.
+  path: Assets/Danilo Assets/eryne assets/environment stff/texture brain dark area.png
+  artifactKey: Guid(55a293d5a296d4246ae9fbf3f20d0fea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Danilo Assets/eryne assets/environment stff/texture brain dark area.png using Guid(55a293d5a296d4246ae9fbf3f20d0fea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '70bd89ce637f6bba7612b267f2b7c8c0') in 0.058843 seconds
+  Import took 0.061798 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000221 seconds.
+  path: Assets/Danilo Assets/eryne assets/environment stff/texture brain medium area.png
+  artifactKey: Guid(fb3c89722cc5cfc4098492b739014c20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Danilo Assets/eryne assets/environment stff/texture brain medium area.png using Guid(fb3c89722cc5cfc4098492b739014c20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fae1371eef59eb69c65f036749f5cec4') in 0.014180 seconds
+  Import took 0.016692 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000161 seconds.
+  path: Assets/Danilo Assets/eryne assets/environment stff/texture brain light areas.png
+  artifactKey: Guid(4fc6515adec712e40b67929af65216a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Danilo Assets/eryne assets/environment stff/texture brain light areas.png using Guid(4fc6515adec712e40b67929af65216a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2ebe77caec40e3d5a584402b2fc5e573') in 0.012825 seconds
+  Import took 0.015323 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 29.370016 seconds.
+  path: Assets/Danilo Assets/eryne assets/environment stff/texture brain bottom edge.png
+  artifactKey: Guid(cc3f15a7f0300ad46ab66cb4653fe7aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Danilo Assets/eryne assets/environment stff/texture brain bottom edge.png using Guid(cc3f15a7f0300ad46ab66cb4653fe7aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5b8f33d830d3d2d31c5681d036ac33b0') in 0.019085 seconds
+  Import took 0.022038 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000217 seconds.
+  path: Assets/Danilo Assets/eryne assets/environment stff/texture brain top edge.png
+  artifactKey: Guid(f3f468fd35d5dd2448b4c56bca4d80cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Danilo Assets/eryne assets/environment stff/texture brain top edge.png using Guid(f3f468fd35d5dd2448b4c56bca4d80cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7a1fc44a72ee713fce105c8a4fdcdaec') in 0.014683 seconds
+  Import took 0.017403 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000217 seconds.
+  path: Assets/Danilo Assets/eryne assets/environment stff/texture brain right edge.png
+  artifactKey: Guid(b285419252e2c5b4b897d084c35bd02a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Danilo Assets/eryne assets/environment stff/texture brain right edge.png using Guid(b285419252e2c5b4b897d084c35bd02a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9184737f3799b57479c3462900b0c0eb') in 0.013627 seconds
+  Import took 0.016478 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000225 seconds.
+  path: Assets/Danilo Assets/eryne assets/environment stff/texture brain left edge .png
+  artifactKey: Guid(5694bcfc8b2f0834f9a7883de813268f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Danilo Assets/eryne assets/environment stff/texture brain left edge .png using Guid(5694bcfc8b2f0834f9a7883de813268f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5074e3c1867ebf36c3fe8ef54ee30ee4') in 0.013782 seconds
+  Import took 0.016928 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 13.951187 seconds.
+  path: Assets/Danilo Assets/eryne assets/environment stff/texture brain bottom left corner.png
+  artifactKey: Guid(556b3955af801484cb37bd6fd8d859d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Danilo Assets/eryne assets/environment stff/texture brain bottom left corner.png using Guid(556b3955af801484cb37bd6fd8d859d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '137f493efd3fc8351e30e679b23e165d') in 0.014997 seconds
+  Import took 0.018326 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000262 seconds.
+  path: Assets/Danilo Assets/eryne assets/environment stff/texture brain top left corner.png
+  artifactKey: Guid(3d9e65deb53163544bbce79c5b7b553e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Danilo Assets/eryne assets/environment stff/texture brain top left corner.png using Guid(3d9e65deb53163544bbce79c5b7b553e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '70fe493299fe0aa42ee2ecb30fca06a6') in 0.014284 seconds
+  Import took 0.016998 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000241 seconds.
+  path: Assets/Danilo Assets/eryne assets/environment stff/texture brain bottom right corner.png
+  artifactKey: Guid(1b31818fa46feb840a66a7847377d155) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Danilo Assets/eryne assets/environment stff/texture brain bottom right corner.png using Guid(1b31818fa46feb840a66a7847377d155) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '685ae3e5045fad83cb7a9a505cbef33f') in 0.014583 seconds
+  Import took 0.017321 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000217 seconds.
+  path: Assets/Danilo Assets/eryne assets/environment stff/texture brain top right corner.png
+  artifactKey: Guid(98dad60e7057c004c8ef684d81ea1fbc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Danilo Assets/eryne assets/environment stff/texture brain top right corner.png using Guid(98dad60e7057c004c8ef684d81ea1fbc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd3b2abf4f8e7bd9ec9fd58778882e20b') in 0.016329 seconds
+  Import took 0.019117 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 109.530562 seconds.
+  path: Assets/Danilo Assets/eryne assets/environment stff/texture brain bottom edge.png
+  artifactKey: Guid(cc3f15a7f0300ad46ab66cb4653fe7aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Danilo Assets/eryne assets/environment stff/texture brain bottom edge.png using Guid(cc3f15a7f0300ad46ab66cb4653fe7aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '52d624fb424244873f81afc06fd3b5bd') in 0.024507 seconds
+  Import took 0.027638 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 150.781775 seconds.
+  path: Assets/Danilo Assets/eryne assets/environment stff/texture brain bottom edge.png
+  artifactKey: Guid(cc3f15a7f0300ad46ab66cb4653fe7aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Danilo Assets/eryne assets/environment stff/texture brain bottom edge.png using Guid(cc3f15a7f0300ad46ab66cb4653fe7aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bcbacf8dc9375da996be15414ea90153') in 0.018763 seconds
+  Import took 0.022230 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 329.289387 seconds.
+  path: Assets/Danilo Assets/LevelPrefabs/lvl1.prefab
+  artifactKey: Guid(64cb3dbdbe8499340a6c74dc7fbb1a95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Danilo Assets/LevelPrefabs/lvl1.prefab using Guid(64cb3dbdbe8499340a6c74dc7fbb1a95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c0183a2ed6b66f1e5bf9da14b919528b') in 0.031064 seconds
+  Import took 0.033928 seconds .
 
