@@ -128,3 +128,4 @@ Received Import Request.
 Start importing Assets/Danilo Assets/BombProjectile.prefab using Guid(e113185fdfde6ef49932e1c5c8d315c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ae2be953bfe556611de551d79f35ec63') in 0.095270 seconds
   Import took 0.098134 seconds .
 
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
