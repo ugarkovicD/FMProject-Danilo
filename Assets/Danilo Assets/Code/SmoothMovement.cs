@@ -27,7 +27,7 @@ public class SmoothMovement : MonoBehaviour
     public static bool slowed;
     public static float speedSlowed;
 
-    public GameObject PortalAndRoomDestruction;
+    private GameObject[] TeleportsAndRooms;
 
     void Start()
     {
@@ -39,6 +39,7 @@ public class SmoothMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        TeleportsAndRooms = GameObject.FindGameObjectsWithTag("Room");
         cameraObject.transform.position = new Vector3(transform.position.x, transform.position.y, cameraObject.transform.position.z);
         //Slow
         if (slowed == true)
@@ -160,10 +161,14 @@ public class SmoothMovement : MonoBehaviour
             Destroy(collision.gameObject);
         }
         if (collision.name == "TeleportPrefab(Clone)")
-        {
+        {            
             RoomGeneration.SpawnWhenWalkPortal = true;
             RandomEnemySpawner.SpawnWhenWalkPortal = true;
             Destroy(collision.gameObject);
+            foreach(GameObject r in TeleportsAndRooms)
+            {
+                Destroy(r.gameObject);
+            }
         }
     }
 }

@@ -1046,12 +1046,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cd9ce8f266e35d9418f17c25e8030255, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  numberToSpawn: 10
+  numberToSpawn: 5
   Spawnpool:
   - {fileID: 1640943144}
   - {fileID: 86449409}
   - {fileID: 807217150}
   SpawnArea: {fileID: 229029059}
+  Spawned: 0
 --- !u!4 &1168426740
 Transform:
   m_ObjectHideFlags: 0
@@ -1451,6 +1452,10 @@ MonoBehaviour:
   Teleport4: {fileID: 1958319127}
   Teleport5: {fileID: 956372623}
   teleportPrefab: {fileID: 307612726228056619, guid: c2a250a05beabc144907b1f1918804ec, type: 3}
+  Room1Called: 0
+  Room2Called: 0
+  Room3Called: 0
+  Room4Called: 0
 --- !u!4 &2078284710
 Transform:
   m_ObjectHideFlags: 0
