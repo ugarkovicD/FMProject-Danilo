@@ -1002,8 +1002,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -583, y: -379}
-  m_SizeDelta: {x: 720, y: 50}
+  m_AnchoredPosition: {x: -583, y: -414}
+  m_SizeDelta: {x: 720, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &603165900
 MonoBehaviour:
@@ -1038,10 +1038,10 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Use Arrow keys to move around. when pressing an arrow key, you will be
-    facing
-
-    that way and your melee attacks will work in that direction'
+  m_Text: "Use Arrow keys to move around. When pressing an arrow key, you will be
+    facing\nthat way and your melee attacks will work in that direction when using
+    LMB, dash \nwith LShift in a direction of the last arrow key you pressed, to
+    continue with the levels, enter the portals. To restart the scene, press R.\n"
 --- !u!222 &603165901
 CanvasRenderer:
   m_ObjectHideFlags: 0
