@@ -539,3 +539,4 @@ Received Import Request.
 Start importing Assets/Danilo Assets/Code/RandomEnemySpawner.cs using Guid(cd9ce8f266e35d9418f17c25e8030255) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '704ea6e22bd36f1453f273dbb1235385') in 0.004480 seconds
   Import took 0.008665 seconds .
 
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
