@@ -11,63 +11,106 @@ public class SpawningTeleportsPerLevel : MonoBehaviour
     public Transform Teleport4;
     public Transform Teleport5;
     public GameObject teleportPrefab;
+    public bool Room1Called;
+    public bool Room2Called;
+    public bool Room3Called;
+    public bool Room4Called;
+    void Start()
+    {
+        Room4Called = false;
+        Room3Called = false;
+        Room2Called = false;
+        Room1Called = false;
+    }
     // Update is called once per frame
     void Update()
     {
+        if (RoomGeneration.EnemiesDead == false)
+        {
+            Room4Called = false;
+            Room3Called = false;
+            Room2Called = false;
+            Room1Called = false;
+        }
         if (RoomGeneration.Room1 == true)
         {
-            Invoke("SpawnTeleportRoom1",0.1f);
+            Invoke("SpawnTeleportRoom1", 0.1f);
         }
         if (RoomGeneration.Room2 == true)
         {
             Invoke("SpawnTeleportRoom2", 0.1f);
+
         }
         if (RoomGeneration.Room3 == true)
         {
             Invoke("SpawnTeleportRoom3", 0.1f);
+
         }
         if (RoomGeneration.Room4 == true)
         {
             Invoke("SpawnTeleportRoom4", 0.1f);
+
         }
         if (RoomGeneration.Room5 == true)
         {
             Invoke("SpawnTeleportRoom5", 0.1f);
+
         }
+   
     }
     void SpawnTeleportRoom1()
     {
-        if (RoomGeneration.EnemiesDead == true)
+        if (Room1Called == false)
         {
-            Instantiate(teleportPrefab,Teleport1.position, Teleport1.rotation);
-            Instantiate(teleportPrefab,Teleport2.position, Teleport2.rotation);
-        }
+            if (RoomGeneration.EnemiesDead == true)
+            {
+                Instantiate(teleportPrefab, Teleport1.position, Teleport1.rotation);
+                Instantiate(teleportPrefab, Teleport2.position, Teleport2.rotation);
+                Room1Called = true;
+                Debug.Log("Spawned Teleport1");
+            }
+        }      
     }
     void SpawnTeleportRoom2()
     {
-        if (RoomGeneration.EnemiesDead == true)
+        if (Room2Called == false)
         {
-            Instantiate(teleportPrefab, Teleport3.position, Teleport3.rotation);
-            Instantiate(teleportPrefab, Teleport4.position, Teleport4.rotation);
-        }
+            if (RoomGeneration.EnemiesDead == true)
+            {
+                Instantiate(teleportPrefab, Teleport3.position, Teleport3.rotation);
+                Instantiate(teleportPrefab, Teleport4.position, Teleport4.rotation);
+                Room2Called = true;
+                Debug.Log("Spawned Teleport2");
+            }
+        }       
     }
     void SpawnTeleportRoom3()
     {
-        if (RoomGeneration.EnemiesDead == true)
+        if (Room3Called == false)
         {
-            Instantiate(teleportPrefab, Teleport3.position, Teleport3.rotation);
-            Instantiate(teleportPrefab, Teleport4.position, Teleport4.rotation);
-        }
+            if (RoomGeneration.EnemiesDead == true)
+            {
+                Instantiate(teleportPrefab, Teleport3.position, Teleport3.rotation);
+                Instantiate(teleportPrefab, Teleport4.position, Teleport4.rotation);
+                Room3Called = true;
+                Debug.Log("Spawned Teleport3");
+            }
+        }       
     }
     void SpawnTeleportRoom4()
     {
-        if (RoomGeneration.EnemiesDead == true)
+        if (Room4Called == false)
         {
-            Instantiate(teleportPrefab, Teleport5.position, Teleport5.rotation);
-        }
+            if (RoomGeneration.EnemiesDead == true)
+            {
+                Instantiate(teleportPrefab, Teleport5.position, Teleport5.rotation);
+                Room4Called = true;
+                Debug.Log("Spawned Teleport4");
+            }
+        }       
     }
     void SpawnTeleportRoom5()
     {
-
+        Debug.Log("Spawned Teleport5");
     }
 }

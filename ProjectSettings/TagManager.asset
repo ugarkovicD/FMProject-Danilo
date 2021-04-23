@@ -12,6 +12,7 @@ TagManager:
   - Wall
   - Rooms
   - DestroyableWall
+  - Room
   layers:
   - Default
   - TransparentFX

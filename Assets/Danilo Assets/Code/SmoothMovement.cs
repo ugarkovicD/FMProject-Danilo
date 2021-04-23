@@ -27,7 +27,7 @@ public class SmoothMovement : MonoBehaviour
     public static bool slowed;
     public static float speedSlowed;
 
-    public static bool DestroyAndSpawnLevel;
+    public GameObject PortalAndRoomDestruction;
 
     void Start()
     {
@@ -161,9 +161,9 @@ public class SmoothMovement : MonoBehaviour
         }
         if (collision.name == "TeleportPrefab(Clone)")
         {
-            if (RoomGeneration.rand == 0)
-            {
-            }
+            RoomGeneration.SpawnWhenWalkPortal = true;
+            RandomEnemySpawner.SpawnWhenWalkPortal = true;
+            Destroy(collision.gameObject);
         }
     }
 }

@@ -18,18 +18,23 @@ public class RoomGeneration : MonoBehaviour
     public static bool Room4;
     public static bool Room5;
 
+    public static bool SpawnWhenWalkPortal;
+
     // Start is called before the first frame update
     void Start()
     {
+        SpawnWhenWalkPortal = false;
         spawned = false;
         Invoke("Spawn",0.1f);
     }
 
     void Update()
     {
-        if (SmoothMovement.DestroyAndSpawnLevel == true)
+        if (SpawnWhenWalkPortal == true)
         {
-            Invoke("Spawn", 0.1f);
+            Invoke("Spawn",0.1f);
+            spawned = false;
+
         }
         if (rand == 0)
         {
@@ -55,6 +60,10 @@ public class RoomGeneration : MonoBehaviour
         {
             EnemiesDead = true;
         }
+        if (RandomEnemySpawner.NumberOfEnemies >= 1)
+        {
+            EnemiesDead = false;
+        }
         if (Input.GetKeyDown(KeyCode.O))
         {
             spawned = false;
@@ -66,6 +75,7 @@ public class RoomGeneration : MonoBehaviour
     {
         if (spawned == false)
         {
+             SpawnWhenWalkPortal = false;
              rand = Random.Range(0, rooms.Length);
              Instantiate(rooms[rand],SpawnPoint2.position,Quaternion.identity);
              spawned = true;
