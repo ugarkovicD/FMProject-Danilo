@@ -52,10 +52,6 @@ public class RoomGeneration : MonoBehaviour
         {
             Room4 = true;
         }
-        if (rand == 4)
-        {
-            Room5 = true;
-        }
         if (RandomEnemySpawner.NumberOfEnemies <= 0)
         {
             EnemiesDead = true;
@@ -80,6 +76,7 @@ public class RoomGeneration : MonoBehaviour
              Instantiate(rooms[rand],SpawnPoint2.position,Quaternion.identity);
              spawned = true;
              Debug.Log("SPAWNED A ROOM");
+            CharacterHealth.currenthp += 3;
         }
     }
 }

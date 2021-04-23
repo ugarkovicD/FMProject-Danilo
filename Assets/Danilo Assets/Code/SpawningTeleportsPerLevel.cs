@@ -32,21 +32,21 @@ public class SpawningTeleportsPerLevel : MonoBehaviour
             Room2Called = false;
             Room1Called = false;
         }
-        if (RoomGeneration.Room1 == true)
+        if (RoomGeneration.rand == 6)
         {
             Invoke("SpawnTeleportRoom1", 0.1f);
         }
-        if (RoomGeneration.Room2 == true)
+        if (RoomGeneration.rand == 7)
         {
             Invoke("SpawnTeleportRoom2", 0.1f);
 
         }
-        if (RoomGeneration.Room3 == true)
+        if (RoomGeneration.rand == 8)
         {
             Invoke("SpawnTeleportRoom3", 0.1f);
 
         }
-        if (RoomGeneration.Room4 == true)
+        if (RoomGeneration.rand == 9)
         {
             Invoke("SpawnTeleportRoom4", 0.1f);
 
@@ -54,7 +54,6 @@ public class SpawningTeleportsPerLevel : MonoBehaviour
         if (RoomGeneration.Room5 == true)
         {
             Invoke("SpawnTeleportRoom5", 0.1f);
-
         }
    
     }

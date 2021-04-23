@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class CharacterHealth : MonoBehaviour
 {
@@ -54,6 +55,10 @@ public class CharacterHealth : MonoBehaviour
         {
             healthImage.sprite = health0;
         }   
+        if (currenthp <= 0)
+        {
+            SceneManager.LoadScene("TestScene");
+        }
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {

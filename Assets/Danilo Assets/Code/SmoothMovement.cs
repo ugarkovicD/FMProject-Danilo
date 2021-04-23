@@ -54,19 +54,23 @@ public class SmoothMovement : MonoBehaviour
         //FINISH THIS, Remove room gen, it makes it reset constantly
         if (RoomGeneration.rand == 0)
         {
-            Spawnedlvl2 = true;            
+            Spawnedlvl2 = true;
+            RoomGeneration.rand = 6;
         }
         if (RoomGeneration.rand == 1)
         {
             Spawnedlvl3 = true;
+            RoomGeneration.rand = 7;
         }
         if (RoomGeneration.rand == 2)
         {
             Spawnedlvl3 = true;
+            RoomGeneration.rand = 7;
         }
         if (RoomGeneration.rand == 3)
         {
             Spawnedlvl1 = true;
+            RoomGeneration.rand = 9;
         }
         if (Spawnedlvl1 == true)
         {
