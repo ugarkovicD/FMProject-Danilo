@@ -88,3 +88,4 @@ Received Import Request.
 Start importing Assets/Danilo Assets/LevelPrefabs/lvl 3 1.prefab using Guid(19eb259b99ff9fc41aee65243620482c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f6f80051cb051646c506876310e4d115') in 0.046392 seconds
   Import took 0.050616 seconds .
 
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
