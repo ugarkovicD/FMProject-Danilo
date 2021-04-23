@@ -54,6 +54,7 @@ public class RandomEnemySpawner : MonoBehaviour
             }
             Spawned = true;
             SpawnWhenWalkPortal = false;
+            numberToSpawn += 1;
         }       
     }
 }

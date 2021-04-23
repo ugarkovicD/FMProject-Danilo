@@ -4,6 +4,13 @@ using UnityEngine;
 
 public class SmoothMovement : MonoBehaviour
 {
+    public Transform Level1Place;
+    public Transform Level2Place;
+    public Transform Level3Place;
+    public bool Spawnedlvl1;
+    public bool Spawnedlvl2;
+    public bool Spawnedlvl3;
+
     public Camera cameraObject;
     public float MaxSpeed;
     public static float speed = 7;
@@ -39,8 +46,41 @@ public class SmoothMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //random
         TeleportsAndRooms = GameObject.FindGameObjectsWithTag("Room");
         cameraObject.transform.position = new Vector3(transform.position.x, transform.position.y, cameraObject.transform.position.z);
+
+        // teleporting the player into the levels
+        //FINISH THIS, Remove room gen, it makes it reset constantly
+        if (RoomGeneration.rand == 0)
+        {
+            Spawnedlvl2 = true;            
+        }
+        if (RoomGeneration.rand == 1)
+        {
+            Spawnedlvl3 = true;
+        }
+        if (RoomGeneration.rand == 2)
+        {
+            Spawnedlvl3 = true;
+        }
+        if (RoomGeneration.rand == 3)
+        {
+            Spawnedlvl1 = true;
+        }
+        if (Spawnedlvl1 == true)
+        {
+            Invoke("SpawnRoom1", 0.1f);
+        }
+        if (Spawnedlvl2 == true)
+        {
+            Invoke("SpawnRoom2", 0.1f);
+        }
+        if (Spawnedlvl3 == true)
+        {
+            SpawnRoom3();
+        }
+
         //Slow
         if (slowed == true)
         {
@@ -170,5 +210,23 @@ public class SmoothMovement : MonoBehaviour
                 Destroy(r.gameObject);
             }
         }
+    }
+    void SpawnRoom1()
+    {
+        targetPos = new Vector2(Level1Place.position.x, Level1Place.position.y);
+        transform.position = Level1Place.position;
+        Spawnedlvl1 = false;
+    }
+    void SpawnRoom2()
+    {
+        targetPos = new Vector2(Level2Place.position.x, Level2Place.position.y);
+        transform.position = Level2Place.position;
+        Spawnedlvl2 = false;
+    }
+    void SpawnRoom3()
+    {
+        targetPos = new Vector2(Level3Place.position.x, Level3Place.position.y);
+        transform.position = Level3Place.position;
+        Spawnedlvl3 = false;
     }
 }
