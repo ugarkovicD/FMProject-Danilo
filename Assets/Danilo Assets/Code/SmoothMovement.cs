@@ -14,14 +14,13 @@ public class SmoothMovement : MonoBehaviour
     public Camera cameraObject;
     public float MaxSpeed;
     public static float speed = 7;
-    private Vector2 targetPos;
     public float distance = 1;
     public static bool facingUp;
     public static bool facingDown;
     public static bool facingRight;
     public static bool facingLeft;
-    public float distanceDash = 3;
-    public int speedDash = 27;
+    public float distanceDash = 10;
+    public int speedDash = 20;
     public bool dashing;
     public float dashTimer;
     public bool ArivedOnTarget;
@@ -97,53 +96,44 @@ public class SmoothMovement : MonoBehaviour
             speed = MaxSpeed;
         }
 
-        //walking
-        if (dashing == false) 
-        {
-            transform.position = Vector2.MoveTowards(transform.position, targetPos, speed * Time.deltaTime);
-        }
+        //walking      
         if (dashing == false)
         {
-            if (Input.GetKeyDown(KeyCode.RightArrow))
+            if (Input.GetKey(KeyCode.D))
             {
-                targetPos = new Vector2(transform.position.x + distance, transform.position.y);
+                transform.position += new Vector3(speed * Time.deltaTime, 0, 0);
                 facingDown = false;
                 facingUp = false;
                 facingLeft = false;
                 facingRight = true;
             }
-            if (Input.GetKeyDown(KeyCode.LeftArrow))
+            if (Input.GetKey(KeyCode.A))
             {
-                targetPos = new Vector2(transform.position.x - distance, transform.position.y);
+                transform.position -= new Vector3(speed * Time.deltaTime, 0, 0);
                 facingDown = false;
                 facingUp = false;
                 facingLeft = true;
                 facingRight = false;
             }
-            if (Input.GetKeyDown(KeyCode.UpArrow))
+            if (Input.GetKey(KeyCode.W))
             {
-                targetPos = new Vector2(transform.position.x, transform.position.y + distance);
+                transform.position += new Vector3(0, speed * Time.deltaTime, 0);
                 facingDown = false;
                 facingUp = true;
                 facingLeft = false;
                 facingRight = false;
             }
-            if (Input.GetKeyDown(KeyCode.DownArrow))
+            if (Input.GetKey(KeyCode.S))
             {
-                targetPos = new Vector2(transform.position.x, transform.position.y - distance); facingDown = true;
+                transform.position -= new Vector3(0, speed * Time.deltaTime, 0);
                 facingUp = false;
                 facingLeft = false;
                 facingRight = false;
                 facingDown = true;
             }
-        }        
+        }
         //dashing
         dashTimer -= 1 * Time.deltaTime;
-
-        if (dashing == true)
-        {
-            transform.position = Vector2.MoveTowards(transform.position, targetPos, speedDash * Time.deltaTime);
-        }
 
         if (dashTimer <= 0)
         {
@@ -153,19 +143,19 @@ public class SmoothMovement : MonoBehaviour
                 dashing = true;
                 if (facingDown == true)
                 {
-                    targetPos = new Vector2(transform.position.x, transform.position.y - distanceDash);
+                    transform.position = new Vector2(transform.position.x, transform.position.y - distanceDash * speedDash * Time.deltaTime);
                 }
                 if (facingUp == true)
                 {
-                    targetPos = new Vector2(transform.position.x, transform.position.y + distanceDash);
+                    transform.position = new Vector2(transform.position.x, transform.position.y + distanceDash * speedDash *Time.deltaTime);
                 }
                 if (facingRight == true)
                 {
-                    targetPos = new Vector2(transform.position.x + distanceDash, transform.position.y);
+                    transform.position = new Vector2(transform.position.x + distanceDash * speedDash * Time.deltaTime, transform.position.y);
                 }
                 if (facingLeft == true)
                 {
-                    targetPos = new Vector2(transform.position.x - distanceDash, transform.position.y);
+                    transform.position = new Vector2(transform.position.x - distanceDash * speedDash * Time.deltaTime, transform.position.y);
                 }
             }
         }
@@ -217,19 +207,16 @@ public class SmoothMovement : MonoBehaviour
     }
     void SpawnRoom1()
     {
-        targetPos = new Vector2(Level1Place.position.x, Level1Place.position.y);
         transform.position = Level1Place.position;
         Spawnedlvl1 = false;
     }
     void SpawnRoom2()
     {
-        targetPos = new Vector2(Level2Place.position.x, Level2Place.position.y);
         transform.position = Level2Place.position;
         Spawnedlvl2 = false;
     }
     void SpawnRoom3()
     {
-        targetPos = new Vector2(Level3Place.position.x, Level3Place.position.y);
         transform.position = Level3Place.position;
         Spawnedlvl3 = false;
     }
