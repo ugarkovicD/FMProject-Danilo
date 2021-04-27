@@ -79,7 +79,6 @@ public class SmoothMovement : MonoBehaviour
         cameraObject.transform.position = new Vector3(transform.position.x, transform.position.y, cameraObject.transform.position.z);
 
         // teleporting the player into the levels
-        //FINISH THIS, Remove room gen, it makes it reset constantly
         if (RoomGeneration.rand == 0)
         {
             Spawnedlvl2 = true;
@@ -107,6 +106,10 @@ public class SmoothMovement : MonoBehaviour
         if (Spawnedlvl3 == true)
         {
             Invoke("SpawnRoom3", 0.1f);
+        }
+        if (Spawnedlvl31 == true)
+        {
+            Invoke("SpawnRoom31", 0.1f);
         }
 
         //Slow

@@ -28,7 +28,6 @@ public class Projectile : MonoBehaviour
     {
         if (collision.name == "Player")
         {
-            CharacterHealth.currenthp -= 1;
             Destroy(gameObject);
             Debug.Log("Slowed");
             SmoothMovement.slowed = true;
