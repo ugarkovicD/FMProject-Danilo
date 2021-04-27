@@ -1,24 +1,29 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class RandomEnemySpawner : MonoBehaviour
 {
-    public int numberToSpawn;
+    public static int numberToSpawn;
     public List<GameObject> Spawnpool;
     public GameObject SpawnArea;
     public static float NumberOfEnemies;
     public bool Spawned;
     public static bool SpawnWhenWalkPortal;
+    public Text EnemiesText;
     // Start is called before the first frame update
     void Start()
     {       
+        NumberOfEnemies = 0;
+        numberToSpawn = 2;
         spawnObjects();
     }
 
     // Update is called once per frame
     void Update()
     {
+        EnemiesText.text = NumberOfEnemies.ToString();
         if (SpawnWhenWalkPortal == true)
         {
             Spawned = false;

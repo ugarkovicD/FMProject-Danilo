@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class RoomGeneration : MonoBehaviour
 {
@@ -10,6 +11,9 @@ public class RoomGeneration : MonoBehaviour
     public Vector3 SpawnPoint;
     public static bool EnemiesDead;
     public Transform SpawnPoint2;
+
+    public Text levelText;
+    public int levelNumber;
 
     //Checking Which room is Spawned
     public static bool Room1;
@@ -30,6 +34,7 @@ public class RoomGeneration : MonoBehaviour
 
     void Update()
     {
+        levelText.text = levelNumber.ToString();
         if (SpawnWhenWalkPortal == true)
         {
             Invoke("Spawn",0.1f);
@@ -78,6 +83,7 @@ public class RoomGeneration : MonoBehaviour
              Debug.Log("SPAWNED A ROOM");
              CharacterHealth.currenthp += 3;
              Debug.Log("Health + 3");
+             levelNumber += 1;
         }
     }
 }

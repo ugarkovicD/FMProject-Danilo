@@ -55,6 +55,7 @@ public class BomberEnemy : MonoBehaviour
         {
             Destroy(gameObject);
             RandomEnemySpawner.NumberOfEnemies -= 1;
+            Debug.Log("Destroyed Bomber Enemy");
         }
     }
     IEnumerator waitSpawn()

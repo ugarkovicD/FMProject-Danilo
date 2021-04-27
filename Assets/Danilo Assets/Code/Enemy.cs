@@ -48,6 +48,7 @@ public class Enemy : MonoBehaviour
         {
             Destroy(gameObject);
             RandomEnemySpawner.NumberOfEnemies -= 1;
+            Debug.Log("Destroyed Melee Enemy");
         }
     }
 }

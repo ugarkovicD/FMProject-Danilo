@@ -61,6 +61,7 @@ public class RangedEnemy : MonoBehaviour
         {
             Destroy(gameObject);
             RandomEnemySpawner.NumberOfEnemies -= 1;
+            Debug.Log("Ranged Enemy Killed");
         }
     }
 }

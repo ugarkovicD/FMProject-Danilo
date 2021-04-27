@@ -20,8 +20,8 @@ public class SmoothMovement : MonoBehaviour
     public static bool facingDown;
     public static bool facingRight;
     public static bool facingLeft;
-    public float distanceDash = 200;
-    public int speedDash = 20;
+    public float distanceDash = 1;
+    public int speedDash = 300;
     public bool dashing;
     public float dashTimer;
     public bool ArivedOnTarget;
@@ -106,7 +106,7 @@ public class SmoothMovement : MonoBehaviour
         }
         if (Spawnedlvl3 == true)
         {
-            SpawnRoom3();
+            Invoke("SpawnRoom3", 0.1f);
         }
 
         //Slow
@@ -247,6 +247,7 @@ public class SmoothMovement : MonoBehaviour
         transform.position = Level3Place.position;
         Spawnedlvl3 = false;
         RoomGeneration.rand = 7;
+        //Make the teleport work for this room when u kill all enemies
     }
     void SpawnRoom31()
     {

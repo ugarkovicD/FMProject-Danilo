@@ -51,10 +51,6 @@ public class SpawningTeleportsPerLevel : MonoBehaviour
             Invoke("SpawnTeleportRoom4", 0.1f);
 
         }
-        if (RoomGeneration.Room5 == true)
-        {
-            Invoke("SpawnTeleportRoom5", 0.1f);
-        }
    
     }
     void SpawnTeleportRoom1()
@@ -79,9 +75,9 @@ public class SpawningTeleportsPerLevel : MonoBehaviour
                 Instantiate(teleportPrefab, Teleport3.position, Teleport3.rotation);
                 Instantiate(teleportPrefab, Teleport4.position, Teleport4.rotation);
                 Room2Called = true;
-                Debug.Log("Spawned Teleport2");
+                Debug.Log("Spawned Teleport3");
             }
-        }       
+        }      
     }
     void SpawnTeleportRoom3()
     {
