@@ -25,7 +25,7 @@ public class RoomGeneration : MonoBehaviour
     {
         SpawnWhenWalkPortal = false;
         spawned = false;
-        Invoke("Spawn",0.1f);
+        Spawn();
     }
 
     void Update()
@@ -76,7 +76,8 @@ public class RoomGeneration : MonoBehaviour
              Instantiate(rooms[rand],SpawnPoint2.position,Quaternion.identity);
              spawned = true;
              Debug.Log("SPAWNED A ROOM");
-            CharacterHealth.currenthp += 3;
+             CharacterHealth.currenthp += 3;
+             Debug.Log("Health + 3");
         }
     }
 }

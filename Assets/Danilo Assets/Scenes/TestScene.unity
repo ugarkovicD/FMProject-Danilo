@@ -523,6 +523,7 @@ MonoBehaviour:
   Spawnedlvl1: 0
   Spawnedlvl2: 0
   Spawnedlvl3: 0
+  Spawnedlvl31: 0
   cameraObject: {fileID: 519420031}
   MaxSpeed: 7
   distance: 1
@@ -614,7 +615,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96c8b2b6d29bec346be1675cde20655b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 4
 --- !u!1 &89611346
 GameObject:
   m_ObjectHideFlags: 0
@@ -1432,7 +1432,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cd9ce8f266e35d9418f17c25e8030255, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  numberToSpawn: 5
+  numberToSpawn: 2
   Spawnpool:
   - {fileID: 1640943144}
   - {fileID: 86449409}

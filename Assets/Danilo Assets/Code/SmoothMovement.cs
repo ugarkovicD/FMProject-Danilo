@@ -10,6 +10,7 @@ public class SmoothMovement : MonoBehaviour
     public bool Spawnedlvl1;
     public bool Spawnedlvl2;
     public bool Spawnedlvl3;
+    public bool Spawnedlvl31;
 
     public Camera cameraObject;
     public float MaxSpeed;
@@ -19,7 +20,7 @@ public class SmoothMovement : MonoBehaviour
     public static bool facingDown;
     public static bool facingRight;
     public static bool facingLeft;
-    public float distanceDash = 10;
+    public float distanceDash = 200;
     public int speedDash = 20;
     public bool dashing;
     public float dashTimer;
@@ -41,6 +42,34 @@ public class SmoothMovement : MonoBehaviour
         haveSpace = true;
         speed = MaxSpeed;
         speedSlowed = 4;
+        if (RoomGeneration.rand == 0)
+        {
+            Spawnedlvl2 = true;
+        }
+        if (RoomGeneration.rand == 1)
+        {
+            Spawnedlvl3 = true;
+        }
+        if (RoomGeneration.rand == 2)
+        {
+            Spawnedlvl31 = true;
+        }
+        if (RoomGeneration.rand == 3)
+        {
+            Spawnedlvl1 = true;
+        }
+        if (Spawnedlvl1 == true)
+        {
+            Invoke("SpawnRoom1", 0.1f);
+        }
+        if (Spawnedlvl2 == true)
+        {
+            Invoke("SpawnRoom2", 0.1f);
+        }
+        if (Spawnedlvl3 == true)
+        {
+            SpawnRoom3();
+        }
     }
     // Update is called once per frame
     void Update()
@@ -54,22 +83,18 @@ public class SmoothMovement : MonoBehaviour
         if (RoomGeneration.rand == 0)
         {
             Spawnedlvl2 = true;
-            RoomGeneration.rand = 6;
         }
         if (RoomGeneration.rand == 1)
         {
             Spawnedlvl3 = true;
-            RoomGeneration.rand = 7;
         }
         if (RoomGeneration.rand == 2)
         {
-            Spawnedlvl3 = true;
-            RoomGeneration.rand = 7;
+            Spawnedlvl31 = true;
         }
         if (RoomGeneration.rand == 3)
         {
             Spawnedlvl1 = true;
-            RoomGeneration.rand = 9;
         }
         if (Spawnedlvl1 == true)
         {
@@ -209,15 +234,24 @@ public class SmoothMovement : MonoBehaviour
     {
         transform.position = Level1Place.position;
         Spawnedlvl1 = false;
+        RoomGeneration.rand = 9;
     }
     void SpawnRoom2()
     {
         transform.position = Level2Place.position;
         Spawnedlvl2 = false;
+        RoomGeneration.rand = 6;
     }
     void SpawnRoom3()
     {
         transform.position = Level3Place.position;
         Spawnedlvl3 = false;
+        RoomGeneration.rand = 7;
+    }
+    void SpawnRoom31()
+    {
+        transform.position = Level3Place.position;
+        Spawnedlvl31 = false;
+        RoomGeneration.rand = 8;
     }
 }
