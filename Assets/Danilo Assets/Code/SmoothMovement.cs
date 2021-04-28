@@ -68,6 +68,11 @@ public class SmoothMovement : MonoBehaviour
     public bool HoldingBow;
     public bool HoldingMinigun;
 
+    public bool walkingRight;
+    public bool walkingLeft;
+    public bool walkingDown;
+    public bool walkingUp;
+
     public SpriteRenderer spriteRender;
 
 
@@ -89,7 +94,7 @@ public class SmoothMovement : MonoBehaviour
         //Animation
         if (AnimationOn == true)
         {
-            SetSpriteAnimation(colCount, rowCount, rowNumber, colNumber, totalCells, FPS);
+            SetSpriteAnimation(colCount, rowCount, colNumber, rowNumber, totalCells, FPS);
         }
         if (AnimationOn == false)
         {
@@ -112,7 +117,7 @@ public class SmoothMovement : MonoBehaviour
                     spriteRender.sprite = StillDownSword;
                 }
             }
-        }                
+        }
         //random
         TeleportsAndRooms = GameObject.FindGameObjectsWithTag("Room");
         cameraObject.transform.position = new Vector3(transform.position.x, transform.position.y, cameraObject.transform.position.z);
@@ -162,43 +167,83 @@ public class SmoothMovement : MonoBehaviour
             slowed = false;
             speed = MaxSpeed;
         }
-
-        //walking      
-        if (dashing == false)
-        {
-            if (Input.GetKey(KeyCode.D))
-            {
-                transform.position += new Vector3(speed * Time.deltaTime, 0, 0);
-                facingDown = false;
-                facingUp = false;
-                facingLeft = false;
-                facingRight = true;
-            }
-            if (Input.GetKey(KeyCode.A))
-            {
-                transform.position -= new Vector3(speed * Time.deltaTime, 0, 0);
-                facingDown = false;
-                facingUp = false;
-                facingLeft = true;
-                facingRight = false;
-            }
-            if (Input.GetKey(KeyCode.W))
-            {
-                transform.position += new Vector3(0, speed * Time.deltaTime, 0);
-                facingDown = false;
-                facingUp = true;
-                facingLeft = false;
-                facingRight = false;
-            }
-            if (Input.GetKey(KeyCode.S))
-            {
-                transform.position -= new Vector3(0, speed * Time.deltaTime, 0);
-                facingUp = false;
-                facingLeft = false;
-                facingRight = false;
-                facingDown = true;
-            }
+        //moving
+        //SET SPRITESHEETS FOR WALKING
+        if (Input.GetKey(KeyCode.D))
+        {            
+            facingDown = false;
+            facingUp = false;
+            facingLeft = false;
+            facingRight = true;
+            AnimationOn = true;
+            walkingRight = true;
         }
+        if (Input.GetKey(KeyCode.A))
+        {         
+            facingDown = false;
+            facingUp = false;
+            facingLeft = true;
+            facingRight = false;
+            AnimationOn = true;
+            walkingLeft = true;
+            GetComponent<Renderer>().material.mainTexture = WalkingLeftSword;
+        }
+        if (Input.GetKey(KeyCode.W))
+        {           
+            facingDown = false;
+            facingUp = true;
+            facingLeft = false;
+            facingRight = false;
+            AnimationOn = true;
+            walkingUp = true;
+            GetComponent<Renderer>().material.mainTexture = WalkingUpSword;
+        }
+        if (Input.GetKeyDown(KeyCode.S))
+        {
+            facingUp = false;
+            facingLeft = false;
+            facingRight = false;
+            facingDown = true;
+            AnimationOn = true;
+            walkingDown = true;
+            GetComponent<Renderer>().material.mainTexture = WalkingDownSword;
+        }
+        if (walkingRight == true)
+        {
+            transform.position += new Vector3(speed * Time.deltaTime, 0, 0);
+        }
+        if (walkingLeft == true)
+        {
+            transform.position -= new Vector3(speed * Time.deltaTime, 0, 0);
+        }
+        if (walkingUp == true)
+        {
+            transform.position += new Vector3(0, speed * Time.deltaTime, 0);
+        }
+        if (walkingDown == true)
+        {
+            transform.position -= new Vector3(0, speed * Time.deltaTime, 0);
+        }
+        if (Input.GetKeyUp(KeyCode.D))
+        {
+            AnimationOn = false;
+            walkingRight = false;
+        }
+        if (Input.GetKeyUp(KeyCode.A))
+        {
+            walkingLeft = false;
+            AnimationOn = false;
+        }
+        if (Input.GetKeyUp(KeyCode.W))
+        {
+            walkingUp = false;
+            AnimationOn = false;
+        }
+        if (Input.GetKeyUp(KeyCode.S))
+        {
+            walkingDown = false;
+            AnimationOn = false;
+        }       
     }
     void OnTriggerEnter2D(Collider2D collision)
     {
