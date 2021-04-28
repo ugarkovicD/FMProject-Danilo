@@ -23,6 +23,7 @@ public class RandomEnemySpawner : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
         EnemiesText.text = NumberOfEnemies.ToString();
         if (SpawnWhenWalkPortal == true)
         {
@@ -59,7 +60,10 @@ public class RandomEnemySpawner : MonoBehaviour
             }
             Spawned = true;
             SpawnWhenWalkPortal = false;
-            numberToSpawn += 1;
+            if (numberToSpawn >= 8)
+            {
+                numberToSpawn += 1;
+            }
         }       
     }
 }

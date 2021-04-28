@@ -68,6 +68,8 @@ public class SmoothMovement : MonoBehaviour
     public bool HoldingBow;
     public bool HoldingMinigun;
 
+    public SpriteRenderer spriteRender;
+
 
     void Start()
     {
@@ -93,19 +95,19 @@ public class SmoothMovement : MonoBehaviour
             {
                 if (facingLeft == true)
                 {
-                    GetComponent<Renderer>().material.Sprite = StillLeftSword;
+                    spriteRender.sprite = StillLeftSword;
                 }
                 if (facingRight == true)
                 {
-                    GetComponent<Renderer>().material.mainTexture = StillRightSword;
+                    spriteRender.sprite = StillRightSword;
                 }
                 if (facingUp == true)
                 {
-                    GetComponent<Renderer>().material.mainTexture = StillUpSword;
+                    spriteRender.sprite = StillUpSword;
                 }
                 if (facingDown == true)
                 {
-                    GetComponent<Renderer>().material.mainTexture = StillDownSword;
+                    spriteRender.sprite = StillDownSword;
                 }
             }            
         }
