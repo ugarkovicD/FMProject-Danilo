@@ -86,7 +86,8 @@ public class SmoothMovement : MonoBehaviour
         MaxSpeed = 7;
         haveSpace = true;
         speed = MaxSpeed;
-        speedSlowed = 4;      
+        speedSlowed = 4;
+        slowed = false;
     }
     // Update is called once per frame
     void Update()
@@ -175,7 +176,7 @@ public class SmoothMovement : MonoBehaviour
             facingUp = false;
             facingLeft = false;
             facingRight = true;
-            AnimationOn = true;
+            //AnimationOn = true;
             walkingRight = true;
         }
         if (Input.GetKey(KeyCode.A))
@@ -184,9 +185,9 @@ public class SmoothMovement : MonoBehaviour
             facingUp = false;
             facingLeft = true;
             facingRight = false;
-            AnimationOn = true;
+            //AnimationOn = true;
             walkingLeft = true;
-            GetComponent<Renderer>().material.mainTexture = WalkingLeftSword;
+            //GetComponent<Renderer>().material.mainTexture = WalkingLeftSword;
         }
         if (Input.GetKey(KeyCode.W))
         {           
@@ -194,9 +195,9 @@ public class SmoothMovement : MonoBehaviour
             facingUp = true;
             facingLeft = false;
             facingRight = false;
-            AnimationOn = true;
+            //AnimationOn = true;
             walkingUp = true;
-            GetComponent<Renderer>().material.mainTexture = WalkingUpSword;
+            //GetComponent<Renderer>().material.mainTexture = WalkingUpSword;
         }
         if (Input.GetKeyDown(KeyCode.S))
         {
@@ -204,9 +205,9 @@ public class SmoothMovement : MonoBehaviour
             facingLeft = false;
             facingRight = false;
             facingDown = true;
-            AnimationOn = true;
+            //AnimationOn = true;
             walkingDown = true;
-            GetComponent<Renderer>().material.mainTexture = WalkingDownSword;
+            //GetComponent<Renderer>().material.mainTexture = WalkingDownSword;
         }
         if (walkingRight == true)
         {
@@ -251,7 +252,14 @@ public class SmoothMovement : MonoBehaviour
         if (collision.name == "DamageItemUPG(Clone)")
         {
             Destroy(collision.gameObject);
-            characterCombat.attackDamage += 10;
+            if (characterCombat.attackDamage == 20)
+            {
+                characterCombat.attackDamage = 30;
+            }
+            if (characterCombat.attackDamage == 30)
+            {
+                characterCombat.attackDamage = 40;
+            }
         }
         //speed
         if (collision.name == "SpeedItemUPG(Clone)")

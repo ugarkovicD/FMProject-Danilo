@@ -15,20 +15,48 @@ public class characterCombat : MonoBehaviour
     private float timebtwHits;
     private float startTimebtwHits = 0.25f;
     private float startTimebtwHitsHeavy = 0.6f;
-    public ParticleSystem damaged3;
-    public ParticleSystem damaged1;
+    public static bool Damage20;
+    public static bool Damage30;
+    public static bool Damage40;
     
     
     // Start is called before the first frame update
     void Start()
     {
+        Damage20 = true;
         timebtwHits = startTimebtwHits;
     }
 
     // Update is called once per frame
     void Update()
     {
-
+        if (Damage20 == true)
+        {
+            Damage30 = false;
+            Damage40 = false;
+        }
+        if (Damage30 == true)
+        {
+            Damage20 = false;
+            Damage40 = false;
+        }
+        if (Damage40 == true)
+        {
+            Damage20 = false;
+            Damage30 = false;
+        }
+        if (attackDamage == 20)
+        {
+            Damage20 = true;
+        }
+        if (attackDamage == 30)
+        {
+            Damage30 = true;
+        }
+        if (attackDamage == 40)
+        {
+            Damage40 = true;
+        }
         //Attack
         if (SmoothMovement.facingDown == true)
         {
@@ -127,7 +155,6 @@ public class characterCombat : MonoBehaviour
 
             Debug.Log("we hit" + enemy.name +"kurac");
             }
-            damaged1.Play();
         }
     }
     void AttackLeft()
@@ -154,7 +181,6 @@ public class characterCombat : MonoBehaviour
 
                 Debug.Log("we hit" + enemy.name + "kurac");
             }
-            damaged1.Play();
         }
     }
     void AttackUp()
@@ -181,7 +207,6 @@ public class characterCombat : MonoBehaviour
 
                 Debug.Log("we hit" + enemy.name + "kurac");
             }
-            damaged1.Play();
         }
     }
     void AttackDown()
@@ -195,20 +220,19 @@ public class characterCombat : MonoBehaviour
             if (enemy.CompareTag("MeleeEnemy"))
             {
                 enemy.GetComponent<Enemy>().TakeDamage(attackDamage);
-                Debug.Log("we hit" + enemy.name + "kurac");
+                Debug.Log("we hit" + enemy.name + attackDamage);
             }
             if (enemy.CompareTag("RangedEnemy"))
             {
                 enemy.GetComponent<RangedEnemy>().TakeDamage(attackDamage);
-                Debug.Log("we hit" + enemy.name + "kurac");
+                Debug.Log("we hit" + enemy.name + attackDamage);
             }
             if (enemy.CompareTag("BomberEnemy"))
             {
                 enemy.GetComponent<BomberEnemy>().TakeDamage(attackDamage);
 
-                Debug.Log("we hit" + enemy.name + "kurac");
+                Debug.Log("we hit" + enemy.name + attackDamage);
             }
-            damaged1.Play();
         }
     }
     void HeavyAttack()
@@ -221,7 +245,6 @@ public class characterCombat : MonoBehaviour
         {
             enemy.GetComponent<RangedEnemy>().TakeDamage(HeavyAttackDamage);
             Debug.Log("we hard hit" + enemy.name + 3 +"damage");
-            damaged3.Play();
         }
     }
     void HeavyAttackLeft()
@@ -234,7 +257,6 @@ public class characterCombat : MonoBehaviour
         {
             enemy.GetComponent<RangedEnemy>().TakeDamage(HeavyAttackDamage);
             Debug.Log("we hard hit" + enemy.name + 3 + "damage");
-            damaged3.Play();
         }
     }
     private void OnDrawGizmosSelected()

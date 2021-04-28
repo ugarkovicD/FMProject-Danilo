@@ -60,7 +60,7 @@ public class RandomEnemySpawner : MonoBehaviour
             }
             Spawned = true;
             SpawnWhenWalkPortal = false;
-            if (numberToSpawn <= 7)
+            if (numberToSpawn <=5)
             {
                 numberToSpawn += 1;
             }
