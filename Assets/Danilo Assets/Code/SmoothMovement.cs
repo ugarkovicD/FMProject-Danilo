@@ -75,11 +75,13 @@ public class SmoothMovement : MonoBehaviour
     {
         //animation
         totalCells = colCount * rowCount;
+        AnimationOn = false;
+        HoldingSword = true;
 
         MaxSpeed = 7;
         haveSpace = true;
         speed = MaxSpeed;
-        speedSlowed = 4;       
+        speedSlowed = 4;      
     }
     // Update is called once per frame
     void Update()
@@ -109,9 +111,8 @@ public class SmoothMovement : MonoBehaviour
                 {
                     spriteRender.sprite = StillDownSword;
                 }
-            }            
-        }
-        
+            }
+        }                
         //random
         TeleportsAndRooms = GameObject.FindGameObjectsWithTag("Room");
         cameraObject.transform.position = new Vector3(transform.position.x, transform.position.y, cameraObject.transform.position.z);
