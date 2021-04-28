@@ -303,3 +303,4 @@ Received Import Request.
 Start importing Assets/Danilo Assets/Scenes/health bar stuff/minus 10.png using Guid(3273d6b5dfb62f54d8a462f3f4bd93a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9c71fd355a23fa7441446411bbcdaa34') in 0.010147 seconds
   Import took 0.012801 seconds .
 
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
