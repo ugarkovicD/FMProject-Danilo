@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class SmoothMovement : MonoBehaviour
 {
+    //Level Position change
     public Transform Level1Place;
     public Transform Level2Place;
     public Transform Level3Place;
@@ -11,20 +12,19 @@ public class SmoothMovement : MonoBehaviour
     public bool Spawnedlvl2;
     public bool Spawnedlvl3;
     public bool Spawnedlvl31;
-
+    //Movement + random
     public Camera cameraObject;
     public float MaxSpeed;
     public static float speed = 7;
     public float distance = 1;
-    public static bool facingUp;
-    public static bool facingDown;
-    public static bool facingRight;
-    public static bool facingLeft;
     public float distanceDash = 1;
     public int speedDash = 300;
     public bool dashing;
     public float dashTimer;
-    public bool ArivedOnTarget;
+    public static bool facingUp;
+    public static bool facingDown;
+    public static bool facingRight;
+    public static bool facingLeft;
     //Passive items and Notches for item ammount
     public bool haveSpace;
     public int NotchesAmmount;
@@ -33,47 +33,83 @@ public class SmoothMovement : MonoBehaviour
     public static float SlowedTimer = 0;
     public static bool slowed;
     public static float speedSlowed;
-
+    //Reset level
     private GameObject[] TeleportsAndRooms;
+    //Sprites with sword, bow and walking
+    public Texture WalkingRightSword;
+    public Texture WalkingLeftSword;
+    public Texture WalkingUpSword;
+    public Texture WalkingDownSword;
+    //Sprites with Bow
+    public Texture WalkingRightBow;
+    public Texture WalkingLeftBow;
+    public Texture WalkingUpBow;
+    public Texture WalkingDownBow;
+    //Sprites stationary
+    public Sprite StillRightBow;
+    public Sprite StillLeftBow;
+    public Sprite StillUpBow;
+    public Sprite StillDownBow;
+    public Sprite StillRightSword;
+    public Sprite StillLeftSword;
+    public Sprite StillUpSword;
+    public Sprite StillDownSword;
+    //Set Sprites when moving
+    public bool AnimationOn;
+    public int colCount;
+    public int rowCount;
+    public int FPS = 10;
+    public int rowNumber = 0;
+    public int colNumber = 0;
+    public int totalCells;
+    private Vector2 offset;
+    //checking for weapon holding
+    public bool HoldingSword;
+    public bool HoldingBow;
+    public bool HoldingMinigun;
+
 
     void Start()
     {
+        //animation
+        totalCells = colCount * rowCount;
+
         MaxSpeed = 7;
         haveSpace = true;
         speed = MaxSpeed;
-        speedSlowed = 4;
-        if (RoomGeneration.rand == 0)
-        {
-            Spawnedlvl2 = true;
-        }
-        if (RoomGeneration.rand == 1)
-        {
-            Spawnedlvl3 = true;
-        }
-        if (RoomGeneration.rand == 2)
-        {
-            Spawnedlvl31 = true;
-        }
-        if (RoomGeneration.rand == 3)
-        {
-            Spawnedlvl1 = true;
-        }
-        if (Spawnedlvl1 == true)
-        {
-            Invoke("SpawnRoom1", 0.1f);
-        }
-        if (Spawnedlvl2 == true)
-        {
-            Invoke("SpawnRoom2", 0.1f);
-        }
-        if (Spawnedlvl3 == true)
-        {
-            SpawnRoom3();
-        }
+        speedSlowed = 4;       
     }
     // Update is called once per frame
     void Update()
     {
+        //Animation
+        if (AnimationOn == true)
+        {
+            SetSpriteAnimation(colCount, rowCount, rowNumber, colNumber, totalCells, FPS);
+        }
+        if (AnimationOn == false)
+        {
+            if (HoldingSword == true)
+            {
+                if (facingLeft == true)
+                {
+                    GetComponent<Renderer>().material.Sprite = StillLeftSword;
+                }
+                if (facingRight == true)
+                {
+                    GetComponent<Renderer>().material.mainTexture = StillRightSword;
+                }
+                if (facingUp == true)
+                {
+                    GetComponent<Renderer>().material.mainTexture = StillUpSword;
+                }
+                if (facingDown == true)
+                {
+                    GetComponent<Renderer>().material.mainTexture = StillDownSword;
+                }
+            }            
+        }
+        
         //random
         TeleportsAndRooms = GameObject.FindGameObjectsWithTag("Room");
         cameraObject.transform.position = new Vector3(transform.position.x, transform.position.y, cameraObject.transform.position.z);
@@ -160,37 +196,6 @@ public class SmoothMovement : MonoBehaviour
                 facingDown = true;
             }
         }
-        //dashing
-        dashTimer -= 1 * Time.deltaTime;
-
-        if (dashTimer <= 0)
-        {
-            if (Input.GetKeyDown(KeyCode.LeftShift))
-            {
-                dashTimer = 4;
-                dashing = true;
-                if (facingDown == true)
-                {
-                    transform.position = new Vector2(transform.position.x, transform.position.y - distanceDash * speedDash * Time.deltaTime);
-                }
-                if (facingUp == true)
-                {
-                    transform.position = new Vector2(transform.position.x, transform.position.y + distanceDash * speedDash *Time.deltaTime);
-                }
-                if (facingRight == true)
-                {
-                    transform.position = new Vector2(transform.position.x + distanceDash * speedDash * Time.deltaTime, transform.position.y);
-                }
-                if (facingLeft == true)
-                {
-                    transform.position = new Vector2(transform.position.x - distanceDash * speedDash * Time.deltaTime, transform.position.y);
-                }
-            }
-        }
-        if (Input.GetKeyUp(KeyCode.LeftShift))
-        {
-            dashing = false;
-        }
     }
     void OnTriggerEnter2D(Collider2D collision)
     {
@@ -204,8 +209,8 @@ public class SmoothMovement : MonoBehaviour
         if (collision.name == "SpeedItemUPG(Clone)")
         {
             Destroy(collision.gameObject);
-            MaxSpeed += 1.2f;
-            speedSlowed += 1;
+            MaxSpeed += 0.3f;
+            speedSlowed += 0.2f;
         }
         //mana
         if (collision.name == "ManaItemUPG(Clone)")
@@ -257,5 +262,27 @@ public class SmoothMovement : MonoBehaviour
         transform.position = Level3Place.position;
         Spawnedlvl31 = false;
         RoomGeneration.rand = 8;
+    }
+    public void SetSpriteAnimation(int colCount, int rowCount, int rowNumber, int colNumber, int totalCells, int fps)
+    {
+        // Calculate index
+        int index = (int)(Time.time * fps);
+        // Repeat when exhausting all cells
+        index = index % totalCells;
+        // Size of every cell
+        float sizeX = 1.0f / colCount;
+
+        float sizeY = 1.0f / rowCount;
+        Vector2 size = new Vector2(sizeX, sizeY);
+        // split into horizontal and vertical index
+        var uIndex = index % colCount;
+        var vIndex = index / colCount;
+        // build offset
+        float offsetX = (uIndex + colNumber) * size.x;
+        float offsetY = (1.0f - size.y) - (vIndex + rowNumber) * size.y;
+        Vector2 offset = new Vector2(offsetX, offsetY);
+        GetComponent<Renderer>().material.SetTextureOffset("_MainTex", offset);
+        GetComponent<Renderer>().material.SetTextureScale("_MainTex", size);
+    
     }
 }
