@@ -11,19 +11,19 @@ C:\Program Files\Unity\Hub\Editor\2020.2.7f1\Editor\Unity.exe
 -name
 AssetImportWorker0
 -projectPath
-C:/eryne/fmp/FMProject-Danilo
+D:/eryne/recent/FMProject-Danilo
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-50365
-Successfully changed project path to: C:/eryne/fmp/FMProject-Danilo
-C:/eryne/fmp/FMProject-Danilo
+50150
+Successfully changed project path to: D:/eryne/recent/FMProject-Danilo
+D:/eryne/recent/FMProject-Danilo
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 33.09 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 33.51 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.2.7f1 (c53830e277f1)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.2.7f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path C:/eryne/fmp/FMProject-Danilo/Assets
+[Subsystems] Discovering subsystems at path D:/eryne/recent/FMProject-Danilo/Assets
 GfxDevice: creating device client; threaded=0
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
@@ -35,272 +35,439 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.2.7f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.2.7f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.2.7f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56932
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56368
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.2.7f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.001107 seconds.
+Registered in 0.001151 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 30.45 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 32.35 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.942 seconds
+- Completed reload, in  0.964 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.000951 seconds.
+Registered in 0.001049 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 32.12 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 32.83 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.816 seconds
+- Completed reload, in  0.849 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
-Refreshing native plugins compatible for Editor in 0.41 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 0.31 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 1834 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 85.3 MB.
+System memory in use before: 85.4 MB.
 System memory in use after: 85.4 MB.
 
-Unloading 19 unused Assets to reduce memory usage. Loaded Objects now: 2281.
-Total: 1.767100 ms (FindLiveObjects: 0.194400 ms CreateObjectMapping: 0.077200 ms MarkObjects: 1.437900 ms  DeleteObjects: 0.056700 ms)
+Unloading 19 unused Assets to reduce memory usage. Loaded Objects now: 2282.
+Total: 1.886000 ms (FindLiveObjects: 0.190800 ms CreateObjectMapping: 0.079700 ms MarkObjects: 1.545500 ms  DeleteObjects: 0.069000 ms)
 
 ========================================================================
 Received Import Request.
   path: Assets/Danilo Assets/Bullet.prefab
   artifactKey: Guid(ef500eeda47186c48be96bf034b30b5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Danilo Assets/Bullet.prefab using Guid(ef500eeda47186c48be96bf034b30b5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '83c8ce4152624e85223b214f8d5d6220') in 0.101466 seconds
-  Import took 0.105481 seconds .
+Start importing Assets/Danilo Assets/Bullet.prefab using Guid(ef500eeda47186c48be96bf034b30b5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2614b54e7f3061bc77541ab94f358845') in 0.105140 seconds
+  Import took 0.111767 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000224 seconds.
+  Time since last request: 0.000218 seconds.
   path: Assets/Danilo Assets/TeleportPrefab.prefab
   artifactKey: Guid(c2a250a05beabc144907b1f1918804ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Danilo Assets/TeleportPrefab.prefab using Guid(c2a250a05beabc144907b1f1918804ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1db67bffe53e6468d3edb2f8a298f864') in 0.010559 seconds
-  Import took 0.013496 seconds .
+Start importing Assets/Danilo Assets/TeleportPrefab.prefab using Guid(c2a250a05beabc144907b1f1918804ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1e426de6cc72ef3e798237b8cec6cfa0') in 0.010644 seconds
+  Import took 0.013161 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000205 seconds.
+  Time since last request: 0.000222 seconds.
   path: Assets/Danilo Assets/BombProjectile.prefab
   artifactKey: Guid(e113185fdfde6ef49932e1c5c8d315c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Danilo Assets/BombProjectile.prefab using Guid(e113185fdfde6ef49932e1c5c8d315c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '47a62647bfa01cdf69d76cff53be6a9b') in 0.095544 seconds
-  Import took 0.098207 seconds .
+Start importing Assets/Danilo Assets/BombProjectile.prefab using Guid(e113185fdfde6ef49932e1c5c8d315c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fcf91bd445cc023eaf7dca7a73e6f0a2') in 0.097398 seconds
+  Import took 0.100053 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000228 seconds.
+  Time since last request: 0.000186 seconds.
   path: Assets/Danilo Assets/da2plgi-c8b8edcc-3cdc-432c-b2bf-02c7d72f5afb.gif
   artifactKey: Guid(93d888eaf76f628499bd86b2a2cf3b9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Danilo Assets/da2plgi-c8b8edcc-3cdc-432c-b2bf-02c7d72f5afb.gif using Guid(93d888eaf76f628499bd86b2a2cf3b9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0da099ff82572085550e0e9d8c3651fd') in 0.133605 seconds
-  Import took 0.136145 seconds .
+Start importing Assets/Danilo Assets/da2plgi-c8b8edcc-3cdc-432c-b2bf-02c7d72f5afb.gif using Guid(93d888eaf76f628499bd86b2a2cf3b9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '298c3355d4c2d1fc62219bac539c536a') in 0.035611 seconds
+  Import took 0.038137 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 3.603989 seconds.
+  Time since last request: 1.363807 seconds.
   path: Assets/Danilo Assets/Scenes
   artifactKey: Guid(1009d4f5c4c087d4e971771b2b409428) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Danilo Assets/Scenes using Guid(1009d4f5c4c087d4e971771b2b409428) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4997639220c05067efe0dad83296fd68') in 0.004143 seconds
-  Import took 0.006774 seconds .
+Start importing Assets/Danilo Assets/Scenes using Guid(1009d4f5c4c087d4e971771b2b409428) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4997639220c05067efe0dad83296fd68') in 0.005807 seconds
+  Import took 0.008982 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.008269 seconds.
+  Time since last request: 0.000976 seconds.
   path: Assets/Danilo Assets/Scenes
   artifactKey: Guid(1009d4f5c4c087d4e971771b2b409428) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Danilo Assets/Scenes using Guid(1009d4f5c4c087d4e971771b2b409428) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4997639220c05067efe0dad83296fd68') in 0.003955 seconds
-  Import took 0.006629 seconds .
+Start importing Assets/Danilo Assets/Scenes using Guid(1009d4f5c4c087d4e971771b2b409428) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4997639220c05067efe0dad83296fd68') in 0.003916 seconds
+  Import took 0.007093 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 1.233293 seconds.
-  path: Assets/Danilo Assets/Scenes/TestScene.unity
-  artifactKey: Guid(2cda990e2423bbf4892e6590ba056729) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Danilo Assets/Scenes/TestScene.unity using Guid(2cda990e2423bbf4892e6590ba056729) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7a9296d108daef1f0ec3b284f62db9fe') in 0.005614 seconds
-  Import took 0.008525 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 347.748037 seconds.
-  path: Assets/Danilo Assets/Scenes/full health.png
-  artifactKey: Guid(9a70bcf3d58823245b49340093ac12fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Danilo Assets/Scenes/full health.png using Guid(9a70bcf3d58823245b49340093ac12fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0e5f14e79e83c0ba7ea65d7f509f911f') in 0.018838 seconds
-  Import took 0.022093 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 17.956176 seconds.
+  Time since last request: 1.243099 seconds.
   path: Assets/Danilo Assets/Scenes/health bar stuff
   artifactKey: Guid(494d61ff06450dd458db57240b27902a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Danilo Assets/Scenes/health bar stuff using Guid(494d61ff06450dd458db57240b27902a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '30096f2b3731b907001990ff5f7a93a7') in 0.005400 seconds
-  Import took 0.007976 seconds .
+Start importing Assets/Danilo Assets/Scenes/health bar stuff using Guid(494d61ff06450dd458db57240b27902a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b8f0e00c4645189c8864265671644a63') in 0.004649 seconds
+  Import took 0.007242 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.084657 seconds.
+  path: Assets/Danilo Assets/Scenes/health bar stuff/dead.png
+  artifactKey: Guid(befe3ef65a8745e48bec2034b8ba1af8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Danilo Assets/Scenes/health bar stuff/dead.png using Guid(befe3ef65a8745e48bec2034b8ba1af8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2146ba1bcb8323ae4516e205e08d055d') in 0.015339 seconds
+  Import took 0.018180 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000248 seconds.
+  path: Assets/Danilo Assets/Scenes/health bar stuff/full health.png
+  artifactKey: Guid(9a70bcf3d58823245b49340093ac12fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Danilo Assets/Scenes/health bar stuff/full health.png using Guid(9a70bcf3d58823245b49340093ac12fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b2b803e90e8cb50774c1ee65e6948fee') in 0.012770 seconds
+  Import took 0.015612 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000203 seconds.
+  path: Assets/Danilo Assets/Scenes/health bar stuff/minus 40.png
+  artifactKey: Guid(d8c9fabc21cb0c7478600b512aaa189a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Danilo Assets/Scenes/health bar stuff/minus 40.png using Guid(d8c9fabc21cb0c7478600b512aaa189a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c7096e4db6ebe47dde83c4f393287ab9') in 0.012152 seconds
+  Import took 0.015155 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000273 seconds.
+  path: Assets/Danilo Assets/Scenes/health bar stuff/minus 50.png
+  artifactKey: Guid(57e9aae5b0544ce47b4cdbf762a55ff9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Danilo Assets/Scenes/health bar stuff/minus 50.png using Guid(57e9aae5b0544ce47b4cdbf762a55ff9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '829093b2e99063d729133e193afc8949') in 0.012783 seconds
+  Import took 0.015601 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000236 seconds.
+  path: Assets/Danilo Assets/Scenes/health bar stuff/minus 80.png
+  artifactKey: Guid(2e8652738727d844e98e889f1e55de29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Danilo Assets/Scenes/health bar stuff/minus 80.png using Guid(2e8652738727d844e98e889f1e55de29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b1459716c29a58a8cb35d7100b6686bb') in 0.012179 seconds
+  Import took 0.014922 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000186 seconds.
+  path: Assets/Danilo Assets/Scenes/health bar stuff/minus 20.png
+  artifactKey: Guid(019af57d40311734db4c70e55a8c9977) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Danilo Assets/Scenes/health bar stuff/minus 20.png using Guid(019af57d40311734db4c70e55a8c9977) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '81f641ade394ed218cc8bb271f6d54b5') in 0.013412 seconds
+  Import took 0.016032 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000209 seconds.
+  path: Assets/Danilo Assets/Scenes/health bar stuff/minus 30.png
+  artifactKey: Guid(bc705dca509ee2c4484e6dce60b4bece) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Danilo Assets/Scenes/health bar stuff/minus 30.png using Guid(bc705dca509ee2c4484e6dce60b4bece) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1e2a636ce5712749b02aebae2029d011') in 0.013515 seconds
+  Import took 0.016186 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000169 seconds.
+  path: Assets/Danilo Assets/Scenes/health bar stuff/minus 70.png
+  artifactKey: Guid(8f0a5e1dd0d8fa34092d389d969d02ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Danilo Assets/Scenes/health bar stuff/minus 70.png using Guid(8f0a5e1dd0d8fa34092d389d969d02ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ce98157f17bbd3c163441f6098855e8e') in 0.015030 seconds
+  Import took 0.017676 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000194 seconds.
+  path: Assets/Danilo Assets/Scenes/health bar stuff/minus 60.png
+  artifactKey: Guid(9555fec418f612040abd8ee6d663ce45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Danilo Assets/Scenes/health bar stuff/minus 60.png using Guid(9555fec418f612040abd8ee6d663ce45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e4aa09044711512723989cc2667368f2') in 0.011364 seconds
+  Import took 0.013987 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000186 seconds.
+  path: Assets/Danilo Assets/Scenes/health bar stuff/minus 10.png
+  artifactKey: Guid(3273d6b5dfb62f54d8a462f3f4bd93a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Danilo Assets/Scenes/health bar stuff/minus 10.png using Guid(3273d6b5dfb62f54d8a462f3f4bd93a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b1e9d5fbd67694ede031abb397b3ac4f') in 0.013623 seconds
+  Import took 0.016297 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.003171 seconds.
+  path: Assets/Danilo Assets/Scenes/health bar stuff/minus 10.png
+  artifactKey: Guid(3273d6b5dfb62f54d8a462f3f4bd93a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Danilo Assets/Scenes/health bar stuff/minus 10.png using Guid(3273d6b5dfb62f54d8a462f3f4bd93a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b1e9d5fbd67694ede031abb397b3ac4f') in 0.009828 seconds
+  Import took 0.012579 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 22.881028 seconds.
+  path: Assets/Danilo Assets/Scenes/health bar stuff/minus 60.png
+  artifactKey: Guid(9555fec418f612040abd8ee6d663ce45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Danilo Assets/Scenes/health bar stuff/minus 60.png using Guid(9555fec418f612040abd8ee6d663ce45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '579ef24ad27b4beb387baa50433af18e') in 0.012309 seconds
+  Import took 0.015210 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000187 seconds.
+  path: Assets/Danilo Assets/Scenes/health bar stuff/minus 80.png
+  artifactKey: Guid(2e8652738727d844e98e889f1e55de29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Danilo Assets/Scenes/health bar stuff/minus 80.png using Guid(2e8652738727d844e98e889f1e55de29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b3f292089617013e776d11f928747fbb') in 0.011244 seconds
+  Import took 0.014072 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000233 seconds.
+  path: Assets/Danilo Assets/Scenes/health bar stuff/minus 70.png
+  artifactKey: Guid(8f0a5e1dd0d8fa34092d389d969d02ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Danilo Assets/Scenes/health bar stuff/minus 70.png using Guid(8f0a5e1dd0d8fa34092d389d969d02ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '12b861291c5fb264199f8aef044fd867') in 0.010198 seconds
+  Import took 0.013187 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000253 seconds.
+  path: Assets/Danilo Assets/Scenes/health bar stuff/minus 90.png
+  artifactKey: Guid(a4f5bae99d0792e43b0bffbc32171775) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Danilo Assets/Scenes/health bar stuff/minus 90.png using Guid(a4f5bae99d0792e43b0bffbc32171775) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e0edf9d9bbfb1ce010cbdb564b8518c4') in 0.014174 seconds
+  Import took 0.017870 seconds .
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.000958 seconds.
+Registered in 0.001018 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.32 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 0.33 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.746 seconds
+- Completed reload, in  0.759 seconds
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.35 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 0.33 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 1824 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 88.1 MB.
-System memory in use after: 88.2 MB.
+System memory in use before: 88.2 MB.
+System memory in use after: 88.3 MB.
 
-Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 2298.
-Total: 1.720000 ms (FindLiveObjects: 0.146600 ms CreateObjectMapping: 0.054800 ms MarkObjects: 1.480900 ms  DeleteObjects: 0.036900 ms)
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 2299.
+Total: 1.828000 ms (FindLiveObjects: 0.161100 ms CreateObjectMapping: 0.060000 ms MarkObjects: 1.568300 ms  DeleteObjects: 0.037600 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001021 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.33 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.751 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.39 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1824 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 88.3 MB.
+System memory in use after: 88.4 MB.
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 2303.
+Total: 1.635600 ms (FindLiveObjects: 0.154100 ms CreateObjectMapping: 0.060700 ms MarkObjects: 1.403800 ms  DeleteObjects: 0.016100 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001027 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.34 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.755 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.37 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1824 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 88.3 MB.
+System memory in use after: 88.4 MB.
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 2307.
+Total: 1.816300 ms (FindLiveObjects: 0.192400 ms CreateObjectMapping: 0.072000 ms MarkObjects: 1.533700 ms  DeleteObjects: 0.017300 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001014 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.33 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.750 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.33 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1824 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 88.3 MB.
+System memory in use after: 88.4 MB.
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 2311.
+Total: 1.898700 ms (FindLiveObjects: 0.174700 ms CreateObjectMapping: 0.068700 ms MarkObjects: 1.636700 ms  DeleteObjects: 0.017800 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000989 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.37 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.750 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.43 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1824 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 88.3 MB.
+System memory in use after: 88.4 MB.
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 2315.
+Total: 1.831300 ms (FindLiveObjects: 0.203200 ms CreateObjectMapping: 0.066100 ms MarkObjects: 1.544800 ms  DeleteObjects: 0.016000 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000962 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.38 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.761 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.34 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1824 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 88.3 MB.
+System memory in use after: 88.4 MB.
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 2319.
+Total: 1.929600 ms (FindLiveObjects: 0.220000 ms CreateObjectMapping: 0.082700 ms MarkObjects: 1.609000 ms  DeleteObjects: 0.017000 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 520.192553 seconds.
-  path: Assets/Danilo Assets/Scenes/health bar stuff/minus 30.png
-  artifactKey: Guid(bc705dca509ee2c4484e6dce60b4bece) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Danilo Assets/Scenes/health bar stuff/minus 30.png using Guid(bc705dca509ee2c4484e6dce60b4bece) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a9ba11ae07065b9bfd8acb8cbeb03cd6') in 0.049449 seconds
-  Import took 0.052557 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.510321 seconds.
-  path: Assets/Danilo Assets/Scenes/health bar stuff/minus 40.png
-  artifactKey: Guid(d8c9fabc21cb0c7478600b512aaa189a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Danilo Assets/Scenes/health bar stuff/minus 40.png using Guid(d8c9fabc21cb0c7478600b512aaa189a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '06bd1f53fd1dba966fcbb82ca0135c18') in 0.012437 seconds
-  Import took 0.015447 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 4.852210 seconds.
-  path: Assets/Danilo Assets/Scenes/health bar stuff/minus 50.png
-  artifactKey: Guid(57e9aae5b0544ce47b4cdbf762a55ff9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Danilo Assets/Scenes/health bar stuff/minus 50.png using Guid(57e9aae5b0544ce47b4cdbf762a55ff9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f9a7e4b1f15e7ff37fd53788848c2bf4') in 0.012183 seconds
-  Import took 0.015119 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 5.773401 seconds.
-  path: Assets/Danilo Assets/Scenes/health bar stuff/minus 60.png
-  artifactKey: Guid(9555fec418f612040abd8ee6d663ce45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Danilo Assets/Scenes/health bar stuff/minus 60.png using Guid(9555fec418f612040abd8ee6d663ce45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f8b81ab45d516bd4919bc67678d7dea5') in 0.014019 seconds
-  Import took 0.017207 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 9.163666 seconds.
-  path: Assets/Danilo Assets/Scenes/health bar stuff/minus 70.png
-  artifactKey: Guid(8f0a5e1dd0d8fa34092d389d969d02ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Danilo Assets/Scenes/health bar stuff/minus 70.png using Guid(8f0a5e1dd0d8fa34092d389d969d02ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00c6bb0e808231a2cbbf35b88246c029') in 0.011203 seconds
-  Import took 0.014080 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 9.829087 seconds.
+  Time since last request: 331.224374 seconds.
   path: Assets/Danilo Assets/Scenes/health bar stuff/minus 80.png
   artifactKey: Guid(2e8652738727d844e98e889f1e55de29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Danilo Assets/Scenes/health bar stuff/minus 80.png using Guid(2e8652738727d844e98e889f1e55de29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '65242399071c7783043eee09722a3314') in 0.013218 seconds
-  Import took 0.016025 seconds .
+Start importing Assets/Danilo Assets/Scenes/health bar stuff/minus 80.png using Guid(2e8652738727d844e98e889f1e55de29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '24a43a69aa4250625de4c4ea6538d98b') in 0.046529 seconds
+  Import took 0.049479 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001038 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.33 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.742 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.36 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1824 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 88.3 MB.
+System memory in use after: 88.4 MB.
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 2324.
+Total: 3.352900 ms (FindLiveObjects: 0.331800 ms CreateObjectMapping: 0.155600 ms MarkObjects: 2.813200 ms  DeleteObjects: 0.050700 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 12.500150 seconds.
-  path: Assets/Danilo Assets/Scenes/health bar stuff/dead.png
-  artifactKey: Guid(befe3ef65a8745e48bec2034b8ba1af8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Danilo Assets/Scenes/health bar stuff/dead.png using Guid(befe3ef65a8745e48bec2034b8ba1af8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '911c577d6a431901d16ed4a299f25fd7') in 0.015823 seconds
-  Import took 0.019013 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 300.167167 seconds.
-  path: Assets/Danilo Assets/Scenes/health bar stuff/dead.png
-  artifactKey: Guid(befe3ef65a8745e48bec2034b8ba1af8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Danilo Assets/Scenes/health bar stuff/dead.png using Guid(befe3ef65a8745e48bec2034b8ba1af8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eed384454836926b4c36760a9b7a8984') in 0.016210 seconds
-  Import took 0.019348 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000187 seconds.
-  path: Assets/Danilo Assets/Scenes/health bar stuff/full health.png
-  artifactKey: Guid(9a70bcf3d58823245b49340093ac12fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Danilo Assets/Scenes/health bar stuff/full health.png using Guid(9a70bcf3d58823245b49340093ac12fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2ed933612940429821d443a599c31af7') in 0.008323 seconds
-  Import took 0.010903 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000211 seconds.
-  path: Assets/Danilo Assets/Scenes/health bar stuff/minus 40.png
-  artifactKey: Guid(d8c9fabc21cb0c7478600b512aaa189a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Danilo Assets/Scenes/health bar stuff/minus 40.png using Guid(d8c9fabc21cb0c7478600b512aaa189a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00461574eb39e33451b80c4de0b8f80a') in 0.008296 seconds
-  Import took 0.010827 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000228 seconds.
-  path: Assets/Danilo Assets/Scenes/health bar stuff/minus 50.png
-  artifactKey: Guid(57e9aae5b0544ce47b4cdbf762a55ff9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Danilo Assets/Scenes/health bar stuff/minus 50.png using Guid(57e9aae5b0544ce47b4cdbf762a55ff9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '38b2cec8b22b11ab3db9186e2128f8d0') in 0.007865 seconds
-  Import took 0.010339 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000234 seconds.
-  path: Assets/Danilo Assets/Scenes/health bar stuff/minus 80.png
-  artifactKey: Guid(2e8652738727d844e98e889f1e55de29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Danilo Assets/Scenes/health bar stuff/minus 80.png using Guid(2e8652738727d844e98e889f1e55de29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '497733eb8602c124c5254a24f696540f') in 0.007740 seconds
-  Import took 0.010249 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000224 seconds.
-  path: Assets/Danilo Assets/Scenes/health bar stuff/minus 20.png
-  artifactKey: Guid(019af57d40311734db4c70e55a8c9977) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Danilo Assets/Scenes/health bar stuff/minus 20.png using Guid(019af57d40311734db4c70e55a8c9977) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '18a31d4ac48a89b1664fe2f8ef365aab') in 0.009490 seconds
-  Import took 0.012118 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000228 seconds.
-  path: Assets/Danilo Assets/Scenes/health bar stuff/minus 30.png
-  artifactKey: Guid(bc705dca509ee2c4484e6dce60b4bece) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Danilo Assets/Scenes/health bar stuff/minus 30.png using Guid(bc705dca509ee2c4484e6dce60b4bece) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd78a3e4cddc061e6559143abe4028984') in 0.010075 seconds
-  Import took 0.012722 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000270 seconds.
+  Time since last request: 185.039456 seconds.
   path: Assets/Danilo Assets/Scenes/health bar stuff/minus 70.png
   artifactKey: Guid(8f0a5e1dd0d8fa34092d389d969d02ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Danilo Assets/Scenes/health bar stuff/minus 70.png using Guid(8f0a5e1dd0d8fa34092d389d969d02ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dd6f2f0f87f86d104d5b196f8204b312') in 0.008895 seconds
-  Import took 0.011557 seconds .
+Start importing Assets/Danilo Assets/Scenes/health bar stuff/minus 70.png using Guid(8f0a5e1dd0d8fa34092d389d969d02ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '392051876b38eda883807f725555ee60') in 0.046335 seconds
+  Import took 0.049320 seconds .
 
 ========================================================================
-Received Import Request.
-  Time since last request: 0.000197 seconds.
-  path: Assets/Danilo Assets/Scenes/health bar stuff/minus 60.png
-  artifactKey: Guid(9555fec418f612040abd8ee6d663ce45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Danilo Assets/Scenes/health bar stuff/minus 60.png using Guid(9555fec418f612040abd8ee6d663ce45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '54fdb9c248ebdf3866a87496c3a1d97e') in 0.008997 seconds
-  Import took 0.011601 seconds .
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001068 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.37 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.839 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.32 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1824 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 88.3 MB.
+System memory in use after: 88.4 MB.
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 2329.
+Total: 4.915200 ms (FindLiveObjects: 0.417500 ms CreateObjectMapping: 0.198000 ms MarkObjects: 4.245700 ms  DeleteObjects: 0.050900 ms)
 
 ========================================================================
-Received Import Request.
-  Time since last request: 0.000165 seconds.
-  path: Assets/Danilo Assets/Scenes/health bar stuff/minus 10.png
-  artifactKey: Guid(3273d6b5dfb62f54d8a462f3f4bd93a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Danilo Assets/Scenes/health bar stuff/minus 10.png using Guid(3273d6b5dfb62f54d8a462f3f4bd93a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9c71fd355a23fa7441446411bbcdaa34') in 0.010147 seconds
-  Import took 0.012801 seconds .
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001141 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.33 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.754 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.32 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1824 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 88.3 MB.
+System memory in use after: 88.5 MB.
 
-AssetImportWorkerClient::OnTransportError - code=2 error=End of file
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 2333.
+Total: 1.966700 ms (FindLiveObjects: 0.181900 ms CreateObjectMapping: 0.067600 ms MarkObjects: 1.682100 ms  DeleteObjects: 0.033800 ms)
+
