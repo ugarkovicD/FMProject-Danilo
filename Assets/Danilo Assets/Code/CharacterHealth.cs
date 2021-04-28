@@ -32,13 +32,13 @@ public class CharacterHealth : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.R))
-        {
-            SceneManager.LoadScene("TestScene");
-        }
         if (currenthp >= maxHp)
         {
             currenthp = maxHp;
+        }
+        if (currenthp == 11)
+        {
+            healthImage.sprite = health10;
         }
         if (currenthp == 10)
         {

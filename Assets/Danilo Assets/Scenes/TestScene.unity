@@ -673,10 +673,8 @@ MonoBehaviour:
   numberToSpawn: 1
   Spawnpool:
   - {fileID: 3998270487766751367, guid: ef55283c7d9d25a4facb483c1ec7507c, type: 3}
-  - {fileID: 264480904775670938, guid: 626b2fd98291050448d331fd38691012, type: 3}
-  - {fileID: 1766764253255964764, guid: a90dd1785dac21b4ab2828cdaf51b0bf, type: 3}
   - {fileID: 3617336460691481597, guid: 1b9ba16bbdcbbbe4bb5c208a62fa63b8, type: 3}
-  - {fileID: 8052559587148224803, guid: a8048bad2e4a5a749a35d4476598b654, type: 3}
+  - {fileID: 1766764253255964764, guid: a90dd1785dac21b4ab2828cdaf51b0bf, type: 3}
   SpawnArea: {fileID: 2131677849}
 --- !u!4 &89611348
 Transform:

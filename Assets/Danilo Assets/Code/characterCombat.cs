@@ -23,6 +23,7 @@ public class characterCombat : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        attackDamage = 20;
         Damage20 = true;
         timebtwHits = startTimebtwHits;
     }

@@ -272,11 +272,11 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Use the Arrow Keys to move your player
+  m_Text: 'Use WASD to move your player
 
 
-    Use the Left Mouse Button
-    to attack'
+    To attack, approach the enemy and press
+    LMB'
 --- !u!222 &25354507
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -310,16 +310,16 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 201223842}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1493945049}
   m_RootOrder: 9
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -219, y: -60.325}
+  m_AnchoredPosition: {x: -242, y: -60}
   m_SizeDelta: {x: 69.1628, y: 100.15}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &201223844
@@ -394,7 +394,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -103.6929, y: -193}
+  m_AnchoredPosition: {x: -296, y: -189}
   m_SizeDelta: {x: 69.3858, y: 69.386}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &305714450
@@ -462,14 +462,14 @@ RectTransform:
   m_GameObject: {fileID: 388244710}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.1524, y: 1.1524, z: 1.1524}
   m_Children: []
   m_Father: {fileID: 1493945049}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -244.42213, y: -124.3882}
+  m_AnchoredPosition: {x: -249.7, y: -123.1}
   m_SizeDelta: {x: 69.1628, y: 48.377}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &388244712
@@ -664,14 +664,14 @@ RectTransform:
   m_GameObject: {fileID: 734608272}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.7264052, y: 0.898586, z: 0.7264052}
   m_Children: []
   m_Father: {fileID: 1493945049}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -265.18, y: 31.6673}
+  m_AnchoredPosition: {x: -243.3, y: 33}
   m_SizeDelta: {x: 69.1628, y: 115.6251}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &734608274
@@ -861,14 +861,14 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Red Enemies attack with Melee
+  m_Text: 'Red Enemies follow you and damage on impact
 
 
-    Blue Enemies attack from range and
-    slow you down
+    Blue Enemies attack
+    from range and slow you down
 
 
-    Green Enemies throw bombs'
+    Green Enemies throw bombs and deal 2 damage'
 --- !u!222 &1143699135
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1456,7 +1456,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -71.0862, y: -308.217}
+  m_AnchoredPosition: {x: -319, y: -308.217}
   m_SizeDelta: {x: 67.8328, y: 67.833}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1763110272
