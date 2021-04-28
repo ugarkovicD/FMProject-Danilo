@@ -6,6 +6,12 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Danilo Assets/Scenes/TestScene.unity
+    path: Assets/Scenes/HowToPlay.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/Mmenu.unity
+    guid: 3a5b84bf841476946b3e31eca14a1ad9
+  - enabled: 1
+    path: Assets/Scenes/TestScene.unity
+    guid: 4874055d47aade34ea220bc43149efb6
   m_configObjects: {}
