@@ -407,8 +407,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 572688695}
-  - component: {fileID: 572688694}
   - component: {fileID: 572688696}
+  - component: {fileID: 572688694}
   m_Layer: 0
   m_Name: SceneManager
   m_TagString: Untagged
@@ -425,7 +425,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 572688693}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e7a8c84ae9768df429ed0ba31266168c, type: 3}
+  m_Script: {fileID: 11500000, guid: a80c46baf45e2d04d969260ae05933e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   SceneName: HowToPlay
@@ -452,7 +452,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 572688693}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e7ac0c009800c264082b32078053df02, type: 3}
+  m_Script: {fileID: 11500000, guid: 7a298f71c3bd64d4cb51766d60810a5c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   SceneName: TestScene
@@ -960,7 +960,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 11500000, guid: 0ba9901074450554c9ee1cc3e940f977, type: 3}
+      - m_Target: {fileID: 11500000, guid: f93b030f7fe9112439bb2ee369b5cd57, type: 3}
         m_TargetAssemblyTypeName: 
         m_MethodName: 
         m_Mode: 1
@@ -1019,7 +1019,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1643590561}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0ba9901074450554c9ee1cc3e940f977, type: 3}
+  m_Script: {fileID: 11500000, guid: f93b030f7fe9112439bb2ee369b5cd57, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1727929871
