@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class SmoothMovement : MonoBehaviour
 {
@@ -75,6 +76,16 @@ public class SmoothMovement : MonoBehaviour
 
     public SpriteRenderer spriteRender;
 
+    //UI
+    public Text HPIncreasedText;
+    public Text DamageIncreasedText;
+    public Text SpeedIncreasedText;
+    public Image Panel;
+    public float PopupTextTimer = 3;
+    public bool HPTextYes;
+    public bool DamageTextYes;
+    public bool SpeedTextYes;
+    public bool PanelYes;
 
     void Start()
     {
@@ -88,10 +99,34 @@ public class SmoothMovement : MonoBehaviour
         speed = MaxSpeed;
         speedSlowed = 4;
         slowed = false;
+        Panel.enabled = false;
+        HPIncreasedText.enabled = false;
+        DamageIncreasedText.enabled = false;
+        SpeedIncreasedText.enabled = false;
     }
     // Update is called once per frame
     void Update()
     {
+        //UI
+        if (HPTextYes == true)
+        {
+            PopupTextTimer -= 1 * Time.deltaTime;
+        }
+        if (DamageTextYes == true)
+        {
+            PopupTextTimer -= 1 * Time.deltaTime;
+        }
+        if (SpeedTextYes == true) 
+        {
+            PopupTextTimer -= 1 * Time.deltaTime;
+        }
+        if (PopupTextTimer <= 0)
+        {
+            HPIncreasedText.enabled = false;
+            DamageIncreasedText.enabled = false;
+            SpeedIncreasedText.enabled = false;
+            Panel.enabled = false;
+        }
         //Animation
         if (AnimationOn == true)
         {
@@ -260,6 +295,11 @@ public class SmoothMovement : MonoBehaviour
             {
                 characterCombat.attackDamage = 40;
             }
+            DamageIncreasedText.enabled = true;
+            Panel.enabled = true;
+            PanelYes = true;
+            DamageTextYes = true;
+            PopupTextTimer = 3;
         }
         //speed
         if (collision.name == "SpeedItemUPG(Clone)")
@@ -267,6 +307,11 @@ public class SmoothMovement : MonoBehaviour
             Destroy(collision.gameObject);
             MaxSpeed += 0.3f;
             speedSlowed += 0.2f;
+            SpeedIncreasedText.enabled = true;
+            Panel.enabled = true;
+            SpeedTextYes = true;
+            PanelYes = true;
+            PopupTextTimer = 3;
         }
         //mana
         if (collision.name == "ManaItemUPG(Clone)")
@@ -282,6 +327,16 @@ public class SmoothMovement : MonoBehaviour
         if (collision.name == "ArmorItemUPG(Clone)")
         {
             Destroy(collision.gameObject);
+        }
+        if (collision.name == "HealthItemUPG(Clone)")
+        {
+            Destroy(collision.gameObject);
+            CharacterHealth.maxHp += 1;
+            Panel.enabled = true;
+            HPTextYes = true;
+            PanelYes = true;
+            HPIncreasedText.enabled = true;
+            PopupTextTimer = 3;
         }
         if (collision.name == "TeleportPrefab(Clone)")
         {            
