@@ -413,7 +413,6 @@ GameObject:
   - component: {fileID: 88390763}
   - component: {fileID: 88390765}
   - component: {fileID: 88390766}
-  - component: {fileID: 88390767}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -461,12 +460,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 270827b27a081354092459b5b420e4ee, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 04f3d779f8633634e8c110eb90e0a6db, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 2.2433333, y: 1.3177392}
+  m_Size: {x: 0.51666665, y: 1.2033334}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -552,10 +551,10 @@ MonoBehaviour:
   StillLeftBow: {fileID: 0}
   StillUpBow: {fileID: 0}
   StillDownBow: {fileID: 0}
-  StillRightSword: {fileID: 21300000, guid: c0a7ce56e03dfe6448470ebfad9bff50, type: 3}
-  StillLeftSword: {fileID: 21300000, guid: f8de082959d6f6345a21c79dc7e9d2ed, type: 3}
-  StillUpSword: {fileID: 21300000, guid: 76f3e5f6344462d43a19e2e42afd0261, type: 3}
-  StillDownSword: {fileID: 21300000, guid: 270827b27a081354092459b5b420e4ee, type: 3}
+  StillRightSword: {fileID: 21300000, guid: 95548e618f0f3b040a88edea1dd66991, type: 3}
+  StillLeftSword: {fileID: 21300000, guid: a3e6f1d38747df24489971ba2edef861, type: 3}
+  StillUpSword: {fileID: 21300000, guid: 07dafbf9dd4c0374bb7eb25e90ba27eb, type: 3}
+  StillDownSword: {fileID: 21300000, guid: 04f3d779f8633634e8c110eb90e0a6db, type: 3}
   AnimationOn: 0
   colCount: 1
   rowCount: 4
@@ -593,18 +592,18 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.01039198, y: 0.0034639835}
+  m_Offset: {x: -0.0062279403, y: 0.0034639835}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.7979073, y: 1.3349999}
-    newSize: {x: 2.2433333, y: 1.3177392}
+    oldSize: {x: 0.51666665, y: 1.2033334}
+    newSize: {x: 0.51666665, y: 1.2033334}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.5773917, y: 1.2286241}
+  m_Size: {x: 0.54415184, y: 1.2286241}
   m_EdgeRadius: 0
 --- !u!114 &88390765
 MonoBehaviour:
@@ -651,25 +650,6 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   HeavyAttackDamage: 3
---- !u!95 &88390767
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 88390759}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: fb3cfdfe0831faf4d82ff3f7c79d5c97, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &89611346
 GameObject:
   m_ObjectHideFlags: 0
