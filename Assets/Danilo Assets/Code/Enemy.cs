@@ -12,6 +12,14 @@ public class Enemy : MonoBehaviour
     public ParticleSystem damaged20P;
     public ParticleSystem damaged30P;
     public ParticleSystem damaged40P;
+    public SpriteRenderer SpriteRenderer;
+    public Sprite HealthFull;
+    public Sprite Health20;
+    public Sprite Health40;
+    public Sprite Health60;
+    public Sprite Health80;
+    public Sprite Dead;
+    public GameObject HealthBar;
     // Start is called before the first frame update
     void Start()
     {
@@ -22,7 +30,31 @@ public class Enemy : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        //Add Changes to enemy Health
+        if (currenthp == 100)
+        {
+            healthImage.sprite = HealthFull;
+        }
+        if (currenthp == 80)
+        {
+            healthImage.sprite = Health80;
+        }
+        if (currenthp == 60)
+        {
+            healthImage.sprite = Health60;
+        }
+        if (currenthp == 40)
+        {
+            healthImage.sprite = Health40;
+        }
+        if (currenthp == 20)
+        {
+            healthImage.sprite = Health20;
+        }
+        if (currenthp == 0)
+        {
+            healthImage.sprite = Dead;
+        }
         Vector3 direction = player.position - transform.position;
         direction.Normalize();
         movement = direction;
