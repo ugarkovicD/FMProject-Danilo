@@ -342,6 +342,7 @@ public class SmoothMovement : MonoBehaviour
         {            
             RoomGeneration.SpawnWhenWalkPortal = true;
             RandomEnemySpawner.SpawnWhenWalkPortal = true;
+            ItemSpawner.SpawnWhenWalkPortal = true;
             Destroy(collision.gameObject);
             foreach(GameObject r in TeleportsAndRooms)
             {

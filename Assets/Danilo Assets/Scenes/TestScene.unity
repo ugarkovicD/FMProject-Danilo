@@ -274,6 +274,8 @@ GameObject:
   - component: {fileID: 86449411}
   - component: {fileID: 86449410}
   - component: {fileID: 86449413}
+  - component: {fileID: 86449415}
+  - component: {fileID: 86449414}
   m_Layer: 6
   m_Name: Ranged Enemy
   m_TagString: RangedEnemy
@@ -343,7 +345,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: 753d950563603b6488e42b3e8970bf53, type: 3}
   m_Color: {r: 0.10432291, g: 0, b: 1, a: 1}
   m_FlipX: 0
@@ -398,6 +400,40 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 11.418493, y: 21.255655}
   m_EdgeRadius: 0
+--- !u!195 &86449414
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 86449409}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 7.8099995
+  m_Speed: 3.5
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 21.255653
+  m_BaseOffset: 0
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
+--- !u!114 &86449415
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 86449409}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b3f7556ab1c6ef4598af81dd96255c4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &88390759
 GameObject:
   m_ObjectHideFlags: 0
@@ -685,6 +721,7 @@ MonoBehaviour:
   - {fileID: 3617336460691481597, guid: 1b9ba16bbdcbbbe4bb5c208a62fa63b8, type: 3}
   - {fileID: 1766764253255964764, guid: a90dd1785dac21b4ab2828cdaf51b0bf, type: 3}
   SpawnArea: {fileID: 2131677849}
+  spawned: 0
 --- !u!4 &89611348
 Transform:
   m_ObjectHideFlags: 0
@@ -15584,6 +15621,8 @@ GameObject:
   - component: {fileID: 807217152}
   - component: {fileID: 807217151}
   - component: {fileID: 807217154}
+  - component: {fileID: 807217156}
+  - component: {fileID: 807217155}
   m_Layer: 6
   m_Name: Bomber Enemy
   m_TagString: BomberEnemy
@@ -15657,7 +15696,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: 3307c9422b432474b99cc4b4965ba9ec, type: 3}
   m_Color: {r: 0, g: 1, b: 0.19283295, a: 1}
   m_FlipX: 0
@@ -15712,6 +15751,40 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 12.053614, y: 17.536083}
   m_EdgeRadius: 0
+--- !u!195 &807217155
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 807217150}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 11.815812
+  m_Speed: 3.5
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 21.22
+  m_BaseOffset: 0
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
+--- !u!114 &807217156
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 807217150}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b3f7556ab1c6ef4598af81dd96255c4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &944879784
 GameObject:
   m_ObjectHideFlags: 0
@@ -35814,7 +35887,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: d2443bf4b562f454b96bbeb7d510085f, type: 3}
   m_Color: {r: 1, g: 0, b: 0, a: 1}
   m_FlipX: 0
@@ -35834,7 +35907,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1640943144}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 10, y: 2.49, z: 0}
+  m_LocalPosition: {x: 999999, y: 2.49, z: 0}
   m_LocalScale: {x: 0.06372926, y: 0.06372926, z: 0.06372926}
   m_Children:
   - {fileID: 290553972}
@@ -35892,7 +35965,7 @@ NavMeshAgent:
   m_AgentTypeID: 0
   m_Radius: 9.834999
   m_Speed: 3.5
-  m_Acceleration: 8
+  m_Acceleration: 5
   avoidancePriority: 50
   m_AngularSpeed: 120
   m_StoppingDistance: 0
