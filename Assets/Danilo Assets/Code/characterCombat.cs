@@ -32,7 +32,7 @@ public class characterCombat : MonoBehaviour
     {
         HaveAmmo = true;
         AmmoAmmount = 10;
-        holdingSword = true;
+        holdingSword = false;
         attackDamage = 20;
         Damage20 = true;
         timebtwHits = startTimebtwHits;
@@ -42,6 +42,7 @@ public class characterCombat : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        timebtwHits -= 1 * Time.deltaTime;
         if (Damage20 == true)
         {
             Damage30 = false;
@@ -83,9 +84,6 @@ public class characterCombat : MonoBehaviour
                     }
                 }
             }
-        }
-        if (holdingSword == true)
-        {
             if (SmoothMovement.facingUp == true)
             {
                 if (timebtwHits <= 0)
@@ -96,10 +94,7 @@ public class characterCombat : MonoBehaviour
                         timebtwHits = startTimebtwHits;
                     }
                 }
-            }
-        }
-        if (holdingSword == true)
-        {
+            }       
             if (SmoothMovement.facingRight == true)
             {
                 if (timebtwHits <= 0)
@@ -110,10 +105,7 @@ public class characterCombat : MonoBehaviour
                         timebtwHits = startTimebtwHits;
                     }
                 }
-            }
-        }
-        if (holdingSword == true)
-        {
+            }      
             if (SmoothMovement.facingLeft == true)
             {
                 if (timebtwHits <= 0)
@@ -125,6 +117,7 @@ public class characterCombat : MonoBehaviour
                     }
                 }
             }
+            holdingBow = false;
         }
         //Bow Attack
         if (holdingBow == true)
@@ -173,20 +166,22 @@ public class characterCombat : MonoBehaviour
             {
                 HaveAmmo = false;
                 ReloadTimer = 2;
-                ReloadTimer -= 1 * Time.deltaTime;
             }
             if (AmmoAmmount == 0)
             {
                 HaveAmmo = false;
-                ReloadTimer = 2;
-                ReloadTimer -= 1 * Time.deltaTime;
             }
             if (ReloadTimer <= 0)
             {
                 ReloadTimer = 2;
                 AmmoAmmount = 10;
-                HaveAmmo = true;
+                HaveAmmo = true;              
             }
+            if (HaveAmmo == false)
+            {
+                ReloadTimer -= 1 * Time.deltaTime;
+            }
+            holdingSword = false;
         }
     }
     void Attack()
@@ -214,6 +209,7 @@ public class characterCombat : MonoBehaviour
             Debug.Log("we hit" + enemy.name +"kurac");
             }
         }
+        startTimebtwHits = 0.25f;
     }
     void AttackLeft()
     {
@@ -288,7 +284,6 @@ public class characterCombat : MonoBehaviour
             if (enemy.CompareTag("BomberEnemy"))
             {
                 enemy.GetComponent<BomberEnemy>().TakeDamage(attackDamage);
-
                 Debug.Log("we hit" + enemy.name + attackDamage);
             }
         }
@@ -321,25 +316,29 @@ public class characterCombat : MonoBehaviour
     {
         GameObject Arrow = Instantiate(ArrowPrefab, AttackPoint.position, AttackPoint.rotation);
         Rigidbody2D rb = ArrowPrefab.GetComponent<Rigidbody2D>();
-        rb.AddForce(AttackPoint.up * 200);
+        rb.AddForce(AttackPoint.up * 2000);
+        AmmoAmmount -= 1;
     }
     public void BowLeft()
     {
         GameObject Arrow = Instantiate(ArrowPrefab, AttackPointLeft.position, AttackPointLeft.rotation);
         Rigidbody2D rb = ArrowPrefab.GetComponent<Rigidbody2D>();
-        rb.AddForce(AttackPointLeft.up * 200);
+        rb.AddForce(AttackPointLeft.up * 2000);
+        AmmoAmmount -= 1;
     }
     public void BowUp()
     {
         GameObject Arrow = Instantiate(ArrowPrefab, AttackPointUp.position, AttackPointUp.rotation);
         Rigidbody2D rb = ArrowPrefab.GetComponent<Rigidbody2D>();
-        rb.AddForce(AttackPointUp.up * 200);
+        rb.AddForce(AttackPointUp.up * 2000);
+        AmmoAmmount -= 1;
     }
     public void BowDown()
     {
         GameObject Arrow = Instantiate(ArrowPrefab, AttackPointDown.position, AttackPointDown.rotation);
         Rigidbody2D rb = ArrowPrefab.GetComponent<Rigidbody2D>();
-        rb.AddForce(AttackPointDown.up * 200);
+        rb.AddForce(AttackPointDown.up * 2000);
+        AmmoAmmount -= 1;
     }
     private void OnDrawGizmosSelected()
     {

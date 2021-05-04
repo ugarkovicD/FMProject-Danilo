@@ -45,6 +45,10 @@ public class Enemy : MonoBehaviour
             CharacterHealth.currenthp -= 1;
             Debug.Log("Health = " + CharacterHealth.currenthp);
         }
+        if (other.name == "arrow(Clone)")
+        {
+            Debug.Log("ArrowHit Melee");
+        }
     }
     public void TakeDamage(int Damage)
     {
