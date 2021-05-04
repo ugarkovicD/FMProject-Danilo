@@ -90,6 +90,8 @@ public class SmoothMovement : MonoBehaviour
     void Start()
     {
         //animation
+        colCount = 4;
+        rowCount = 1;
         totalCells = colCount * rowCount;
         AnimationOn = false;
         HoldingSword = true;
@@ -107,6 +109,8 @@ public class SmoothMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        Vector3 horizontal = new Vector3(Input.GetAxis("Horizontal"), 0.0f, 0.0f);
+        transform.position = transform.position + horizontal * Time.deltaTime;
         //UI
         if (HPTextYes == true)
         {
@@ -116,7 +120,7 @@ public class SmoothMovement : MonoBehaviour
         {
             PopupTextTimer -= 1 * Time.deltaTime;
         }
-        if (SpeedTextYes == true) 
+        if (SpeedTextYes == true)
         {
             PopupTextTimer -= 1 * Time.deltaTime;
         }
@@ -132,6 +136,7 @@ public class SmoothMovement : MonoBehaviour
         {
             SetSpriteAnimation(colCount, rowCount, colNumber, rowNumber, totalCells, FPS);
         }
+        
         if (AnimationOn == false)
         {
             if (HoldingSword == true)
@@ -205,34 +210,34 @@ public class SmoothMovement : MonoBehaviour
         }
         //moving
         //SET SPRITESHEETS FOR WALKING
-        if (Input.GetKey(KeyCode.D))
+        if (Input.GetKeyDown(KeyCode.D))
         {            
             facingDown = false;
             facingUp = false;
             facingLeft = false;
             facingRight = true;
-            //AnimationOn = true;
+            AnimationOn = true;
             walkingRight = true;
         }
-        if (Input.GetKey(KeyCode.A))
+        if (Input.GetKeyDown(KeyCode.A))
         {         
             facingDown = false;
             facingUp = false;
             facingLeft = true;
             facingRight = false;
-            //AnimationOn = true;
+            AnimationOn = true;
             walkingLeft = true;
-            //GetComponent<Renderer>().material.mainTexture = WalkingLeftSword;
+            GetComponent<Renderer>().material.mainTexture = WalkingLeftSword;
         }
-        if (Input.GetKey(KeyCode.W))
+        if (Input.GetKeyDown(KeyCode.W))
         {           
             facingDown = false;
             facingUp = true;
             facingLeft = false;
             facingRight = false;
-            //AnimationOn = true;
+            AnimationOn = true;
             walkingUp = true;
-            //GetComponent<Renderer>().material.mainTexture = WalkingUpSword;
+            GetComponent<Renderer>().material.mainTexture = WalkingUpSword;
         }
         if (Input.GetKeyDown(KeyCode.S))
         {
@@ -240,9 +245,9 @@ public class SmoothMovement : MonoBehaviour
             facingLeft = false;
             facingRight = false;
             facingDown = true;
-            //AnimationOn = true;
+            AnimationOn = true;
             walkingDown = true;
-            //GetComponent<Renderer>().material.mainTexture = WalkingDownSword;
+            GetComponent<Renderer>().material.mainTexture = WalkingDownSword;
         }
         if (walkingRight == true)
         {
@@ -374,8 +379,10 @@ public class SmoothMovement : MonoBehaviour
         transform.position = Level3Place.position;
         Spawnedlvl31 = false;
         RoomGeneration.rand = 8;
+    
+        
     }
-    public void SetSpriteAnimation(int colCount, int rowCount, int rowNumber, int colNumber, int totalCells, int fps)
+    void SetSpriteAnimation(int colCount, int rowCount, int rowNumber, int colNumber, int totalCells, int fps)
     {
         // Calculate index
         int index = (int)(Time.time * fps);
