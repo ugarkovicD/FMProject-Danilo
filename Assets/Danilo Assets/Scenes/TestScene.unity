@@ -686,6 +686,12 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   HeavyAttackDamage: 3
+  holdingSword: 0
+  holdingBow: 0
+  HaveAmmo: 0
+  ReloadTimer: 0
+  AmmoAmmount: 0
+  ArrowPrefab: {fileID: 2505352283793873807, guid: a12b612786b833c46b8d1c8ff4ebedbe, type: 3}
 --- !u!1 &89611346
 GameObject:
   m_ObjectHideFlags: 0

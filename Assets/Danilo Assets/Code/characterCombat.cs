@@ -18,14 +18,25 @@ public class characterCombat : MonoBehaviour
     public static bool Damage20;
     public static bool Damage30;
     public static bool Damage40;
-    
+    public bool holdingSword;
+
+    //BOW stuff
+    public bool holdingBow;
+    public bool HaveAmmo;
+    public float ReloadTimer = 2;
+    public float AmmoAmmount;
+    public GameObject ArrowPrefab;
     
     // Start is called before the first frame update
     void Start()
     {
+        HaveAmmo = true;
+        AmmoAmmount = 10;
+        holdingSword = true;
         attackDamage = 20;
         Damage20 = true;
         timebtwHits = startTimebtwHits;
+        holdingBow = true;
     }
 
     // Update is called once per frame
@@ -59,77 +70,123 @@ public class characterCombat : MonoBehaviour
             Damage40 = true;
         }
         //Attack
-        if (SmoothMovement.facingDown == true)
+        if (holdingSword == true)
         {
-            if (timebtwHits <= 0)
+            if (SmoothMovement.facingDown == true)
             {
-                if (Input.GetButtonDown("Fire1"))
+                if (timebtwHits <= 0)
                 {
-                    AttackDown();
-                    timebtwHits = startTimebtwHits;
+                    if (Input.GetButtonDown("Fire1"))
+                    {
+                        AttackDown();
+                        timebtwHits = startTimebtwHits;
+                    }
                 }
             }
         }
-        if (SmoothMovement.facingUp == true)
+        if (holdingSword == true)
         {
-            if (timebtwHits <= 0)
+            if (SmoothMovement.facingUp == true)
             {
-                if (Input.GetButtonDown("Fire1"))
+                if (timebtwHits <= 0)
                 {
-                    AttackUp();
-                    timebtwHits = startTimebtwHits;
+                    if (Input.GetButtonDown("Fire1"))
+                    {
+                        AttackUp();
+                        timebtwHits = startTimebtwHits;
+                    }
                 }
             }
         }
-        if (SmoothMovement.facingRight == true)
+        if (holdingSword == true)
         {
-            if (timebtwHits <= 0)
+            if (SmoothMovement.facingRight == true)
             {
-                if (Input.GetButtonDown("Fire1"))
+                if (timebtwHits <= 0)
                 {
-                    Attack();
-                    timebtwHits = startTimebtwHits;
+                    if (Input.GetButtonDown("Fire1"))
+                    {
+                        Attack();
+                        timebtwHits = startTimebtwHits;
+                    }
                 }
             }
         }
-        if (SmoothMovement.facingLeft == true)
+        if (holdingSword == true)
         {
-            if (timebtwHits <= 0)
+            if (SmoothMovement.facingLeft == true)
             {
-                if (Input.GetButtonDown("Fire1"))
+                if (timebtwHits <= 0)
                 {
-                    AttackLeft();
-                    timebtwHits = startTimebtwHits;
+                    if (Input.GetButtonDown("Fire1"))
+                    {
+                        AttackLeft();
+                        timebtwHits = startTimebtwHits;
+                    }
                 }
             }
         }
-
-        //Heavy Attack
-        if (SmoothMovement.facingRight == true)
+        //Bow Attack
+        if (holdingBow == true)
         {
-            if (timebtwHits <= 0)
+            if (SmoothMovement.facingLeft == true)
             {
-                if (Input.GetButtonDown("Fire2"))
+                if (HaveAmmo == true)
                 {
-                    HeavyAttack();
-                    timebtwHits = startTimebtwHitsHeavy;
+                    if (Input.GetButtonDown("Fire1"))
+                    {
+                        BowLeft();
+                    }
                 }
             }
-        }     
-        if (SmoothMovement.facingLeft == true)
-        {
-            if (timebtwHits <= 0)
+            if (SmoothMovement.facingRight == true)
             {
-                if (Input.GetButtonDown("Fire2"))
+                if (HaveAmmo == true)
                 {
-                    HeavyAttackLeft();
-                    timebtwHits = startTimebtwHitsHeavy;
+                    if (Input.GetButtonDown("Fire1"))
+                    {
+                        BowRight();
+                    }
                 }
             }
-        }
-        if (timebtwHits >= 0)
-        {
-            timebtwHits -= Time.deltaTime;
+            if (SmoothMovement.facingUp == true)
+            {
+                if (HaveAmmo == true)
+                {
+                    if (Input.GetButtonDown("Fire1"))
+                    {
+                        BowUp();
+                    }
+                }
+            }
+            if (SmoothMovement.facingDown == true)
+            {
+                if (HaveAmmo == true)
+                {
+                    if (Input.GetButtonDown("Fire1"))
+                    {
+                        BowDown();
+                    }
+                }
+            }
+            if (Input.GetKeyDown(KeyCode.R))
+            {
+                HaveAmmo = false;
+                ReloadTimer = 2;
+                ReloadTimer -= 1 * Time.deltaTime;
+            }
+            if (AmmoAmmount == 0)
+            {
+                HaveAmmo = false;
+                ReloadTimer = 2;
+                ReloadTimer -= 1 * Time.deltaTime;
+            }
+            if (ReloadTimer <= 0)
+            {
+                ReloadTimer = 2;
+                AmmoAmmount = 10;
+                HaveAmmo = true;
+            }
         }
     }
     void Attack()
@@ -259,6 +316,30 @@ public class characterCombat : MonoBehaviour
             enemy.GetComponent<RangedEnemy>().TakeDamage(HeavyAttackDamage);
             Debug.Log("we hard hit" + enemy.name + 3 + "damage");
         }
+    }
+    public void BowRight()
+    {
+        GameObject Arrow = Instantiate(ArrowPrefab, AttackPoint.position, AttackPoint.rotation);
+        Rigidbody2D rb = ArrowPrefab.GetComponent<Rigidbody2D>();
+        rb.AddForce(AttackPoint.up * 200);
+    }
+    public void BowLeft()
+    {
+        GameObject Arrow = Instantiate(ArrowPrefab, AttackPointLeft.position, AttackPointLeft.rotation);
+        Rigidbody2D rb = ArrowPrefab.GetComponent<Rigidbody2D>();
+        rb.AddForce(AttackPointLeft.up * 200);
+    }
+    public void BowUp()
+    {
+        GameObject Arrow = Instantiate(ArrowPrefab, AttackPointUp.position, AttackPointUp.rotation);
+        Rigidbody2D rb = ArrowPrefab.GetComponent<Rigidbody2D>();
+        rb.AddForce(AttackPointUp.up * 200);
+    }
+    public void BowDown()
+    {
+        GameObject Arrow = Instantiate(ArrowPrefab, AttackPointDown.position, AttackPointDown.rotation);
+        Rigidbody2D rb = ArrowPrefab.GetComponent<Rigidbody2D>();
+        rb.AddForce(AttackPointDown.up * 200);
     }
     private void OnDrawGizmosSelected()
     {
