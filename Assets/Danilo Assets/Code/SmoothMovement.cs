@@ -131,6 +131,7 @@ public class SmoothMovement : MonoBehaviour
             SpeedIncreasedText.enabled = false;
             Panel.enabled = false;
         }
+        /*
         //Animation
         if (AnimationOn == true)
         {
@@ -159,6 +160,7 @@ public class SmoothMovement : MonoBehaviour
                 }
             }
         }
+        */
         //random
         TeleportsAndRooms = GameObject.FindGameObjectsWithTag("Room");
         cameraObject.transform.position = new Vector3(transform.position.x, transform.position.y, cameraObject.transform.position.z);
@@ -286,6 +288,7 @@ public class SmoothMovement : MonoBehaviour
             AnimationOn = false;
         }       
     }
+        
     void OnTriggerEnter2D(Collider2D collision)
     {
         //damage
@@ -383,25 +386,27 @@ public class SmoothMovement : MonoBehaviour
         
     }
     void SetSpriteAnimation(int colCount, int rowCount, int rowNumber, int colNumber, int totalCells, int fps)
-    {
-        // Calculate index
-        int index = (int)(Time.time * fps);
-        // Repeat when exhausting all cells
-        index = index % totalCells;
-        // Size of every cell
-        float sizeX = 1.0f / colCount;
+        {
+            // Calculate index
+            int index = (int)(Time.time * fps);
+            // Repeat when exhausting all cells
+            index = index % totalCells;
+            // Size of every cell
+            float sizeX = 1.0f / colCount;
 
-        float sizeY = 1.0f / rowCount;
-        Vector2 size = new Vector2(sizeX, sizeY);
-        // split into horizontal and vertical index
-        var uIndex = index % colCount;
-        var vIndex = index / colCount;
-        // build offset
-        float offsetX = (uIndex + colNumber) * size.x;
-        float offsetY = (1.0f - size.y) - (vIndex + rowNumber) * size.y;
-        Vector2 offset = new Vector2(offsetX, offsetY);
-        GetComponent<Renderer>().material.SetTextureOffset("_MainTex", offset);
-        GetComponent<Renderer>().material.SetTextureScale("_MainTex", size);
+            float sizeY = 1.0f / rowCount;
+            Vector2 size = new Vector2(sizeX, sizeY);
+            // split into horizontal and vertical index
+            var uIndex = index % colCount;
+            var vIndex = index / colCount;
+            // build offset
+            float offsetX = (uIndex + colNumber) * size.x;
+            float offsetY = (1.0f - size.y) - (vIndex + rowNumber) * size.y;
+            Vector2 offset = new Vector2(offsetX, offsetY);
+            GetComponent<Renderer>().material.SetTextureOffset("_MainTex", offset);
+            GetComponent<Renderer>().material.SetTextureScale("_MainTex", size);
+        }
     
     }
-}
+
+
