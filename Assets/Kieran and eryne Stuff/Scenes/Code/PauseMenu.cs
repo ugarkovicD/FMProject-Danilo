@@ -4,26 +4,26 @@ using UnityEngine;
 
 public class PauseMenu : MonoBehaviour
 {
-    public static bool GameIsPaused = false;
+    public static bool GameIsPaused = true;
     public GameObject pauseMenuUI;
     public GameObject HowToPlayUI;
 
     void Start()
     {
-        HowToPlayUI.SetActive(false);
+        GameIsPaused = false;
     }
     // Update is called once per frame
     void Update()
     {
-        if (GameIsPaused = false);
+        if(GameIsPaused = false);
         {
             pauseMenuUI.SetActive(false);
         }
-        if (GameIsPaused = true);
+        if(GameIsPaused = true);
         {
             pauseMenuUI.SetActive(true);
         }
-        if (Input.GetKeyDown(KeyCode.P))
+        if (Input.GetKeyDown(KeyCode.Escape));
         {
             GameIsPaused = true;
         }
