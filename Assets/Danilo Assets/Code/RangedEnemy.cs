@@ -19,6 +19,10 @@ public class RangedEnemy : MonoBehaviour
     private Rigidbody2D rb;
     public int maxHealth = 100;
     private float currentHealth;
+
+    public ParticleSystem damaged20P;
+    public ParticleSystem damaged30P;
+    public ParticleSystem damaged40P;
     // Start is called before the first frame update
     void Start()
     {
@@ -56,10 +60,24 @@ public class RangedEnemy : MonoBehaviour
     }
     public void TakeDamage(int Damage)
     {
+        if (characterCombat.Damage20 == true)
+        {
+            damaged20P.Play();
+        }
+        if (characterCombat.Damage40 == true)
+        {
+            damaged30P.Play();
+        }
+        if (characterCombat.Damage30 == true)
+        {
+            damaged40P.Play();
+        }
         currentHealth -= Damage;
         if (currentHealth <= 0)
         {
             Destroy(gameObject);
+            RandomEnemySpawner.NumberOfEnemies -= 1;
+            Debug.Log("Ranged Enemy Killed");
         }
     }
 }
