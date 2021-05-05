@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class characterCombat : MonoBehaviour
 {
@@ -25,13 +26,30 @@ public class characterCombat : MonoBehaviour
     public bool HaveAmmo;
     public float ReloadTimer = 2;
     public float AmmoAmmount;
-    public GameObject ArrowPrefab;
-    
+    public Rigidbody2D ArrowPrefab;
+    public Text BowAmmoAmmount;
+
+    //Pickups for weapons
+    public bool HoveringOnSword;
+    public bool HoveringOnBow;
+    public Text PickupSwordText;
+    public Text PickupBowText;
+    public Image Panel;
+    public GameObject BowPrefab;
+    public GameObject SwordPrefab;
+
+    public GameObject[] Weapons;
+    public static bool levelNext;
+    public float arrowFroce = 100f;
+
     // Start is called before the first frame update
     void Start()
     {
+        Panel.enabled = false;
+        PickupSwordText.enabled = false;
+        PickupBowText.enabled = false;
         HaveAmmo = true;
-        AmmoAmmount = 10;
+        AmmoAmmount = 7;
         holdingSword = false;
         attackDamage = 20;
         Damage20 = true;
@@ -43,6 +61,38 @@ public class characterCombat : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        BowAmmoAmmount.text = AmmoAmmount.ToString();
+        if (levelNext == true)
+        {
+            DestroyWeapons();
+        }
+        Weapons = GameObject.FindGameObjectsWithTag("Weapon");
+        if (HoveringOnSword == true)
+        {
+            if (Input.GetKeyDown(KeyCode.E))
+            {
+                holdingSword = true;
+                holdingBow = false;
+                Instantiate(BowPrefab, transform.position, transform.rotation);
+                foreach (GameObject r in Weapons)
+                {
+                    Destroy(r.gameObject);
+                }
+            }
+        }
+        if (HoveringOnBow == true)
+        {
+            if (Input.GetKeyDown(KeyCode.E))
+            {
+                holdingSword = false;
+                holdingBow = true;
+                Instantiate(SwordPrefab, transform.position, transform.rotation);
+                foreach (GameObject r in Weapons)
+                {
+                    Destroy(r.gameObject);
+                }
+            }
+        }
         timebtwHits -= 1 * Time.deltaTime;
         if (Damage20 == true)
         {
@@ -175,7 +225,7 @@ public class characterCombat : MonoBehaviour
             if (ReloadTimer <= 0)
             {
                 ReloadTimer = 2;
-                AmmoAmmount = 10;
+                AmmoAmmount = 7;
                 HaveAmmo = true;              
             }
             if (HaveAmmo == false)
@@ -310,35 +360,35 @@ public class characterCombat : MonoBehaviour
         foreach (Collider2D enemy in hitEnemies)
         {
             enemy.GetComponent<RangedEnemy>().TakeDamage(HeavyAttackDamage);
-            Debug.Log("we hard hit" + enemy.name + 3 + "damage");
+            Debug.Log("we hard hit" + enemy.name + 7 + "damage");
         }
     }
     public void BowRight()
     {
-        GameObject Arrow = Instantiate(ArrowPrefab, AttackPoint.position, AttackPoint.rotation);
-        Rigidbody2D rb = ArrowPrefab.GetComponent<Rigidbody2D>();
-        rb.AddForce(AttackPoint.up * 2000);
+        Rigidbody2D arrowInstance;
+        arrowInstance = Instantiate(ArrowPrefab, AttackPoint.position, AttackPoint.rotation) as Rigidbody2D;
+        arrowInstance.AddForce(AttackPoint.right * 10*Time.deltaTime);
         AmmoAmmount -= 1;
     }
     public void BowLeft()
     {
-        GameObject Arrow = Instantiate(ArrowPrefab, AttackPointLeft.position, AttackPointLeft.rotation);
-        Rigidbody2D rb = ArrowPrefab.GetComponent<Rigidbody2D>();
-        rb.AddForce(AttackPointLeft.up * 2000);
+        Rigidbody2D arrowInstance;
+        arrowInstance = Instantiate(ArrowPrefab, AttackPointLeft.position, AttackPointLeft.rotation) as Rigidbody2D;
+        arrowInstance.AddForce(AttackPointLeft.right * 10 * Time.deltaTime);
         AmmoAmmount -= 1;
     }
     public void BowUp()
     {
-        GameObject Arrow = Instantiate(ArrowPrefab, AttackPointUp.position, AttackPointUp.rotation);
-        Rigidbody2D rb = ArrowPrefab.GetComponent<Rigidbody2D>();
-        rb.AddForce(AttackPointUp.up * 2000);
+        Rigidbody2D arrowInstance;
+        arrowInstance = Instantiate(ArrowPrefab, AttackPointUp.position, AttackPointUp.rotation) as Rigidbody2D;
+        arrowInstance.AddForce(AttackPointUp.right * 10 * Time.deltaTime);
         AmmoAmmount -= 1;
     }
     public void BowDown()
     {
-        GameObject Arrow = Instantiate(ArrowPrefab, AttackPointDown.position, AttackPointDown.rotation);
-        Rigidbody2D rb = ArrowPrefab.GetComponent<Rigidbody2D>();
-        rb.AddForce(AttackPointDown.up * 2000);
+        Rigidbody2D arrowInstance;
+        arrowInstance = Instantiate(ArrowPrefab, AttackPointDown.position, AttackPointDown.rotation) as Rigidbody2D;
+        arrowInstance.AddForce(AttackPointDown.right * 10 * Time.deltaTime);
         AmmoAmmount -= 1;
     }
     private void OnDrawGizmosSelected()
@@ -347,5 +397,43 @@ public class characterCombat : MonoBehaviour
         Gizmos.DrawWireSphere(AttackPointLeft.position, attackRange);
         Gizmos.DrawWireSphere(AttackPointUp.position, attackRange);
         Gizmos.DrawWireSphere(AttackPointDown.position, attackRange);
+    }
+    public void OnTriggerEnter2D(Collider2D collison)
+    {
+        if (collison.name == "BowItemPickup(Clone)")
+        {
+            HoveringOnBow = true;
+            PickupBowText.enabled = true;
+            Panel.enabled = true;
+        }
+        if (collison.name == "SwordItemPickup(Clone)")
+        {
+            HoveringOnSword = true;
+            PickupSwordText.enabled = true;
+            Panel.enabled = true;
+        }
+    }
+    public void OnTriggerExit2D(Collider2D collison)
+    {
+        if (collison.name == "BowItemPickup(Clone)")
+        {
+            HoveringOnBow = false;
+            PickupBowText.enabled = false;
+            Panel.enabled = false;
+        }
+        if (collison.name == "SwordItemPickup(Clone)")
+        {
+            HoveringOnSword = false;
+            PickupSwordText.enabled = false;
+            Panel.enabled = false;
+        }
+    }
+    public void DestroyWeapons()
+    {       
+            foreach (GameObject r in Weapons)
+            {
+                Destroy(r.gameObject);
+            }
+            levelNext = false;       
     }
 }

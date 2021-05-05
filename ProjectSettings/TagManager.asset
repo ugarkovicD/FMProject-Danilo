@@ -3,7 +3,14 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - RangedEnemy
+  - BomberEnemy
+  - MeleeEnemy
+  - Projectile
+  - Room
+  - PassiveItem
+  - Weapon
   layers:
   - Default
   - TransparentFX

@@ -26,10 +26,6 @@ public class SmoothMovement : MonoBehaviour
     public static bool facingDown;
     public static bool facingRight;
     public static bool facingLeft;
-    //Passive items and Notches for item ammount
-    public bool haveSpace;
-    public int NotchesAmmount;
-    public bool collidingItem;
     //Slowed
     public static float SlowedTimer = 0;
     public static bool slowed;
@@ -67,7 +63,6 @@ public class SmoothMovement : MonoBehaviour
     //checking for weapon holding
     public bool HoldingSword;
     public bool HoldingBow;
-    public bool HoldingMinigun;
 
     public bool walkingRight;
     public bool walkingLeft;
@@ -75,7 +70,6 @@ public class SmoothMovement : MonoBehaviour
     public bool walkingUp;
 
     public SpriteRenderer spriteRender;
-
     //UI
     public Text HPIncreasedText;
     public Text DamageIncreasedText;
@@ -93,9 +87,8 @@ public class SmoothMovement : MonoBehaviour
         totalCells = colCount * rowCount;
         AnimationOn = false;
         HoldingSword = true;
-
+        //random
         MaxSpeed = 7;
-        haveSpace = true;
         speed = MaxSpeed;
         speedSlowed = 4;
         slowed = false;
@@ -348,6 +341,7 @@ public class SmoothMovement : MonoBehaviour
             {
                 Destroy(r.gameObject);
             }
+            characterCombat.levelNext = true;
         }
     }
     void SpawnRoom1()

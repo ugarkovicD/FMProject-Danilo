@@ -26,6 +26,7 @@ public class RangedEnemy : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        transform.rotation = Quaternion.identity;
         currentHealth = 100;
         rb = this.GetComponent<Rigidbody2D>();
         startTimeBewShots = 2;
@@ -36,6 +37,12 @@ public class RangedEnemy : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (currentHealth <= 0)
+        {
+            Destroy(gameObject);
+            RandomEnemySpawner.NumberOfEnemies -= 1;
+            Debug.Log("Ranged Enemy Killed");
+        }
         if (Vector2.Distance(transform.position, playerFollow.position) > stoppingDistance)
         {
                 transform.position = Vector2.MoveTowards(transform.position, playerFollow.position, MoveSpeed * Time.deltaTime); ;
@@ -73,11 +80,14 @@ public class RangedEnemy : MonoBehaviour
             damaged40P.Play();
         }
         currentHealth -= Damage;
-        if (currentHealth <= 0)
+       
+    }
+    public void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.name == "arrow(Clone)")
         {
-            Destroy(gameObject);
-            RandomEnemySpawner.NumberOfEnemies -= 1;
-            Debug.Log("Ranged Enemy Killed");
+            Debug.Log("ArrowHit Ranged");
+            currentHealth -= 50;
         }
     }
 }

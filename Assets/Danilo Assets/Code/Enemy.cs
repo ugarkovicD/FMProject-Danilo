@@ -20,6 +20,7 @@ public class Enemy : MonoBehaviour
         agent = GetComponent<NavMeshAgent>();
         currentHealth = 100;
         rb = this.GetComponent<Rigidbody2D>();
+        transform.rotation = Quaternion.identity;
     }
 
     // Update is called once per frame
@@ -29,6 +30,12 @@ public class Enemy : MonoBehaviour
         Vector3 direction = player.position - transform.position;
         direction.Normalize();
         movement = direction;
+        if (currentHealth <= 0)
+        {
+            Destroy(gameObject);
+            RandomEnemySpawner.NumberOfEnemies -= 1;
+            Debug.Log("Destroyed Melee Enemy");
+        }
     }
     private void FixedUpdate()
     {
@@ -48,6 +55,7 @@ public class Enemy : MonoBehaviour
         if (other.name == "arrow(Clone)")
         {
             Debug.Log("ArrowHit Melee");
+            currentHealth -= 50;
         }
     }
     public void TakeDamage(int Damage)
@@ -65,11 +73,6 @@ public class Enemy : MonoBehaviour
             damaged40P.Play();
         }
         currentHealth -= Damage;
-        if (currentHealth <= 0)
-        {
-            Destroy(gameObject);
-            RandomEnemySpawner.NumberOfEnemies -= 1;
-            Debug.Log("Destroyed Melee Enemy");
-        }
+        
     }
 }
