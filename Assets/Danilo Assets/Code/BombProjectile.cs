@@ -25,7 +25,7 @@ public class BombProjectile : MonoBehaviour
         {
             bombExplode();
         }
-        if (bombtimer < 0.5)
+        if (bombtimer < 0.3)
         {
             explosion.Play();
         }

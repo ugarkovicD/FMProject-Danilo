@@ -36,7 +36,8 @@ public class characterCombat : MonoBehaviour
         attackDamage = 20;
         Damage20 = true;
         timebtwHits = startTimebtwHits;
-        holdingBow = true;
+        holdingBow = false;
+        holdingSword = true;
     }
 
     // Update is called once per frame
