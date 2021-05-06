@@ -21,6 +21,8 @@ public class SadBossCode : MonoBehaviour
     public ParticleSystem damaged30P;
     public ParticleSystem damaged40P;
     public ParticleSystem damaged50P;
+
+    public Transform ShootingPoint;
     // Start is called before the first frame update
     void Start()
     {
@@ -30,9 +32,13 @@ public class SadBossCode : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (SpinTime >= 0)
+        {
+            SpinTime -= 1 * Time.deltaTime;
+        }
         if (SpinShooting == true)
         {
-            if (timebtwShots<= 0)
+            if (startTimeBewShots<= 0)
             {
                 ShootSpin();
             }
@@ -42,12 +48,14 @@ public class SadBossCode : MonoBehaviour
             if (startTimeBewShots <= 0)
             {
                 Shoot();
-            }
-            timeBeforeSpinAttack -= 1 * Time.deltaTime;
+            }           
         }
+        timeBeforeSpinAttack -= 1 * Time.deltaTime;
         if (timeBeforeSpinAttack <= 0)
         {
+            SpinTime = 10;
             SpinningAttack();
+            timeBeforeSpinAttack = 30;
         }
         if (SpinTime <= 0)
         {
@@ -57,12 +65,10 @@ public class SadBossCode : MonoBehaviour
     }
     public void SpinningAttack()
     {
-        //SetTheBossTorotate And reset when it stops
-        SpinTime = 10;
         SpinShooting = true;
+        transform.Rotate(0, 0, 20 * Time.deltaTime);
         if (SpinTime >= 0)
-        {
-            transform.Rotate(0, 0, 20 * Time.deltaTime);
+        {          
             SpinTime -= 1 * Time.deltaTime;
         }
     }
@@ -74,8 +80,10 @@ public class SadBossCode : MonoBehaviour
     }
     public void ShootSpin()
     {
-        Instantiate(projectile, transform.position, Quaternion.identity);
+        Rigidbody2D Bullet;
+        Bullet = Instantiate(projectile, ShootingPoint.position, Quaternion.identity)as Rigidbody2D;
+        Bullet.AddForce(ShootingPoint.up * 5 * Time.deltaTime);
         timebtwShots = startTimeBewShots;
-        startTimeBewShots = 0.05f;
+        startTimeBewShots = 0.1f; 
     }
 }
