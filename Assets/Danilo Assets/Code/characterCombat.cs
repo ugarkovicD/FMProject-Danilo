@@ -14,7 +14,7 @@ public class characterCombat : MonoBehaviour
     public static int attackDamage = 20;
     public int HeavyAttackDamage = 40;
     private float timebtwHits;
-    private float startTimebtwHits = 0.25f;
+    private float startTimebtwHits = 0.3f;
     private float startTimebtwHitsHeavy = 0.6f;
     public static bool Damage20;
     public static bool Damage30;
