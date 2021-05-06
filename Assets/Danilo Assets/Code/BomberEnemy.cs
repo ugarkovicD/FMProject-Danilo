@@ -29,6 +29,7 @@ public class BomberEnemy : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        transform.rotation = Quaternion.identity;
         currentHealth = 100;
         StartCoroutine(waitSpawn());
         rb = this.GetComponent<Rigidbody2D>();
@@ -51,6 +52,12 @@ public class BomberEnemy : MonoBehaviour
         {
             transform.position = Vector2.MoveTowards(transform.position, playerFollow.position, -MoveSpeed * Time.deltaTime);
         }
+        if (currentHealth <= 0)
+        {
+            Destroy(gameObject);
+            RandomEnemySpawner.NumberOfEnemies -= 1;
+            Debug.Log("Destroyed Bomber Enemy");
+        }
     }
     public void TakeDamage(int Damage)
     {
@@ -66,13 +73,7 @@ public class BomberEnemy : MonoBehaviour
         {
             damaged40P.Play();
         }
-        currentHealth -= Damage;
-        if (currentHealth <= 0)
-        {
-            Destroy(gameObject);
-            RandomEnemySpawner.NumberOfEnemies -= 1;
-            Debug.Log("Destroyed Bomber Enemy");
-        }
+        currentHealth -= Damage;        
     }
     IEnumerator waitSpawn()
     {
@@ -81,6 +82,14 @@ public class BomberEnemy : MonoBehaviour
         {
             Instantiate(projectile, transform.position, Quaternion.identity);
             yield return new WaitForSeconds(spawnWait);
+        }
+    }
+    public void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.name == "arrow(Clone)")
+        {
+            Debug.Log("ArrowHit Bomber");
+            currentHealth -= 50;
         }
     }
 }

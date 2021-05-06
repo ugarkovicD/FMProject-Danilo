@@ -86,7 +86,7 @@ public class CharacterHealth : MonoBehaviour
         }   
         if (currenthp <= 0)
         {
-            SceneManager.LoadScene("TestScene");
+            SceneManager.LoadScene("DeathScreen");
         }
     }
     private void OnTriggerEnter2D(Collider2D collision)

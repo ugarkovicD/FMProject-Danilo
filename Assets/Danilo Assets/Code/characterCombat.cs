@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class characterCombat : MonoBehaviour
 {
@@ -18,19 +19,81 @@ public class characterCombat : MonoBehaviour
     public static bool Damage20;
     public static bool Damage30;
     public static bool Damage40;
-    
-    
+    public bool holdingSword;
+
+    //BOW stuff
+    public bool holdingBow;
+    public bool HaveAmmo;
+    public float ReloadTimer = 2;
+    public float AmmoAmmount;
+    public Rigidbody2D ArrowPrefab;
+    public Text BowAmmoAmmount;
+
+    //Pickups for weapons
+    public bool HoveringOnSword;
+    public bool HoveringOnBow;
+    public Text PickupSwordText;
+    public Text PickupBowText;
+    public Image Panel;
+    public GameObject BowPrefab;
+    public GameObject SwordPrefab;
+
+    public GameObject[] Weapons;
+    public static bool levelNext;
+    public float arrowFroce = 100f;
+
     // Start is called before the first frame update
     void Start()
     {
+        Panel.enabled = false;
+        PickupSwordText.enabled = false;
+        PickupBowText.enabled = false;
+        HaveAmmo = true;
+        AmmoAmmount = 7;
+        holdingSword = false;
         attackDamage = 20;
         Damage20 = true;
         timebtwHits = startTimebtwHits;
+        holdingBow = false;
+        holdingSword = true;
     }
 
     // Update is called once per frame
     void Update()
     {
+        BowAmmoAmmount.text = AmmoAmmount.ToString();
+        if (levelNext == true)
+        {
+            DestroyWeapons();
+        }
+        Weapons = GameObject.FindGameObjectsWithTag("Weapon");
+        if (HoveringOnSword == true)
+        {
+            if (Input.GetKeyDown(KeyCode.E))
+            {
+                holdingSword = true;
+                holdingBow = false;
+                Instantiate(BowPrefab, transform.position, transform.rotation);
+                foreach (GameObject r in Weapons)
+                {
+                    Destroy(r.gameObject);
+                }
+            }
+        }
+        if (HoveringOnBow == true)
+        {
+            if (Input.GetKeyDown(KeyCode.E))
+            {
+                holdingSword = false;
+                holdingBow = true;
+                Instantiate(SwordPrefab, transform.position, transform.rotation);
+                foreach (GameObject r in Weapons)
+                {
+                    Destroy(r.gameObject);
+                }
+            }
+        }
+        timebtwHits -= 1 * Time.deltaTime;
         if (Damage20 == true)
         {
             Damage30 = false;
@@ -59,77 +122,117 @@ public class characterCombat : MonoBehaviour
             Damage40 = true;
         }
         //Attack
-        if (SmoothMovement.facingDown == true)
+        if (holdingSword == true)
         {
-            if (timebtwHits <= 0)
+            if (SmoothMovement.facingDown == true)
             {
-                if (Input.GetButtonDown("Fire1"))
+                if (timebtwHits <= 0)
                 {
-                    AttackDown();
-                    timebtwHits = startTimebtwHits;
+                    if (Input.GetButtonDown("Fire1"))
+                    {
+                        AttackDown();
+                        timebtwHits = startTimebtwHits;
+                    }
                 }
             }
+            if (SmoothMovement.facingUp == true)
+            {
+                if (timebtwHits <= 0)
+                {
+                    if (Input.GetButtonDown("Fire1"))
+                    {
+                        AttackUp();
+                        timebtwHits = startTimebtwHits;
+                    }
+                }
+            }       
+            if (SmoothMovement.facingRight == true)
+            {
+                if (timebtwHits <= 0)
+                {
+                    if (Input.GetButtonDown("Fire1"))
+                    {
+                        Attack();
+                        timebtwHits = startTimebtwHits;
+                    }
+                }
+            }      
+            if (SmoothMovement.facingLeft == true)
+            {
+                if (timebtwHits <= 0)
+                {
+                    if (Input.GetButtonDown("Fire1"))
+                    {
+                        AttackLeft();
+                        timebtwHits = startTimebtwHits;
+                    }
+                }
+            }
+            holdingBow = false;
         }
-        if (SmoothMovement.facingUp == true)
+        //Bow Attack
+        if (holdingBow == true)
         {
-            if (timebtwHits <= 0)
+            if (SmoothMovement.facingLeft == true)
             {
-                if (Input.GetButtonDown("Fire1"))
+                if (HaveAmmo == true)
                 {
-                    AttackUp();
-                    timebtwHits = startTimebtwHits;
+                    if (Input.GetButtonDown("Fire1"))
+                    {
+                        BowLeft();
+                    }
                 }
             }
-        }
-        if (SmoothMovement.facingRight == true)
-        {
-            if (timebtwHits <= 0)
+            if (SmoothMovement.facingRight == true)
             {
-                if (Input.GetButtonDown("Fire1"))
+                if (HaveAmmo == true)
                 {
-                    Attack();
-                    timebtwHits = startTimebtwHits;
+                    if (Input.GetButtonDown("Fire1"))
+                    {
+                        BowRight();
+                    }
                 }
             }
-        }
-        if (SmoothMovement.facingLeft == true)
-        {
-            if (timebtwHits <= 0)
+            if (SmoothMovement.facingUp == true)
             {
-                if (Input.GetButtonDown("Fire1"))
+                if (HaveAmmo == true)
                 {
-                    AttackLeft();
-                    timebtwHits = startTimebtwHits;
+                    if (Input.GetButtonDown("Fire1"))
+                    {
+                        BowUp();
+                    }
                 }
             }
-        }
-
-        //Heavy Attack
-        if (SmoothMovement.facingRight == true)
-        {
-            if (timebtwHits <= 0)
+            if (SmoothMovement.facingDown == true)
             {
-                if (Input.GetButtonDown("Fire2"))
+                if (HaveAmmo == true)
                 {
-                    HeavyAttack();
-                    timebtwHits = startTimebtwHitsHeavy;
+                    if (Input.GetButtonDown("Fire1"))
+                    {
+                        BowDown();
+                    }
                 }
             }
-        }     
-        if (SmoothMovement.facingLeft == true)
-        {
-            if (timebtwHits <= 0)
+            if (Input.GetKeyDown(KeyCode.R))
             {
-                if (Input.GetButtonDown("Fire2"))
-                {
-                    HeavyAttackLeft();
-                    timebtwHits = startTimebtwHitsHeavy;
-                }
+                HaveAmmo = false;
+                ReloadTimer = 2;
             }
-        }
-        if (timebtwHits >= 0)
-        {
-            timebtwHits -= Time.deltaTime;
+            if (AmmoAmmount == 0)
+            {
+                HaveAmmo = false;
+            }
+            if (ReloadTimer <= 0)
+            {
+                ReloadTimer = 2;
+                AmmoAmmount = 7;
+                HaveAmmo = true;              
+            }
+            if (HaveAmmo == false)
+            {
+                ReloadTimer -= 1 * Time.deltaTime;
+            }
+            holdingSword = false;
         }
     }
     void Attack()
@@ -157,6 +260,7 @@ public class characterCombat : MonoBehaviour
             Debug.Log("we hit" + enemy.name +"kurac");
             }
         }
+        startTimebtwHits = 0.25f;
     }
     void AttackLeft()
     {
@@ -231,7 +335,6 @@ public class characterCombat : MonoBehaviour
             if (enemy.CompareTag("BomberEnemy"))
             {
                 enemy.GetComponent<BomberEnemy>().TakeDamage(attackDamage);
-
                 Debug.Log("we hit" + enemy.name + attackDamage);
             }
         }
@@ -257,8 +360,36 @@ public class characterCombat : MonoBehaviour
         foreach (Collider2D enemy in hitEnemies)
         {
             enemy.GetComponent<RangedEnemy>().TakeDamage(HeavyAttackDamage);
-            Debug.Log("we hard hit" + enemy.name + 3 + "damage");
+            Debug.Log("we hard hit" + enemy.name + 7 + "damage");
         }
+    }
+    public void BowRight()
+    {
+        Rigidbody2D arrowInstance;
+        arrowInstance = Instantiate(ArrowPrefab, AttackPoint.position, AttackPoint.rotation) as Rigidbody2D;
+        arrowInstance.AddForce(AttackPoint.right * 10*Time.deltaTime);
+        AmmoAmmount -= 1;
+    }
+    public void BowLeft()
+    {
+        Rigidbody2D arrowInstance;
+        arrowInstance = Instantiate(ArrowPrefab, AttackPointLeft.position, AttackPointLeft.rotation) as Rigidbody2D;
+        arrowInstance.AddForce(AttackPointLeft.right * 10 * Time.deltaTime);
+        AmmoAmmount -= 1;
+    }
+    public void BowUp()
+    {
+        Rigidbody2D arrowInstance;
+        arrowInstance = Instantiate(ArrowPrefab, AttackPointUp.position, AttackPointUp.rotation) as Rigidbody2D;
+        arrowInstance.AddForce(AttackPointUp.right * 10 * Time.deltaTime);
+        AmmoAmmount -= 1;
+    }
+    public void BowDown()
+    {
+        Rigidbody2D arrowInstance;
+        arrowInstance = Instantiate(ArrowPrefab, AttackPointDown.position, AttackPointDown.rotation) as Rigidbody2D;
+        arrowInstance.AddForce(AttackPointDown.right * 10 * Time.deltaTime);
+        AmmoAmmount -= 1;
     }
     private void OnDrawGizmosSelected()
     {
@@ -266,5 +397,43 @@ public class characterCombat : MonoBehaviour
         Gizmos.DrawWireSphere(AttackPointLeft.position, attackRange);
         Gizmos.DrawWireSphere(AttackPointUp.position, attackRange);
         Gizmos.DrawWireSphere(AttackPointDown.position, attackRange);
+    }
+    public void OnTriggerEnter2D(Collider2D collison)
+    {
+        if (collison.name == "BowItemPickup(Clone)")
+        {
+            HoveringOnBow = true;
+            PickupBowText.enabled = true;
+            Panel.enabled = true;
+        }
+        if (collison.name == "SwordItemPickup(Clone)")
+        {
+            HoveringOnSword = true;
+            PickupSwordText.enabled = true;
+            Panel.enabled = true;
+        }
+    }
+    public void OnTriggerExit2D(Collider2D collison)
+    {
+        if (collison.name == "BowItemPickup(Clone)")
+        {
+            HoveringOnBow = false;
+            PickupBowText.enabled = false;
+            Panel.enabled = false;
+        }
+        if (collison.name == "SwordItemPickup(Clone)")
+        {
+            HoveringOnSword = false;
+            PickupSwordText.enabled = false;
+            Panel.enabled = false;
+        }
+    }
+    public void DestroyWeapons()
+    {       
+            foreach (GameObject r in Weapons)
+            {
+                Destroy(r.gameObject);
+            }
+            levelNext = false;       
     }
 }

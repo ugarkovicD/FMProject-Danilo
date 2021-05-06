@@ -39,7 +39,6 @@ public class RoomGeneration : MonoBehaviour
         {
             Invoke("Spawn",0.1f);
             spawned = false;
-
         }
         if (rand == 0)
         {
