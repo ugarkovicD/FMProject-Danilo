@@ -7,7 +7,7 @@ public class SadBossCode : MonoBehaviour
     public float currentHealth;
     //damage and shooting action
     private float timebtwShots;
-    public float startTimeBewShots = 0.2f;
+    public float startTimeBewShots = 0.3f;
     public Rigidbody2D projectile;
     public float SpinTime;
     public float ammountOfXShots;
