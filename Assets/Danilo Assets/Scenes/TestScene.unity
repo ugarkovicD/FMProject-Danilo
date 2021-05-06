@@ -576,29 +576,6 @@ MonoBehaviour:
   haveSpace: 0
   NotchesAmmount: 0
   collidingItem: 0
-  WalkingRightSword: {fileID: 0}
-  WalkingLeftSword: {fileID: 0}
-  WalkingUpSword: {fileID: 0}
-  WalkingDownSword: {fileID: 0}
-  WalkingRightBow: {fileID: 0}
-  WalkingLeftBow: {fileID: 0}
-  WalkingUpBow: {fileID: 0}
-  WalkingDownBow: {fileID: 0}
-  StillRightBow: {fileID: 0}
-  StillLeftBow: {fileID: 0}
-  StillUpBow: {fileID: 0}
-  StillDownBow: {fileID: 0}
-  StillRightSword: {fileID: 0}
-  StillLeftSword: {fileID: 0}
-  StillUpSword: {fileID: 0}
-  StillDownSword: {fileID: 0}
-  AnimationOn: 0
-  colCount: 1
-  rowCount: 4
-  FPS: 10
-  rowNumber: 0
-  colNumber: 0
-  totalCells: 0
   HoldingSword: 0
   HoldingBow: 0
   HoldingMinigun: 0
@@ -616,6 +593,7 @@ MonoBehaviour:
   DamageTextYes: 0
   SpeedTextYes: 0
   PanelYes: 0
+  animator: {fileID: 88390767}
 --- !u!61 &88390764
 BoxCollider2D:
   m_ObjectHideFlags: 0

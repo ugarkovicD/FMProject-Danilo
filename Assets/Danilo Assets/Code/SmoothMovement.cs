@@ -79,9 +79,17 @@ public class SmoothMovement : MonoBehaviour
     void Update()
     {
         animator.SetFloat("Horizontal", Input.GetAxis("Horizontal"));
-
+        
+        animator.SetFloat("Vertical", Input.GetAxis("Vertical"));
+        
         Vector3 horizontal = new Vector3(Input.GetAxis("Horizontal"), 0.0f, 0.0f);
         transform.position = transform.position + horizontal * Time.deltaTime;
+
+        Vector3 Vertical = new Vector3(Input.GetAxis("Vertical"), 0.0f, 0.0f);
+        transform.position = transform.position + Vertical * Time.deltaTime;
+
+
+
         //UI
         if (HPTextYes == true)
         {
@@ -164,8 +172,7 @@ public class SmoothMovement : MonoBehaviour
             facingDown = false;
             facingUp = false;
             facingLeft = false;
-            facingRight = true;
-            AnimationOn = true;
+            facingRight = true;           
             walkingRight = true;
         }
         if (Input.GetKeyDown(KeyCode.A))
@@ -174,9 +181,7 @@ public class SmoothMovement : MonoBehaviour
             facingUp = false;
             facingLeft = true;
             facingRight = false;
-            AnimationOn = true;
             walkingLeft = true;
-            GetComponent<Renderer>().material.mainTexture = WalkingLeftSword;
         }
         if (Input.GetKeyDown(KeyCode.W))
         {           
@@ -184,9 +189,7 @@ public class SmoothMovement : MonoBehaviour
             facingUp = true;
             facingLeft = false;
             facingRight = false;
-            AnimationOn = true;
             walkingUp = true;
-            GetComponent<Renderer>().material.mainTexture = WalkingUpSword;
         }
         if (Input.GetKeyDown(KeyCode.S))
         {
@@ -194,9 +197,7 @@ public class SmoothMovement : MonoBehaviour
             facingLeft = false;
             facingRight = false;
             facingDown = true;
-            AnimationOn = true;
             walkingDown = true;
-            GetComponent<Renderer>().material.mainTexture = WalkingDownSword;
         }
         if (walkingRight == true)
         {
@@ -216,23 +217,20 @@ public class SmoothMovement : MonoBehaviour
         }
         if (Input.GetKeyUp(KeyCode.D))
         {
-            AnimationOn = false;
+
             walkingRight = false;
         }
         if (Input.GetKeyUp(KeyCode.A))
         {
             walkingLeft = false;
-            AnimationOn = false;
         }
         if (Input.GetKeyUp(KeyCode.W))
         {
             walkingUp = false;
-            AnimationOn = false;
         }
         if (Input.GetKeyUp(KeyCode.S))
         {
             walkingDown = false;
-            AnimationOn = false;
         }       
     }
         
@@ -331,7 +329,7 @@ public class SmoothMovement : MonoBehaviour
         RoomGeneration.rand = 8;        
     }
     void SetSpriteAnimation(int colCount, int rowCount, int rowNumber, int colNumber, int totalCells, int fps)
-        {
+    {
             // Calculate index
             int index = (int)(Time.time * fps);
             // Repeat when exhausting all cells
@@ -350,9 +348,11 @@ public class SmoothMovement : MonoBehaviour
             Vector2 offset = new Vector2(offsetX, offsetY);
             GetComponent<Renderer>().material.SetTextureOffset("_MainTex", offset);
             GetComponent<Renderer>().material.SetTextureScale("_MainTex", size);
-        }
-    
     }
-]
+    
+    
+}
+
+
 
 
