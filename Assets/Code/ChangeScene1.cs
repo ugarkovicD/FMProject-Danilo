@@ -5,10 +5,13 @@ using UnityEngine.SceneManagement;
 
 public class ChangeScene1 : MonoBehaviour
 {
-    public string SceneName;
 
     public void ChangeToScene()
     {
-        SceneManager.LoadScene(SceneName);
+        SceneManager.LoadScene("Mmenu");
+    }
+    public void RestartGame()
+    {
+        SceneManager.LoadScene("TestScene");
     }
 }
