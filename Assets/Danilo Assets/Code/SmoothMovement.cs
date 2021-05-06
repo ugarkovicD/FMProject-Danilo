@@ -36,34 +36,7 @@ public class SmoothMovement : MonoBehaviour
     public static float speedSlowed;
     //Reset level
     private GameObject[] TeleportsAndRooms;
-    //Sprites with sword, bow and walking
-    public Texture WalkingRightSword;
-    public Texture WalkingLeftSword;
-    public Texture WalkingUpSword;
-    public Texture WalkingDownSword;
-    //Sprites with Bow
-    public Texture WalkingRightBow;
-    public Texture WalkingLeftBow;
-    public Texture WalkingUpBow;
-    public Texture WalkingDownBow;
-    //Sprites stationary
-    public Sprite StillRightBow;
-    public Sprite StillLeftBow;
-    public Sprite StillUpBow;
-    public Sprite StillDownBow;
-    public Sprite StillRightSword;
-    public Sprite StillLeftSword;
-    public Sprite StillUpSword;
-    public Sprite StillDownSword;
-    //Set Sprites when moving
-    public bool AnimationOn;
-    public int colCount;
-    public int rowCount;
-    public int FPS = 10;
-    public int rowNumber = 0;
-    public int colNumber = 0;
-    public int totalCells;
-    private Vector2 offset;
+
     //checking for weapon holding
     public bool HoldingSword;
     public bool HoldingBow;
@@ -87,15 +60,11 @@ public class SmoothMovement : MonoBehaviour
     public bool SpeedTextYes;
     public bool PanelYes;
 
+    // Animation 
+    public Animator animator; 
+
     void Start()
     {
-        //animation
-        colCount = 4;
-        rowCount = 1;
-        totalCells = colCount * rowCount;
-        AnimationOn = false;
-        HoldingSword = true;
-
         MaxSpeed = 7;
         haveSpace = true;
         speed = MaxSpeed;
@@ -109,6 +78,8 @@ public class SmoothMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        animator.SetFloat("Horizontal", Input.GetAxis("Horizontal"));
+
         Vector3 horizontal = new Vector3(Input.GetAxis("Horizontal"), 0.0f, 0.0f);
         transform.position = transform.position + horizontal * Time.deltaTime;
         //UI
@@ -131,36 +102,12 @@ public class SmoothMovement : MonoBehaviour
             SpeedIncreasedText.enabled = false;
             Panel.enabled = false;
         }
-        /*
-        //Animation
-        if (AnimationOn == true)
-        {
-            SetSpriteAnimation(colCount, rowCount, colNumber, rowNumber, totalCells, FPS);
-        }
-        
-        if (AnimationOn == false)
-        {
-            if (HoldingSword == true)
-            {
-                if (facingLeft == true)
-                {
-                    spriteRender.sprite = StillLeftSword;
-                }
-                if (facingRight == true)
-                {
-                    spriteRender.sprite = StillRightSword;
-                }
-                if (facingUp == true)
-                {
-                    spriteRender.sprite = StillUpSword;
-                }
-                if (facingDown == true)
-                {
-                    spriteRender.sprite = StillDownSword;
-                }
-            }
-        }
-        */
+    
+
+
+
+
+
         //random
         TeleportsAndRooms = GameObject.FindGameObjectsWithTag("Room");
         cameraObject.transform.position = new Vector3(transform.position.x, transform.position.y, cameraObject.transform.position.z);
@@ -381,9 +328,7 @@ public class SmoothMovement : MonoBehaviour
     {
         transform.position = Level3Place.position;
         Spawnedlvl31 = false;
-        RoomGeneration.rand = 8;
-    
-        
+        RoomGeneration.rand = 8;        
     }
     void SetSpriteAnimation(int colCount, int rowCount, int rowNumber, int colNumber, int totalCells, int fps)
         {
@@ -408,5 +353,6 @@ public class SmoothMovement : MonoBehaviour
         }
     
     }
+]
 
 

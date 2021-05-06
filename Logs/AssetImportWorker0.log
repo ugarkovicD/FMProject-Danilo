@@ -15,11 +15,11 @@ D:/eryne/animation/FMProject-Danilo
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-60731
+60974
 Successfully changed project path to: D:/eryne/animation/FMProject-Danilo
 D:/eryne/animation/FMProject-Danilo
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 34.73 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 34.18 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.2.7f1 (c53830e277f1)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.2.7f1/Editor/Data/Resources/UnitySubsystems
@@ -35,1014 +35,279 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.2.7f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.2.7f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.2.7f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56524
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56732
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.2.7f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.001173 seconds.
+Registered in 0.001142 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 32.86 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 32.62 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.982 seconds
+- Completed reload, in  0.959 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.000963 seconds.
+Registered in 0.001024 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 33.22 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 33.61 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.852 seconds
+- Completed reload, in  0.856 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
-Refreshing native plugins compatible for Editor in 0.35 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 0.34 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 1841 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 85.6 MB.
 System memory in use after: 85.7 MB.
 
 Unloading 19 unused Assets to reduce memory usage. Loaded Objects now: 2290.
-Total: 1.783200 ms (FindLiveObjects: 0.161600 ms CreateObjectMapping: 0.071900 ms MarkObjects: 1.492100 ms  DeleteObjects: 0.056800 ms)
+Total: 1.945300 ms (FindLiveObjects: 0.209900 ms CreateObjectMapping: 0.097300 ms MarkObjects: 1.572800 ms  DeleteObjects: 0.064600 ms)
 
 ========================================================================
 Received Import Request.
-  path: Assets/Danilo Assets/Code
-  artifactKey: Guid(8df492541c7ba874fa34fce3a1944d43) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Danilo Assets/Code using Guid(8df492541c7ba874fa34fce3a1944d43) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '63ffd428e04c6adcefd196802deed999') in 0.008144 seconds
-  Import took 0.010843 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000253 seconds.
-  path: Assets/Danilo Assets/Bomb.png
-  artifactKey: Guid(60c177656e1a86a44b5ba9e5eb0eacc0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Danilo Assets/Bomb.png using Guid(60c177656e1a86a44b5ba9e5eb0eacc0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9b1409b9b2c15e927010bcf7bcbbdfe9') in 0.111371 seconds
-  Import took 0.114746 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000283 seconds.
-  path: Assets/Danilo Assets/Bullet.prefab
-  artifactKey: Guid(ef500eeda47186c48be96bf034b30b5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Danilo Assets/Bullet.prefab using Guid(ef500eeda47186c48be96bf034b30b5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cffe725562ca52e31349004c88472e79') in 0.036452 seconds
-  Import took 0.039501 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000221 seconds.
-  path: Assets/Danilo Assets/TeleportPrefab.prefab
-  artifactKey: Guid(c2a250a05beabc144907b1f1918804ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Danilo Assets/TeleportPrefab.prefab using Guid(c2a250a05beabc144907b1f1918804ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ba17512bce54534bc0e9a005a29df393') in 0.011331 seconds
-  Import took 0.014071 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000229 seconds.
-  path: Assets/Danilo Assets/arrow.prefab
-  artifactKey: Guid(a12b612786b833c46b8d1c8ff4ebedbe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Danilo Assets/arrow.prefab using Guid(a12b612786b833c46b8d1c8ff4ebedbe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '315bd6f55090444432822a2c13154064') in 0.010800 seconds
-  Import took 0.013611 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000243 seconds.
-  path: Assets/Danilo Assets/BombProjectile.prefab
-  artifactKey: Guid(e113185fdfde6ef49932e1c5c8d315c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Danilo Assets/BombProjectile.prefab using Guid(e113185fdfde6ef49932e1c5c8d315c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fa82ff80987a000116913cd486b3f711') in 0.021165 seconds
-  Import took 0.023798 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000216 seconds.
-  path: Assets/Danilo Assets/da2plgi-c8b8edcc-3cdc-432c-b2bf-02c7d72f5afb.gif
-  artifactKey: Guid(93d888eaf76f628499bd86b2a2cf3b9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Danilo Assets/da2plgi-c8b8edcc-3cdc-432c-b2bf-02c7d72f5afb.gif using Guid(93d888eaf76f628499bd86b2a2cf3b9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0da099ff82572085550e0e9d8c3651fd') in 0.016148 seconds
-  Import took 0.018625 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.354671 seconds.
-  path: Assets/Danilo Assets/Code/SmoothMovement.cs
-  artifactKey: Guid(3f4519e31ff85824298c168ed551f574) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Danilo Assets/Code/SmoothMovement.cs using Guid(3f4519e31ff85824298c168ed551f574) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1a0571bf9cf228918ddb4001c2d437d4') in 0.019349 seconds
-  Import took 0.022172 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.001273 seconds.
-  path: Assets/Danilo Assets/Code/SmoothMovement.cs
-  artifactKey: Guid(3f4519e31ff85824298c168ed551f574) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Danilo Assets/Code/SmoothMovement.cs using Guid(3f4519e31ff85824298c168ed551f574) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1a0571bf9cf228918ddb4001c2d437d4') in 0.003981 seconds
-  Import took 0.007223 seconds .
-
-========================================================================
-Received Prepare
-Refreshing native plugins compatible for Editor in 1.99 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 52.4 MB.
-System memory in use after: 52.5 MB.
-
-Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 2302.
-Total: 1.972800 ms (FindLiveObjects: 0.158800 ms CreateObjectMapping: 0.060200 ms MarkObjects: 1.724300 ms  DeleteObjects: 0.028300 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 264.941361 seconds.
-  path: Assets/Danilo Assets/Sprites/-20_Damage_Count.png
-  artifactKey: Guid(843858c7eb89dc14caf955695390a303) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Danilo Assets/Sprites/-20_Damage_Count.png using Guid(843858c7eb89dc14caf955695390a303) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '16437efc9aead0f40488bfc340204575') in 0.015766 seconds
-  Import took 0.019081 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000235 seconds.
-  path: Assets/Danilo Assets/Sprites/-40_Damage_Count.png
-  artifactKey: Guid(0e73bb886cfa55c44986c594cf0e9ff2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Danilo Assets/Sprites/-40_Damage_Count.png using Guid(0e73bb886cfa55c44986c594cf0e9ff2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e88e3ac879cc114cdba168f2e088f145') in 0.015799 seconds
-  Import took 0.018244 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000234 seconds.
-  path: Assets/Danilo Assets/Sprites/-30_Damage_Count.png
-  artifactKey: Guid(09dd7233dbfd57b4a9a4d7a29716a095) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Danilo Assets/Sprites/-30_Damage_Count.png using Guid(09dd7233dbfd57b4a9a4d7a29716a095) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '443f02a585dfe630f5e00ab7c5ca10db') in 0.013659 seconds
-  Import took 0.016408 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000229 seconds.
-  path: Assets/Danilo Assets/Sprites/enemy designs -  reverse.png
-  artifactKey: Guid(17f97399562cc364683f7292150d7623) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Danilo Assets/Sprites/enemy designs -  reverse.png using Guid(17f97399562cc364683f7292150d7623) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1baa208062e1581fedc6dd4a4d74f2b6') in 0.019895 seconds
-  Import took 0.022850 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000192 seconds.
-  path: Assets/Danilo Assets/Sprites/Sad Enemy - Flipped.png
-  artifactKey: Guid(349c68f75f49d394892775ee6d04a1f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Danilo Assets/Sprites/Sad Enemy - Flipped.png using Guid(349c68f75f49d394892775ee6d04a1f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e4d3a396866771c4b6ae75144c65f2bf') in 0.019919 seconds
-  Import took 0.023041 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000185 seconds.
-  path: Assets/Danilo Assets/Sprites/Jealous Enemy - Reverse.png
-  artifactKey: Guid(95c9d807c03c9d34ab49e80d035783bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Danilo Assets/Sprites/Jealous Enemy - Reverse.png using Guid(95c9d807c03c9d34ab49e80d035783bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3fedf43e95a79c61beb9dea49d7afccc') in 0.039021 seconds
-  Import took 0.042718 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000172 seconds.
-  path: Assets/Danilo Assets/Sprites/Jealous Enemy.png
-  artifactKey: Guid(3307c9422b432474b99cc4b4965ba9ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Danilo Assets/Sprites/Jealous Enemy.png using Guid(3307c9422b432474b99cc4b4965ba9ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2156518620b4c8f3430ba1b53221b138') in 0.032541 seconds
-  Import took 0.036248 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000203 seconds.
-  path: Assets/Danilo Assets/Sprites/Sad Enemy.png
-  artifactKey: Guid(753d950563603b6488e42b3e8970bf53) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Danilo Assets/Sprites/Sad Enemy.png using Guid(753d950563603b6488e42b3e8970bf53) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bc03602643820d9bc539899cf76baa4f') in 0.026336 seconds
-  Import took 0.029948 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000205 seconds.
-  path: Assets/Danilo Assets/Sprites/enemy designs.png
-  artifactKey: Guid(d2443bf4b562f454b96bbeb7d510085f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Danilo Assets/Sprites/enemy designs.png using Guid(d2443bf4b562f454b96bbeb7d510085f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5d0cdd15ecd5d1d56e63688360df1763') in 0.026072 seconds
-  Import took 0.028945 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.218115 seconds.
-  path: Assets/Danilo Assets/LevelPrefabs/lvl 2.prefab
-  artifactKey: Guid(2222a70c831ce4e40ba0305574877b40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Danilo Assets/LevelPrefabs/lvl 2.prefab using Guid(2222a70c831ce4e40ba0305574877b40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '271b95c2e109081cfa3ad6b68faa7b4d') in 0.074340 seconds
-  Import took 0.080700 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000275 seconds.
-  path: Assets/Danilo Assets/LevelPrefabs/lvl 3.prefab
-  artifactKey: Guid(b96553249eaafb54abeaf241fb4de408) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Danilo Assets/LevelPrefabs/lvl 3.prefab using Guid(b96553249eaafb54abeaf241fb4de408) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '83462d9f72925702e77490d50b6e47b6') in 0.053158 seconds
-  Import took 0.058257 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000240 seconds.
-  path: Assets/Danilo Assets/LevelPrefabs/NavMesh-NavMesh2D 2.asset
-  artifactKey: Guid(2d6130b726f1d214092d38f5d5161a8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Danilo Assets/LevelPrefabs/NavMesh-NavMesh2D 2.asset using Guid(2d6130b726f1d214092d38f5d5161a8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'efda0376941f58247c991f445b63169d') in 0.006163 seconds
-  Import took 0.008971 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000230 seconds.
-  path: Assets/Danilo Assets/LevelPrefabs/NavMesh-NavMesh2D 1.asset
-  artifactKey: Guid(9b29883d8f002254f8fd9e0a2d53990a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Danilo Assets/LevelPrefabs/NavMesh-NavMesh2D 1.asset using Guid(9b29883d8f002254f8fd9e0a2d53990a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9a713fa9fc1662f15be67b017e785d46') in 0.005339 seconds
-  Import took 0.008593 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000219 seconds.
-  path: Assets/Danilo Assets/LevelPrefabs/lvl 3 1.prefab
-  artifactKey: Guid(19eb259b99ff9fc41aee65243620482c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Danilo Assets/LevelPrefabs/lvl 3 1.prefab using Guid(19eb259b99ff9fc41aee65243620482c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cc376592eb7ecd5bac1e4d7a437d102b') in 0.049337 seconds
-  Import took 0.054015 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000221 seconds.
-  path: Assets/Danilo Assets/LevelPrefabs/lvl1.prefab
-  artifactKey: Guid(64cb3dbdbe8499340a6c74dc7fbb1a95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Danilo Assets/LevelPrefabs/lvl1.prefab using Guid(64cb3dbdbe8499340a6c74dc7fbb1a95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '39b7ed3c277d4048e132056eedfbdee3') in 0.088437 seconds
-  Import took 0.096214 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000179 seconds.
-  path: Assets/Danilo Assets/LevelPrefabs/NavMesh-GameObject.asset
-  artifactKey: Guid(005c2aac7015c1a47a26e6420c89f87a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Danilo Assets/LevelPrefabs/NavMesh-GameObject.asset using Guid(005c2aac7015c1a47a26e6420c89f87a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6c2926f7e601de6e491b807c5c45ff6b') in 0.005138 seconds
-  Import took 0.008396 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000286 seconds.
-  path: Assets/Danilo Assets/LevelPrefabs/NavMesh-NavMesh.asset
-  artifactKey: Guid(8eb9382e5bf15374fa05dd7da1b783fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Danilo Assets/LevelPrefabs/NavMesh-NavMesh.asset using Guid(8eb9382e5bf15374fa05dd7da1b783fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ce878cc3f084dc97f3910681872fa7d6') in 0.005349 seconds
-  Import took 0.008185 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000177 seconds.
-  path: Assets/Danilo Assets/LevelPrefabs/NavMesh-NavMesh2D.asset
-  artifactKey: Guid(a3a79dc90ecd573469bedd77c37f146e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Danilo Assets/LevelPrefabs/NavMesh-NavMesh2D.asset using Guid(a3a79dc90ecd573469bedd77c37f146e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ccd91040bafb8ec779ca684acd6f5bf9') in 0.005151 seconds
-  Import took 0.007967 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.946874 seconds.
-  path: Assets/Danilo Assets/eryne assets/sprite animation
-  artifactKey: Guid(34be235a565914048a4d13289997dc7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Danilo Assets/eryne assets/sprite animation using Guid(34be235a565914048a4d13289997dc7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9d0c85a31349e2e4701ce44ed1e79e66') in 0.005888 seconds
-  Import took 0.009241 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.081230 seconds.
-  path: Assets/Danilo Assets/eryne assets/sprite animation/Character down sprite.png
-  artifactKey: Guid(986c02e2cb5ccbe48811c33ad7d787b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Danilo Assets/eryne assets/sprite animation/Character down sprite.png using Guid(986c02e2cb5ccbe48811c33ad7d787b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '603a9acf3e553eac6de58cd1812e0bc2') in 3.262957 seconds
-  Import took 3.278261 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000314 seconds.
-  path: Assets/Danilo Assets/eryne assets/sprite animation/Character Sprite - Left.png
-  artifactKey: Guid(b03767cccc6d6fd458ae561edc2ca4f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Danilo Assets/eryne assets/sprite animation/Character Sprite - Left.png using Guid(b03767cccc6d6fd458ae561edc2ca4f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd83efa5228aa4a962a8e2d177d65632b') in 0.019036 seconds
-  Import took 0.022191 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000227 seconds.
-  path: Assets/Danilo Assets/eryne assets/sprite animation/Character Sprite.png
-  artifactKey: Guid(f3368196ea97d5c42ba60fea5217a83a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Danilo Assets/eryne assets/sprite animation/Character Sprite.png using Guid(f3368196ea97d5c42ba60fea5217a83a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f7c527a84d12b71bfa104c04a7270005') in 0.021033 seconds
-  Import took 0.023616 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000204 seconds.
-  path: Assets/Danilo Assets/eryne assets/sprite animation/Character Up Sprite.png
-  artifactKey: Guid(e6aa22ba4fc5bca46b233760d8deaebe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Danilo Assets/eryne assets/sprite animation/Character Up Sprite.png using Guid(e6aa22ba4fc5bca46b233760d8deaebe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '90f94e9924c260062e36aa1dcba4e5fd') in 0.019154 seconds
-  Import took 0.021986 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 184.320359 seconds.
-  path: Assets/Danilo Assets/eryne assets/sprite animation/Character down sprite.png
-  artifactKey: Guid(986c02e2cb5ccbe48811c33ad7d787b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Danilo Assets/eryne assets/sprite animation/Character down sprite.png using Guid(986c02e2cb5ccbe48811c33ad7d787b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3bdafe3a63f202e33ebf531a3164bc24') in 3.141471 seconds
-  Import took 3.158547 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 81.735546 seconds.
-  path: Assets/Danilo Assets/eryne assets/sprite animation/Character down sprite.png
-  artifactKey: Guid(986c02e2cb5ccbe48811c33ad7d787b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Danilo Assets/eryne assets/sprite animation/Character down sprite.png using Guid(986c02e2cb5ccbe48811c33ad7d787b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aa55bbd0876c2687905a8e8efb0eedb0') in 3.119198 seconds
-  Import took 3.135349 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 44.009500 seconds.
-  path: Assets/Danilo Assets/eryne assets/sprite animation/Character down sprite.png
-  artifactKey: Guid(986c02e2cb5ccbe48811c33ad7d787b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Danilo Assets/eryne assets/sprite animation/Character down sprite.png using Guid(986c02e2cb5ccbe48811c33ad7d787b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '08b79055fa8ee6fda6cc64ca5bfe2918') in 0.021376 seconds
-  Import took 0.024734 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 59.290173 seconds.
-  path: Assets/Danilo Assets/eryne assets/sprite animation/Character down sprite.png
-  artifactKey: Guid(986c02e2cb5ccbe48811c33ad7d787b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Danilo Assets/eryne assets/sprite animation/Character down sprite.png using Guid(986c02e2cb5ccbe48811c33ad7d787b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '75053cb01c493af7f01b9b10c9acd506') in 0.017139 seconds
-  Import took 0.020171 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 403.930012 seconds.
-  path: Assets/Danilo Assets/eryne assets/sprite animation/Character down sprite.png
-  artifactKey: Guid(986c02e2cb5ccbe48811c33ad7d787b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Danilo Assets/eryne assets/sprite animation/Character down sprite.png using Guid(986c02e2cb5ccbe48811c33ad7d787b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd1c8cc3d388a1cbf25c5d659eabe2d84') in 0.030425 seconds
-  Import took 0.034088 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 56.303016 seconds.
-  path: Assets/Danilo Assets/Sprites/PlayerSprites/SwordSprites/Character Sprite right swords.png
-  artifactKey: Guid(456629a6d2d148d4d838840f361af82a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Danilo Assets/Sprites/PlayerSprites/SwordSprites/Character Sprite right swords.png using Guid(456629a6d2d148d4d838840f361af82a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '953f27d05f9bd1af58f4e6330d92072d') in 0.014862 seconds
-  Import took 0.017964 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000247 seconds.
-  path: Assets/Danilo Assets/Sprites/PlayerSprites/SwordSprites/Character Sword Stationary - Left.png
-  artifactKey: Guid(a3e6f1d38747df24489971ba2edef861) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Danilo Assets/Sprites/PlayerSprites/SwordSprites/Character Sword Stationary - Left.png using Guid(a3e6f1d38747df24489971ba2edef861) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '926c3195765a5b6ce4bce4d62a1b9871') in 0.018636 seconds
-  Import took 0.021405 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000174 seconds.
-  path: Assets/Danilo Assets/Sprites/PlayerSprites/SwordSprites/Character Sprite right swords.png
-  artifactKey: Guid(456629a6d2d148d4d838840f361af82a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Danilo Assets/Sprites/PlayerSprites/SwordSprites/Character Sprite right swords.png using Guid(456629a6d2d148d4d838840f361af82a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '953f27d05f9bd1af58f4e6330d92072d') in 0.012721 seconds
-  Import took 0.015499 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000241 seconds.
-  path: Assets/Danilo Assets/Sprites/PlayerSprites/SwordSprites/Character Sword Stationary - Up.png
-  artifactKey: Guid(07dafbf9dd4c0374bb7eb25e90ba27eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Danilo Assets/Sprites/PlayerSprites/SwordSprites/Character Sword Stationary - Up.png using Guid(07dafbf9dd4c0374bb7eb25e90ba27eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8c348be3f6cf7bed5834c24ccf599b38') in 0.016284 seconds
-  Import took 0.018914 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000220 seconds.
-  path: Assets/Danilo Assets/Sprites/PlayerSprites/SwordSprites/Character Sword Stationary.png
-  artifactKey: Guid(95548e618f0f3b040a88edea1dd66991) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Danilo Assets/Sprites/PlayerSprites/SwordSprites/Character Sword Stationary.png using Guid(95548e618f0f3b040a88edea1dd66991) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c0f0545b143c748fa82ee8b665936185') in 0.017839 seconds
-  Import took 0.021107 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000236 seconds.
-  path: Assets/Danilo Assets/Sprites/PlayerSprites/SwordSprites/Character Swords Stationary - Down.png
-  artifactKey: Guid(04f3d779f8633634e8c110eb90e0a6db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Danilo Assets/Sprites/PlayerSprites/SwordSprites/Character Swords Stationary - Down.png using Guid(04f3d779f8633634e8c110eb90e0a6db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8c041d073530eeb536f7d150fd3a13aa') in 0.012999 seconds
-  Import took 0.016427 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000216 seconds.
-  path: Assets/Danilo Assets/Sprites/PlayerSprites/SwordSprites/Character Sprite Sword Walking - Left.png
-  artifactKey: Guid(c8ad8e6d849959043ba6ea3f9f83fbdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Danilo Assets/Sprites/PlayerSprites/SwordSprites/Character Sprite Sword Walking - Left.png using Guid(c8ad8e6d849959043ba6ea3f9f83fbdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f47e165e30b0d10b8ad4b18a4d936fdc') in 0.016578 seconds
-  Import took 0.020204 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.002778 seconds.
-  path: Assets/Danilo Assets/Sprites/PlayerSprites/SwordSprites/Character down sprite Swords.png
-  artifactKey: Guid(b09532a3a886a3e4187aeb27f47e7fab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Danilo Assets/Sprites/PlayerSprites/SwordSprites/Character down sprite Swords.png using Guid(b09532a3a886a3e4187aeb27f47e7fab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '096685a5589bb6ebb1670e305d604357') in 0.017997 seconds
-  Import took 0.020828 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000221 seconds.
-  path: Assets/Danilo Assets/Sprites/PlayerSprites/SwordSprites/Character up sprite Weapons.png
-  artifactKey: Guid(f33467052fa387f4f9f146e08e7446a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Danilo Assets/Sprites/PlayerSprites/SwordSprites/Character up sprite Weapons.png using Guid(f33467052fa387f4f9f146e08e7446a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c18a1e02df83daafe40ae8fd06fb266d') in 0.017952 seconds
-  Import took 0.021205 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001186 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.50 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.772 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.33 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1831 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 91.9 MB.
-System memory in use after: 92.0 MB.
-
-Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 2333.
-Total: 1.632000 ms (FindLiveObjects: 0.176800 ms CreateObjectMapping: 0.064400 ms MarkObjects: 1.377400 ms  DeleteObjects: 0.012400 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.000990 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.35 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.761 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.36 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1831 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 92.0 MB.
-System memory in use after: 92.1 MB.
-
-Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 2337.
-Total: 1.769900 ms (FindLiveObjects: 0.210400 ms CreateObjectMapping: 0.073200 ms MarkObjects: 1.471400 ms  DeleteObjects: 0.013800 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.000986 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.38 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.760 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.40 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1831 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 92.0 MB.
-System memory in use after: 92.1 MB.
-
-Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 2341.
-Total: 1.872200 ms (FindLiveObjects: 0.210300 ms CreateObjectMapping: 0.069100 ms MarkObjects: 1.574900 ms  DeleteObjects: 0.016300 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001069 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.33 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.751 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.33 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1831 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 92.0 MB.
-System memory in use after: 92.2 MB.
-
-Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 2345.
-Total: 1.664900 ms (FindLiveObjects: 0.178400 ms CreateObjectMapping: 0.061000 ms MarkObjects: 1.410300 ms  DeleteObjects: 0.014200 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001248 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.33 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.752 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.33 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1831 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 92.1 MB.
-System memory in use after: 92.2 MB.
-
-Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 2349.
-Total: 2.080900 ms (FindLiveObjects: 0.197100 ms CreateObjectMapping: 0.089500 ms MarkObjects: 1.768100 ms  DeleteObjects: 0.024600 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001087 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.41 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.752 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.41 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1831 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 92.1 MB.
-System memory in use after: 92.2 MB.
-
-Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 2353.
-Total: 1.700000 ms (FindLiveObjects: 0.194400 ms CreateObjectMapping: 0.061400 ms MarkObjects: 1.429700 ms  DeleteObjects: 0.013300 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001031 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.34 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.752 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.32 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1831 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 92.1 MB.
-System memory in use after: 92.2 MB.
-
-Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 2357.
-Total: 7.001600 ms (FindLiveObjects: 0.505900 ms CreateObjectMapping: 0.242800 ms MarkObjects: 6.192200 ms  DeleteObjects: 0.056400 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001155 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.33 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.775 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.33 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1831 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 92.1 MB.
-System memory in use after: 92.2 MB.
-
-Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 2361.
-Total: 2.188400 ms (FindLiveObjects: 0.208500 ms CreateObjectMapping: 0.105200 ms MarkObjects: 1.852800 ms  DeleteObjects: 0.020300 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001035 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.32 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.756 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.36 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1831 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 92.1 MB.
-System memory in use after: 92.2 MB.
-
-Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 2365.
-Total: 1.953200 ms (FindLiveObjects: 0.190900 ms CreateObjectMapping: 0.066200 ms MarkObjects: 1.680800 ms  DeleteObjects: 0.014200 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001075 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.33 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.760 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.32 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1831 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 92.1 MB.
-System memory in use after: 92.2 MB.
-
-Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 2369.
-Total: 1.654200 ms (FindLiveObjects: 0.182700 ms CreateObjectMapping: 0.067600 ms MarkObjects: 1.390600 ms  DeleteObjects: 0.012300 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.000982 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.36 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.754 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.33 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1831 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 92.1 MB.
-System memory in use after: 92.2 MB.
-
-Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 2373.
-Total: 1.872300 ms (FindLiveObjects: 0.238500 ms CreateObjectMapping: 0.074800 ms MarkObjects: 1.540100 ms  DeleteObjects: 0.017900 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001053 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.33 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.746 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.37 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1831 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 92.1 MB.
-System memory in use after: 92.2 MB.
-
-Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 2377.
-Total: 1.767300 ms (FindLiveObjects: 0.186300 ms CreateObjectMapping: 0.064500 ms MarkObjects: 1.503100 ms  DeleteObjects: 0.012200 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.000994 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.40 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.759 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.32 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1831 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 92.1 MB.
-System memory in use after: 92.2 MB.
-
-Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 2381.
-Total: 2.328200 ms (FindLiveObjects: 0.215100 ms CreateObjectMapping: 0.093600 ms MarkObjects: 2.001600 ms  DeleteObjects: 0.016600 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.000969 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.33 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.751 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.34 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1831 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 92.1 MB.
-System memory in use after: 92.3 MB.
-
-Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 2385.
-Total: 1.695500 ms (FindLiveObjects: 0.192700 ms CreateObjectMapping: 0.064600 ms MarkObjects: 1.425000 ms  DeleteObjects: 0.012300 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001007 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.36 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.749 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.35 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1831 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 92.1 MB.
-System memory in use after: 92.3 MB.
-
-Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 2389.
-Total: 1.931900 ms (FindLiveObjects: 0.220500 ms CreateObjectMapping: 0.073400 ms MarkObjects: 1.621100 ms  DeleteObjects: 0.016000 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001103 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.36 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.755 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.36 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1831 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 92.2 MB.
-System memory in use after: 92.3 MB.
-
-Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 2393.
-Total: 1.830400 ms (FindLiveObjects: 0.191600 ms CreateObjectMapping: 0.069900 ms MarkObjects: 1.553800 ms  DeleteObjects: 0.014000 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.000953 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.35 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.761 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.35 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1831 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 92.2 MB.
-System memory in use after: 92.3 MB.
-
-Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 2397.
-Total: 1.774200 ms (FindLiveObjects: 0.189800 ms CreateObjectMapping: 0.062300 ms MarkObjects: 1.507300 ms  DeleteObjects: 0.013600 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001131 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.32 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.777 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.32 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1831 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 92.2 MB.
-System memory in use after: 92.3 MB.
-
-Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 2401.
-Total: 5.308500 ms (FindLiveObjects: 0.413800 ms CreateObjectMapping: 0.181800 ms MarkObjects: 4.679400 ms  DeleteObjects: 0.030400 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001009 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.40 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.751 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.42 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1831 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 92.2 MB.
-System memory in use after: 92.3 MB.
-
-Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 2405.
-Total: 1.871000 ms (FindLiveObjects: 0.194500 ms CreateObjectMapping: 0.067300 ms MarkObjects: 1.593200 ms  DeleteObjects: 0.015000 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.000972 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.33 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.753 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.33 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1831 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 92.2 MB.
-System memory in use after: 92.3 MB.
-
-Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 2409.
-Total: 1.807600 ms (FindLiveObjects: 0.208700 ms CreateObjectMapping: 0.081100 ms MarkObjects: 1.503700 ms  DeleteObjects: 0.013200 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001159 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.36 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.758 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.36 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1831 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 92.2 MB.
-System memory in use after: 92.3 MB.
-
-Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 2413.
-Total: 1.830600 ms (FindLiveObjects: 0.201900 ms CreateObjectMapping: 0.071900 ms MarkObjects: 1.540000 ms  DeleteObjects: 0.016000 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 1601.750159 seconds.
   path: Assets/Danilo Assets/eryne assets/sprite animation/Run forward.anim
   artifactKey: Guid(f429db95f8e577c4fbedc3682fb20d4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Danilo Assets/eryne assets/sprite animation/Run forward.anim using Guid(f429db95f8e577c4fbedc3682fb20d4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f902b0795ed4fd15a3a6c80d33dddf18') in 0.015857 seconds
-  Import took 0.018970 seconds .
+Start importing Assets/Danilo Assets/eryne assets/sprite animation/Run forward.anim using Guid(f429db95f8e577c4fbedc3682fb20d4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cb53e9629a8ec59f7632a56a7735d982') in 0.030624 seconds
+  Import took 0.033268 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.001388 seconds.
-  path: Assets/Danilo Assets/eryne assets/sprite animation/Run forward.anim
-  artifactKey: Guid(f429db95f8e577c4fbedc3682fb20d4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Danilo Assets/eryne assets/sprite animation/Run forward.anim using Guid(f429db95f8e577c4fbedc3682fb20d4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f902b0795ed4fd15a3a6c80d33dddf18') in 0.004677 seconds
-  Import took 0.007521 seconds .
+  Time since last request: 0.000246 seconds.
+  path: Assets/Danilo Assets/eryne assets/sprite animation/Player.controller
+  artifactKey: Guid(cca8db22bad387544ae6823b7b6032bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Danilo Assets/eryne assets/sprite animation/Player.controller using Guid(cca8db22bad387544ae6823b7b6032bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '34d33b5d5b135cc3d18f821531e381a6') in 0.007999 seconds
+  Import took 0.010488 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 37.913048 seconds.
-  path: Assets/Danilo Assets/eryne assets/sprite animation/Character Sprite - Left.png
-  artifactKey: Guid(b03767cccc6d6fd458ae561edc2ca4f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Danilo Assets/eryne assets/sprite animation/Character Sprite - Left.png using Guid(b03767cccc6d6fd458ae561edc2ca4f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9829bd628d28fddf36ff4917c209d9bc') in 0.031976 seconds
-  Import took 0.034891 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 136.825608 seconds.
-  path: Assets/Danilo Assets/eryne assets/sprite animation/Character Sprite - Left.png
-  artifactKey: Guid(b03767cccc6d6fd458ae561edc2ca4f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Danilo Assets/eryne assets/sprite animation/Character Sprite - Left.png using Guid(b03767cccc6d6fd458ae561edc2ca4f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0482a72d6a0fb1d0a46736b9353fc6b7') in 0.048268 seconds
-  Import took 0.051416 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 476.859328 seconds.
+  Time since last request: 6.448671 seconds.
   path: Assets/Danilo Assets/eryne assets/sprite animation/run left.anim
   artifactKey: Guid(9e2a6fe099768734f8c6d54c97a9f50b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Danilo Assets/eryne assets/sprite animation/run left.anim using Guid(9e2a6fe099768734f8c6d54c97a9f50b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '90b6c626de87c8ab744edf0ebaf76a6b') in 0.006717 seconds
-  Import took 0.010884 seconds .
+Start importing Assets/Danilo Assets/eryne assets/sprite animation/run left.anim using Guid(9e2a6fe099768734f8c6d54c97a9f50b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e84836766ea051ce38456f9cf59032e5') in 0.005728 seconds
+  Import took 0.008409 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 587.895508 seconds.
-  path: Assets/Danilo Assets/eryne assets/sprite animation/Character down sprite Swords.png
-  artifactKey: Guid(fd828ad4060c7cf47864475540f0d78d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Danilo Assets/eryne assets/sprite animation/Character down sprite Swords.png using Guid(fd828ad4060c7cf47864475540f0d78d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a2eefc5bf809336862ac2f42c85bbfae') in 0.020424 seconds
-  Import took 0.023867 seconds .
+  Time since last request: 0.001552 seconds.
+  path: Assets/Danilo Assets/eryne assets/sprite animation/run left.anim
+  artifactKey: Guid(9e2a6fe099768734f8c6d54c97a9f50b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Danilo Assets/eryne assets/sprite animation/run left.anim using Guid(9e2a6fe099768734f8c6d54c97a9f50b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e84836766ea051ce38456f9cf59032e5') in 0.005310 seconds
+  Import took 0.008434 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000278 seconds.
-  path: Assets/Danilo Assets/eryne assets/sprite animation/Character Sprite Sword Walking - Left.png
-  artifactKey: Guid(b91fae443b2da254d8ffb301c37cf65f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Danilo Assets/eryne assets/sprite animation/Character Sprite Sword Walking - Left.png using Guid(b91fae443b2da254d8ffb301c37cf65f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eacfa61152446ed93ac745a4e47d4916') in 0.016334 seconds
-  Import took 0.019415 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000273 seconds.
-  path: Assets/Danilo Assets/eryne assets/sprite animation/Character up sprite Weapons.png
-  artifactKey: Guid(9ab08a2a8d52c804484f65442b58a38c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Danilo Assets/eryne assets/sprite animation/Character up sprite Weapons.png using Guid(9ab08a2a8d52c804484f65442b58a38c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '70c4e8d18beb430b56ad93161975177d') in 0.022240 seconds
-  Import took 0.025023 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000167 seconds.
+  Time since last request: 26.657862 seconds.
   path: Assets/Danilo Assets/eryne assets/sprite animation/Character Sprite right swords.png
   artifactKey: Guid(22d445fad0fa61f4b93ecd7a8129ea74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Danilo Assets/eryne assets/sprite animation/Character Sprite right swords.png using Guid(22d445fad0fa61f4b93ecd7a8129ea74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3fc0877488aa22496adf5416f6ceeec3') in 0.013684 seconds
-  Import took 0.016167 seconds .
+Start importing Assets/Danilo Assets/eryne assets/sprite animation/Character Sprite right swords.png using Guid(22d445fad0fa61f4b93ecd7a8129ea74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eba8b8238fb8e37265f078a40fe6cee0') in 0.062239 seconds
+  Import took 0.064953 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 18.016809 seconds.
-  path: Assets/Danilo Assets/eryne assets/sprite animation/Character down sprite Swords.png
-  artifactKey: Guid(fd828ad4060c7cf47864475540f0d78d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Danilo Assets/eryne assets/sprite animation/Character down sprite Swords.png using Guid(fd828ad4060c7cf47864475540f0d78d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f3e511213cb1ec1a01f026778d4742dd') in 0.015159 seconds
-  Import took 0.018162 seconds .
+  Time since last request: 155.986646 seconds.
+  path: Assets/Danilo Assets/eryne assets/sprite animation/Character Sprite right swords.png
+  artifactKey: Guid(22d445fad0fa61f4b93ecd7a8129ea74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Danilo Assets/eryne assets/sprite animation/Character Sprite right swords.png using Guid(22d445fad0fa61f4b93ecd7a8129ea74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ac2f30df7fd579bf83c0034e0350dc9f') in 0.057744 seconds
+  Import took 0.060947 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 136.166271 seconds.
-  path: Assets/Danilo Assets/eryne assets/sprite animation/Character down sprite Swords.png
-  artifactKey: Guid(fd828ad4060c7cf47864475540f0d78d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Danilo Assets/eryne assets/sprite animation/Character down sprite Swords.png using Guid(fd828ad4060c7cf47864475540f0d78d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '91cd665f37d030e66bdfd56e702546aa') in 0.029425 seconds
-  Import took 0.033026 seconds .
+  Time since last request: 179.592045 seconds.
+  path: Assets/Danilo Assets/eryne assets/sprite animation/Character Sprite Sword Walking - Left.png
+  artifactKey: Guid(b91fae443b2da254d8ffb301c37cf65f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Danilo Assets/eryne assets/sprite animation/Character Sprite Sword Walking - Left.png using Guid(b91fae443b2da254d8ffb301c37cf65f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6838273e46f36b2d689edd853b0f43c4') in 0.014421 seconds
+  Import took 0.017459 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 132.467005 seconds.
+  path: Assets/Danilo Assets/eryne assets/sprite animation/Character Sprite Sword Walking - Left.png
+  artifactKey: Guid(b91fae443b2da254d8ffb301c37cf65f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Danilo Assets/eryne assets/sprite animation/Character Sprite Sword Walking - Left.png using Guid(b91fae443b2da254d8ffb301c37cf65f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f7bec72b1482021859185596d46a2b90') in 0.029363 seconds
+  Import took 0.032258 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 91.988576 seconds.
+  path: Assets/Danilo Assets/eryne assets/sprite animation/run left sword.anim
+  artifactKey: Guid(60d5c74abe858fc47bffd5768c111357) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Danilo Assets/eryne assets/sprite animation/run left sword.anim using Guid(60d5c74abe858fc47bffd5768c111357) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b187e3db63eddfc2da692fb4eeeb03c7') in 0.006204 seconds
+  Import took 0.009666 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001504 seconds.
+  path: Assets/Danilo Assets/eryne assets/sprite animation/run left sword.anim
+  artifactKey: Guid(60d5c74abe858fc47bffd5768c111357) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Danilo Assets/eryne assets/sprite animation/run left sword.anim using Guid(60d5c74abe858fc47bffd5768c111357) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b187e3db63eddfc2da692fb4eeeb03c7') in 0.004442 seconds
+  Import took 0.007139 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.543328 seconds.
+  path: Assets/Danilo Assets/eryne assets/sprite animation/run right sword.anim
+  artifactKey: Guid(8f353961a2cf408408945cd3e1275293) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Danilo Assets/eryne assets/sprite animation/run right sword.anim using Guid(8f353961a2cf408408945cd3e1275293) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '529c41e15f8e2bc965fed532407d8f6a') in 0.005492 seconds
+  Import took 0.008549 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001191 seconds.
+  path: Assets/Danilo Assets/eryne assets/sprite animation/run right sword.anim
+  artifactKey: Guid(8f353961a2cf408408945cd3e1275293) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Danilo Assets/eryne assets/sprite animation/run right sword.anim using Guid(8f353961a2cf408408945cd3e1275293) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '529c41e15f8e2bc965fed532407d8f6a') in 0.005432 seconds
+  Import took 0.008572 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 27.810304 seconds.
+  path: Assets/Danilo Assets/eryne assets/sprite animation/Player.controller
+  artifactKey: Guid(cca8db22bad387544ae6823b7b6032bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Danilo Assets/eryne assets/sprite animation/Player.controller using Guid(cca8db22bad387544ae6823b7b6032bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b168485829585bb752f0006dc04c6239') in 0.006134 seconds
+  Import took 0.009026 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 90.067967 seconds.
+  path: Assets/Danilo Assets/eryne assets/sprite animation/Character up sprite Weapons.png
+  artifactKey: Guid(9ab08a2a8d52c804484f65442b58a38c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Danilo Assets/eryne assets/sprite animation/Character up sprite Weapons.png using Guid(9ab08a2a8d52c804484f65442b58a38c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eb3bc9f55ca8c68575487e94f4267419') in 0.021037 seconds
+  Import took 0.023787 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 106.318315 seconds.
+  path: Assets/Danilo Assets/eryne assets/sprite animation/Character up sprite Weapons.png
+  artifactKey: Guid(9ab08a2a8d52c804484f65442b58a38c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Danilo Assets/eryne assets/sprite animation/Character up sprite Weapons.png using Guid(9ab08a2a8d52c804484f65442b58a38c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5328129db4fb9cf252e29df8997bdadb') in 0.035879 seconds
+  Import took 0.038721 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 338.887383 seconds.
+  path: Assets/Danilo Assets/eryne assets/sprite animation/run up msword.anim
+  artifactKey: Guid(52eea2c903848c649823eb2067a03407) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Danilo Assets/eryne assets/sprite animation/run up msword.anim using Guid(52eea2c903848c649823eb2067a03407) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6e57c646ecd91283780f422e5ff75748') in 0.005526 seconds
+  Import took 0.008825 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001008 seconds.
+  path: Assets/Danilo Assets/eryne assets/sprite animation/run up msword.anim
+  artifactKey: Guid(52eea2c903848c649823eb2067a03407) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Danilo Assets/eryne assets/sprite animation/run up msword.anim using Guid(52eea2c903848c649823eb2067a03407) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6e57c646ecd91283780f422e5ff75748') in 0.004834 seconds
+  Import took 0.007684 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.991149 seconds.
+  path: Assets/Danilo Assets/eryne assets/sprite animation/idle with sword.anim
+  artifactKey: Guid(821740fd4f829784eb96ce637ffd466f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Danilo Assets/eryne assets/sprite animation/idle with sword.anim using Guid(821740fd4f829784eb96ce637ffd466f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0e82161d5705a82eb6a49c32d8bc5eff') in 0.006204 seconds
+  Import took 0.009307 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001582 seconds.
+  path: Assets/Danilo Assets/eryne assets/sprite animation/idle with sword.anim
+  artifactKey: Guid(821740fd4f829784eb96ce637ffd466f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Danilo Assets/eryne assets/sprite animation/idle with sword.anim using Guid(821740fd4f829784eb96ce637ffd466f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0e82161d5705a82eb6a49c32d8bc5eff') in 0.004795 seconds
+  Import took 0.008131 seconds .
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.001032 seconds.
+Registered in 0.001265 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.33 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 0.36 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.763 seconds
+- Completed reload, in  0.757 seconds
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.38 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 0.32 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 1831 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 92.2 MB.
-System memory in use after: 92.3 MB.
+System memory in use before: 88.3 MB.
+System memory in use after: 88.4 MB.
 
-Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 2425.
-Total: 1.975800 ms (FindLiveObjects: 0.225100 ms CreateObjectMapping: 0.075500 ms MarkObjects: 1.659500 ms  DeleteObjects: 0.014800 ms)
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 2308.
+Total: 1.757000 ms (FindLiveObjects: 0.187300 ms CreateObjectMapping: 0.066900 ms MarkObjects: 1.484000 ms  DeleteObjects: 0.017500 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001188 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.39 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.752 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.33 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1831 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 88.3 MB.
+System memory in use after: 88.4 MB.
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 2312.
+Total: 1.862000 ms (FindLiveObjects: 0.198700 ms CreateObjectMapping: 0.064900 ms MarkObjects: 1.578100 ms  DeleteObjects: 0.019000 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 957.833181 seconds.
+  path: Assets/Danilo Assets/Code/SmoothMovement.cs
+  artifactKey: Guid(3f4519e31ff85824298c168ed551f574) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Danilo Assets/Code/SmoothMovement.cs using Guid(3f4519e31ff85824298c168ed551f574) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a0e2548fff70d4fdf3262da0cc7a1d90') in 0.010354 seconds
+  Import took 0.012995 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.026118 seconds.
+  path: Assets/Danilo Assets/Code/SmoothMovement.cs
+  artifactKey: Guid(3f4519e31ff85824298c168ed551f574) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Danilo Assets/Code/SmoothMovement.cs using Guid(3f4519e31ff85824298c168ed551f574) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a0e2548fff70d4fdf3262da0cc7a1d90') in 0.004465 seconds
+  Import took 0.007343 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 457.105003 seconds.
+  path: Assets/Danilo Assets/Code/SmoothMovement.cs
+  artifactKey: Guid(3f4519e31ff85824298c168ed551f574) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Danilo Assets/Code/SmoothMovement.cs using Guid(3f4519e31ff85824298c168ed551f574) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6883f120d05fc43aa51a1c1d3ebb4419') in 0.004690 seconds
+  Import took 0.008804 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000475 seconds.
+  path: Assets/Danilo Assets/Code/SmoothMovement.cs
+  artifactKey: Guid(3f4519e31ff85824298c168ed551f574) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Danilo Assets/Code/SmoothMovement.cs using Guid(3f4519e31ff85824298c168ed551f574) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6883f120d05fc43aa51a1c1d3ebb4419') in 0.004491 seconds
+  Import took 0.008360 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1374.092971 seconds.
+  path: Assets/Danilo Assets/eryne assets/sprite animation/Player.controller
+  artifactKey: Guid(cca8db22bad387544ae6823b7b6032bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Danilo Assets/eryne assets/sprite animation/Player.controller using Guid(cca8db22bad387544ae6823b7b6032bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00226617a5aed9cea8f3afc8c4157c05') in 0.014458 seconds
+  Import took 0.017698 seconds .
 
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file
