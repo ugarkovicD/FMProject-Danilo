@@ -14,6 +14,7 @@ public class Enemy : MonoBehaviour
     public ParticleSystem damaged20P;
     public ParticleSystem damaged30P;
     public ParticleSystem damaged40P;
+    public ParticleSystem damaged50P;
     // Start is called before the first frame update
     void Start()
     {
@@ -56,6 +57,7 @@ public class Enemy : MonoBehaviour
         {
             Debug.Log("ArrowHit Melee");
             currentHealth -= 50;
+            damaged50P.Play();
         }
     }
     public void TakeDamage(int Damage)

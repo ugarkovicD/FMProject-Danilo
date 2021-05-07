@@ -26,6 +26,7 @@ public class BomberEnemy : MonoBehaviour
     public ParticleSystem damaged20P;
     public ParticleSystem damaged30P;
     public ParticleSystem damaged40P;
+    public ParticleSystem damaged50P;
     // Start is called before the first frame update
     void Start()
     {
@@ -90,6 +91,7 @@ public class BomberEnemy : MonoBehaviour
         {
             Debug.Log("ArrowHit Bomber");
             currentHealth -= 50;
+            damaged50P.Play();
         }
     }
 }

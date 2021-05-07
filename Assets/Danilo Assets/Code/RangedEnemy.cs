@@ -23,6 +23,7 @@ public class RangedEnemy : MonoBehaviour
     public ParticleSystem damaged20P;
     public ParticleSystem damaged30P;
     public ParticleSystem damaged40P;
+    public ParticleSystem damaged50P;
     // Start is called before the first frame update
     void Start()
     {
@@ -88,6 +89,7 @@ public class RangedEnemy : MonoBehaviour
         {
             Debug.Log("ArrowHit Ranged");
             currentHealth -= 50;
+            damaged50P.Play();
         }
     }
 }

@@ -31,16 +31,17 @@ public class SadBossCode : MonoBehaviour
 
     // Update is called once per frame
     void Update()
-    {
+    {      
         if (SpinTime >= 0)
         {
-            SpinTime -= 1 * Time.deltaTime;
+            SpinTime -= 1 * Time.deltaTime;          
         }
         if (SpinShooting == true)
         {
             if (startTimeBewShots<= 0)
             {
                 ShootSpin();
+                transform.Rotate(0, 0, 5000 * Time.deltaTime);
             }
         }
         if (SpinShooting == false)
@@ -55,7 +56,7 @@ public class SadBossCode : MonoBehaviour
         {
             SpinTime = 10;
             SpinningAttack();
-            timeBeforeSpinAttack = 30;
+            timeBeforeSpinAttack = 30;           
         }
         if (SpinTime <= 0)
         {
@@ -66,11 +67,6 @@ public class SadBossCode : MonoBehaviour
     public void SpinningAttack()
     {
         SpinShooting = true;
-        transform.Rotate(0, 0, 20 * Time.deltaTime);
-        if (SpinTime >= 0)
-        {          
-            SpinTime -= 1 * Time.deltaTime;
-        }
     }
     public void Shoot()
     {       
