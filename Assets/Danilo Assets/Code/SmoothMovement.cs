@@ -78,17 +78,14 @@ public class SmoothMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        animator.SetFloat("Horizontal", Input.GetAxis("Horizontal"));
+
+        Vector3 movement = new Vector3(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"), 0.0f);
+
+
+        animator.SetFloat("Horizontal", movement.x);
+        animator.SetFloat("Vertical", movement.y);
+        animator.SetFloat("Magnitude", movement.magnitude);
         
-        animator.SetFloat("Vertical", Input.GetAxis("Vertical"));
-        
-        Vector3 horizontal = new Vector3(Input.GetAxis("Horizontal"), 0.0f, 0.0f);
-        transform.position = transform.position + horizontal * Time.deltaTime;
-
-        Vector3 Vertical = new Vector3(Input.GetAxis("Vertical"), 0.0f, 0.0f);
-        transform.position = transform.position + Vertical * Time.deltaTime;
-
-
 
         //UI
         if (HPTextYes == true)
@@ -111,7 +108,7 @@ public class SmoothMovement : MonoBehaviour
             Panel.enabled = false;
         }
     
-
+    
 
 
 
