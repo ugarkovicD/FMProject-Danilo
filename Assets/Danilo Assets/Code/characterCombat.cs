@@ -259,6 +259,11 @@ public class characterCombat : MonoBehaviour
 
             Debug.Log("we hit" + enemy.name +"kurac");
             }
+            if (enemy.CompareTag("SadBoss"))
+            {
+                enemy.GetComponent<SadBossCode>().TakeDamage(attackDamage);
+                Debug.Log("we hit" + enemy.name + "Bosskurac");
+            }
         }
         startTimebtwHits = 0.25f;
     }
@@ -286,6 +291,11 @@ public class characterCombat : MonoBehaviour
 
                 Debug.Log("we hit" + enemy.name + "kurac");
             }
+            if (enemy.CompareTag("SadBoss"))
+            {
+                enemy.GetComponent<SadBossCode>().TakeDamage(attackDamage);
+                Debug.Log("we hit" + enemy.name + "Bosskurac");
+            }
         }
     }
     void AttackUp()
@@ -312,6 +322,11 @@ public class characterCombat : MonoBehaviour
 
                 Debug.Log("we hit" + enemy.name + "kurac");
             }
+            if (enemy.CompareTag("SadBoss"))
+            {
+                enemy.GetComponent<SadBossCode>().TakeDamage(attackDamage);
+                Debug.Log("we hit SadBoss");
+            }
         }
     }
     void AttackDown()
@@ -336,6 +351,11 @@ public class characterCombat : MonoBehaviour
             {
                 enemy.GetComponent<BomberEnemy>().TakeDamage(attackDamage);
                 Debug.Log("we hit" + enemy.name + attackDamage);
+            }
+            if (enemy.CompareTag("SadBoss"))
+            {
+                enemy.GetComponent<SadBossCode>().TakeDamage(attackDamage);
+                Debug.Log("we hit" + enemy.name + "Bosskurac");
             }
         }
     }

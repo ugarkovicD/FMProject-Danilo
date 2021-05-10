@@ -11,6 +11,7 @@ TagManager:
   - Room
   - PassiveItem
   - Weapon
+  - SadBoss
   layers:
   - Default
   - TransparentFX
