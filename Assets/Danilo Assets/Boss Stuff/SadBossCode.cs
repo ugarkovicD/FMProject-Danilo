@@ -87,13 +87,12 @@ public class SadBossCode : MonoBehaviour
         Rigidbody2D Bullet;
         Bullet = Instantiate(projectile, ShootingPoint.position, Quaternion.identity)as Rigidbody2D;
         Bullet.AddForce(ShootingPoint.up * 100000 * Time.deltaTime);
-        timebtwShots = startTimeBewShots;
-        startTimeBewShots = 0.1f;
         Bullet = Instantiate(projectile, ShootingPoint1.position, Quaternion.identity) as Rigidbody2D;
         Bullet.AddForce(ShootingPoint1.up * 100000 * Time.deltaTime);
         Bullet = Instantiate(projectile, ShootingPoint2.position, Quaternion.identity) as Rigidbody2D;
         Bullet.AddForce(ShootingPoint2.up * 100000* Time.deltaTime);
-
+        timebtwShots = startTimeBewShots;
+        startTimeBewShots = 0.1f;
     }
     public void TakeDamage(int Damage)
     {
