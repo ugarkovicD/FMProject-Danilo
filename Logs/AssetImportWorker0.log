@@ -1452,3 +1452,31 @@ System memory in use after: 89.3 MB.
 Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 2495.
 Total: 2.448500 ms (FindLiveObjects: 0.232600 ms CreateObjectMapping: 0.078200 ms MarkObjects: 2.107800 ms  DeleteObjects: 0.027900 ms)
 
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 2.65 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 53.0 MB.
+System memory in use after: 53.1 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 2495.
+Total: 3.829700 ms (FindLiveObjects: 0.217500 ms CreateObjectMapping: 0.077100 ms MarkObjects: 3.508400 ms  DeleteObjects: 0.024300 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 718.461944 seconds.
+  path: Assets/Danilo Assets/Boss.prefab
+  artifactKey: Guid(dc73e83d7dba07c4fa294adda989e4e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Danilo Assets/Boss.prefab using Guid(dc73e83d7dba07c4fa294adda989e4e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f40d10e0898262a4aa37ea16df4c620f') in 0.174778 seconds
+  Import took 0.181101 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.003778 seconds.
+  path: Assets/Danilo Assets/Boss.prefab
+  artifactKey: Guid(dc73e83d7dba07c4fa294adda989e4e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Danilo Assets/Boss.prefab using Guid(dc73e83d7dba07c4fa294adda989e4e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f40d10e0898262a4aa37ea16df4c620f') in 0.054813 seconds
+  Import took 0.064061 seconds .
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
