@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class SadBossCode : MonoBehaviour
 {
-    public float currentHealth = 300;
+    public float currentHealth = 500;
     //damage and shooting action
     private float timebtwShots;
     public float startTimeBewShots = 0.3f;
@@ -25,18 +25,25 @@ public class SadBossCode : MonoBehaviour
     public Transform ShootingPoint;
     public Transform ShootingPoint1;
     public Transform ShootingPoint2;
+    public Transform ShootingPointFront;
     public Sprite SpiningAttack;
     public Sprite NormalSprite;
 
     // Start is called before the first frame update
     void Start()
     {
+        currentHealth = 500;
         timebtwShots = startTimeBewShots;
     }
 
     // Update is called once per frame
     void Update()
     {      
+        if (currentHealth <= 1)
+        {
+            Destroy(this.gameObject);
+            Debug.Log("BossDestroyed");
+        }
         if (SpinTime >= 0)
         {
             SpinTime -= 1 * Time.deltaTime;          
@@ -46,7 +53,7 @@ public class SadBossCode : MonoBehaviour
             if (startTimeBewShots<= 0)
             {
                 ShootSpin();
-                transform.Rotate(0, 0, 1500 * Time.deltaTime);
+                transform.Rotate(0, 0, 600 * Time.deltaTime);
                 GetComponent<SpriteRenderer>().sprite = SpiningAttack;
             }
         }
@@ -79,6 +86,7 @@ public class SadBossCode : MonoBehaviour
     public void Shoot()
     {       
         Instantiate(projectile, transform.position, Quaternion.identity);
+        Instantiate(projectile, ShootingPointFront.position, Quaternion.identity);
         timebtwShots = startTimeBewShots;
         startTimeBewShots = 0.2f;
     }
@@ -86,11 +94,11 @@ public class SadBossCode : MonoBehaviour
     {
         Rigidbody2D Bullet;
         Bullet = Instantiate(projectile, ShootingPoint.position, Quaternion.identity)as Rigidbody2D;
-        Bullet.AddForce(ShootingPoint.up * 100000 * Time.deltaTime);
+        Bullet.AddForce(ShootingPoint.up * 15000 * Time.deltaTime);
         Bullet = Instantiate(projectile, ShootingPoint1.position, Quaternion.identity) as Rigidbody2D;
-        Bullet.AddForce(ShootingPoint1.up * 100000 * Time.deltaTime);
+        Bullet.AddForce(ShootingPoint1.up * 15000 * Time.deltaTime);
         Bullet = Instantiate(projectile, ShootingPoint2.position, Quaternion.identity) as Rigidbody2D;
-        Bullet.AddForce(ShootingPoint2.up * 100000* Time.deltaTime);
+        Bullet.AddForce(ShootingPoint2.up * 15000* Time.deltaTime);
         timebtwShots = startTimeBewShots;
         startTimeBewShots = 0.1f;
     }
@@ -109,6 +117,14 @@ public class SadBossCode : MonoBehaviour
             damaged40P.Play();
         }
         currentHealth -= Damage;
-
+    }
+    public void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.name == "arrow(Clone)")
+        {
+            Debug.Log("ArrowHit SadBoss");
+            currentHealth -= 50;
+            damaged50P.Play();
+        }
     }
 }

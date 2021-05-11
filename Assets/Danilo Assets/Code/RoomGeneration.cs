@@ -37,7 +37,7 @@ public class RoomGeneration : MonoBehaviour
         levelText.text = levelNumber.ToString();
         if (SpawnWhenWalkPortal == true)
         {
-            Invoke("Spawn",0.1f);
+            Invoke("Spawn",0.0001f);
             spawned = false;
         }
         if (rand == 0)
@@ -63,11 +63,6 @@ public class RoomGeneration : MonoBehaviour
         if (RandomEnemySpawner.NumberOfEnemies >= 1)
         {
             EnemiesDead = false;
-        }
-        if (Input.GetKeyDown(KeyCode.O))
-        {
-            spawned = false;
-            Invoke("Spawn", 0.1f);
         }
     }
     // Update is called once per frame

@@ -50,12 +50,11 @@ public class characterCombat : MonoBehaviour
         PickupBowText.enabled = false;
         HaveAmmo = true;
         AmmoAmmount = 7;
-        holdingSword = false;
         attackDamage = 20;
         Damage20 = true;
         timebtwHits = startTimebtwHits;
-        holdingBow = false;
-        holdingSword = true;
+        holdingBow = true;
+        holdingSword = false;
     }
 
     // Update is called once per frame
@@ -112,13 +111,19 @@ public class characterCombat : MonoBehaviour
         if (attackDamage == 20)
         {
             Damage20 = true;
+            Damage30 = false;
+            Damage40 = false;
         }
         if (attackDamage == 30)
         {
             Damage30 = true;
+            Damage20 = false;
+            Damage40 = false;
         }
         if (attackDamage == 40)
         {
+            Damage20 = false;
+            Damage30 = false;
             Damage40 = true;
         }
         //Attack

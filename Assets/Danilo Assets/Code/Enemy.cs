@@ -74,7 +74,6 @@ public class Enemy : MonoBehaviour
         {
             damaged40P.Play();
         }
-        currentHealth -= Damage;
-        
+        currentHealth -= Damage;      
     }
 }

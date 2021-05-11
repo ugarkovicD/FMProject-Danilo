@@ -32,6 +32,10 @@ public class CharacterHealth : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (maxHp >= 12)
+        {
+            maxHp = 12;          
+        }
         if (currenthp >= maxHp)
         {
             currenthp = maxHp;

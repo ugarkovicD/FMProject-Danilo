@@ -33,6 +33,7 @@ public class RangedEnemy : MonoBehaviour
         startTimeBewShots = 2;
         timebtwShots = startTimeBewShots;
         playerFollow = GameObject.FindGameObjectWithTag("Player").transform;
+        SadBossCode.SpinShooting = false;
     }
 
     // Update is called once per frame

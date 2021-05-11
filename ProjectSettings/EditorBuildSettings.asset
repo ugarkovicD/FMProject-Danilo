@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Danilo Assets/Boss Stuff/BossScene.unity
+    guid: fab755aa77912154baa0ad495d85fa51
+  - enabled: 1
     path: Assets/Kieran and eryne Stuff/Scenes/Mmenu.unity
     guid: 3a5b84bf841476946b3e31eca14a1ad9
   - enabled: 1

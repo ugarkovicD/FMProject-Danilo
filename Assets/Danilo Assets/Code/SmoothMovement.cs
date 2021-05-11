@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class SmoothMovement : MonoBehaviour
 {
@@ -100,6 +101,15 @@ public class SmoothMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (Input.GetKeyDown(KeyCode.I))
+        {
+            SceneManager.LoadScene("BossScene");
+        }
+        if (MaxSpeed >= 7.6f)
+        {
+            MaxSpeed = 7.6f;
+            speedSlowed = 4.4f;
+        }
         //UI
         if (HPTextYes == true)
         {
@@ -170,19 +180,19 @@ public class SmoothMovement : MonoBehaviour
         }
         if (Spawnedlvl1 == true)
         {
-            Invoke("SpawnRoom1", 0.1f);
+            Invoke("SpawnRoom1", 0.0001f);
         }
         if (Spawnedlvl2 == true)
         {
-            Invoke("SpawnRoom2", 0.1f);
+            Invoke("SpawnRoom2", 0.0001f);
         }
         if (Spawnedlvl3 == true)
         {
-            Invoke("SpawnRoom3", 0.1f);
+            Invoke("SpawnRoom3", 0.0001f);
         }
         if (Spawnedlvl31 == true)
         {
-            Invoke("SpawnRoom31", 0.1f);
+            Invoke("SpawnRoom31", 0.0001f);
         }
 
         //Slow
