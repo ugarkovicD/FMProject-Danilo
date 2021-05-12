@@ -1,0 +1,444 @@
+Using pre-set license
+Built from '2020.2/staging' branch; Version is '2020.2.7f1 (c53830e277f1) revision 12924976'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10 Enterprise; OS build 18363.1443; Version 1909; 64bit' Language: 'en' Physical Memory: 16332 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+ COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2020.2.7f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+D:/Danilo/FMProject-Danilo
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+56876
+Successfully changed project path to: D:/Danilo/FMProject-Danilo
+D:/Danilo/FMProject-Danilo
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 33.75 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2020.2.7f1 (c53830e277f1)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.2.7f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path D:/Danilo/FMProject-Danilo/Assets
+GfxDevice: creating device client; threaded=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce GTX 1660 (ID=0x2184)
+    Vendor:   
+    VRAM:     5991 MB
+    Driver:   27.21.14.5206
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.2.7f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.2.7f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.2.7f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56308
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.2.7f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.001120 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 30.77 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.936 seconds
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.000971 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 32.77 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.833 seconds
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
+Refreshing native plugins compatible for Editor in 0.32 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1846 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 85.9 MB.
+System memory in use after: 86.0 MB.
+
+Unloading 19 unused Assets to reduce memory usage. Loaded Objects now: 2296.
+Total: 1.894900 ms (FindLiveObjects: 0.152500 ms CreateObjectMapping: 0.064500 ms MarkObjects: 1.617100 ms  DeleteObjects: 0.060000 ms)
+
+========================================================================
+Received Import Request.
+  path: Assets/Danilo Assets/Boss Stuff/BossScene.unity
+  artifactKey: Guid(fab755aa77912154baa0ad495d85fa51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Danilo Assets/Boss Stuff/BossScene.unity using Guid(fab755aa77912154baa0ad495d85fa51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '320d0f6aeed42e6658e1d3ba1c2190b4') in 0.012774 seconds
+  Import took 0.015304 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000249 seconds.
+  path: Assets/Danilo Assets/Boss Stuff/Sad_boss_Boi_v2.png
+  artifactKey: Guid(968afddf059eed44da87b4cf1070419e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Danilo Assets/Boss Stuff/Sad_boss_Boi_v2.png using Guid(968afddf059eed44da87b4cf1070419e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '93e03fbb7183d4e62555494ca49e7efa') in 0.141321 seconds
+  Import took 0.144105 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.827413 seconds.
+  path: Assets/Danilo Assets/arrow.prefab
+  artifactKey: Guid(a12b612786b833c46b8d1c8ff4ebedbe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Danilo Assets/arrow.prefab using Guid(a12b612786b833c46b8d1c8ff4ebedbe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '074b60b97d99afec680e6b3059d5b20a') in 0.046263 seconds
+  Import took 0.049226 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000230 seconds.
+  path: Assets/Danilo Assets/Boss.prefab
+  artifactKey: Guid(dc73e83d7dba07c4fa294adda989e4e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Danilo Assets/Boss.prefab using Guid(dc73e83d7dba07c4fa294adda989e4e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd7f2083ce2f3db6e6e8fb49060b8487c') in 0.022265 seconds
+  Import took 0.025600 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.003478 seconds.
+  path: Assets/Danilo Assets/Boss.prefab
+  artifactKey: Guid(dc73e83d7dba07c4fa294adda989e4e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Danilo Assets/Boss.prefab using Guid(dc73e83d7dba07c4fa294adda989e4e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd7f2083ce2f3db6e6e8fb49060b8487c') in 0.016434 seconds
+  Import took 0.019822 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.170680 seconds.
+  path: Assets/Danilo Assets/TestScene.unity
+  artifactKey: Guid(2cda990e2423bbf4892e6590ba056729) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Danilo Assets/TestScene.unity using Guid(2cda990e2423bbf4892e6590ba056729) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c8ad65c2f79cd9f1ab2f0f3357149cba') in 0.005368 seconds
+  Import took 0.008371 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 47.765708 seconds.
+  path: Assets/Danilo Assets/eryne assets/environment stff
+  artifactKey: Guid(b02c157344fa4de42ba4790831c1e5af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Danilo Assets/eryne assets/environment stff using Guid(b02c157344fa4de42ba4790831c1e5af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7ce811a13b71863a348a5eca810ce7f7') in 0.041154 seconds
+  Import took 0.044134 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.029876 seconds.
+  path: Assets/Danilo Assets/eryne assets/environment stff/texture brain bottom edge.png
+  artifactKey: Guid(cc3f15a7f0300ad46ab66cb4653fe7aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Danilo Assets/eryne assets/environment stff/texture brain bottom edge.png using Guid(cc3f15a7f0300ad46ab66cb4653fe7aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '04be0446791c9c3ee515cb66b9e632a9') in 0.016483 seconds
+  Import took 0.019078 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000242 seconds.
+  path: Assets/Danilo Assets/eryne assets/environment stff/texture brain bottom left corner.png
+  artifactKey: Guid(556b3955af801484cb37bd6fd8d859d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Danilo Assets/eryne assets/environment stff/texture brain bottom left corner.png using Guid(556b3955af801484cb37bd6fd8d859d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9419335012a3dba368359cc13ecc341e') in 0.015752 seconds
+  Import took 0.018431 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000249 seconds.
+  path: Assets/Danilo Assets/eryne assets/environment stff/texture brain top edge.png
+  artifactKey: Guid(f3f468fd35d5dd2448b4c56bca4d80cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Danilo Assets/eryne assets/environment stff/texture brain top edge.png using Guid(f3f468fd35d5dd2448b4c56bca4d80cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9337a8543eef1e927404837104c39a68') in 0.017366 seconds
+  Import took 0.020035 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000238 seconds.
+  path: Assets/Danilo Assets/eryne assets/environment stff/texture brain bottom left corner.png
+  artifactKey: Guid(556b3955af801484cb37bd6fd8d859d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Danilo Assets/eryne assets/environment stff/texture brain bottom left corner.png using Guid(556b3955af801484cb37bd6fd8d859d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9419335012a3dba368359cc13ecc341e') in 0.014998 seconds
+  Import took 0.017648 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000236 seconds.
+  path: Assets/Danilo Assets/eryne assets/environment stff/texture brain medium area.png
+  artifactKey: Guid(fb3c89722cc5cfc4098492b739014c20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Danilo Assets/eryne assets/environment stff/texture brain medium area.png using Guid(fb3c89722cc5cfc4098492b739014c20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4351575756efb8414143ba55555c5ff7') in 0.014307 seconds
+  Import took 0.017218 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000258 seconds.
+  path: Assets/Danilo Assets/eryne assets/environment stff/texture brain top left corner.png
+  artifactKey: Guid(3d9e65deb53163544bbce79c5b7b553e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Danilo Assets/eryne assets/environment stff/texture brain top left corner.png using Guid(3d9e65deb53163544bbce79c5b7b553e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'de9a27b0b39b5bf4c8299d90df76edc8') in 0.014909 seconds
+  Import took 0.022841 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000210 seconds.
+  path: Assets/Danilo Assets/eryne assets/environment stff/texture brain bottom right corner.png
+  artifactKey: Guid(1b31818fa46feb840a66a7847377d155) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Danilo Assets/eryne assets/environment stff/texture brain bottom right corner.png using Guid(1b31818fa46feb840a66a7847377d155) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a72d4cde6d78c4f5df0ad5801aa72a14') in 0.014710 seconds
+  Import took 0.017216 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000211 seconds.
+  path: Assets/Danilo Assets/eryne assets/environment stff/texture brain top right corner.png
+  artifactKey: Guid(98dad60e7057c004c8ef684d81ea1fbc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Danilo Assets/eryne assets/environment stff/texture brain top right corner.png using Guid(98dad60e7057c004c8ef684d81ea1fbc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '22ebf26d4450a89400888cf9bcc3f9f6') in 0.014393 seconds
+  Import took 0.016989 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000173 seconds.
+  path: Assets/Danilo Assets/eryne assets/environment stff/texture brain right edge.png
+  artifactKey: Guid(b285419252e2c5b4b897d084c35bd02a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Danilo Assets/eryne assets/environment stff/texture brain right edge.png using Guid(b285419252e2c5b4b897d084c35bd02a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'de97fa855bc71e3a992c860eb7e5f1a9') in 0.013803 seconds
+  Import took 0.016471 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000161 seconds.
+  path: Assets/Danilo Assets/eryne assets/environment stff/texture brain dark area.png
+  artifactKey: Guid(55a293d5a296d4246ae9fbf3f20d0fea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Danilo Assets/eryne assets/environment stff/texture brain dark area.png using Guid(55a293d5a296d4246ae9fbf3f20d0fea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c7e77e75bb53c9aad2b025ff9eb40e67') in 0.012706 seconds
+  Import took 0.015384 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000214 seconds.
+  path: Assets/Danilo Assets/eryne assets/environment stff/texture brain light areas.png
+  artifactKey: Guid(4fc6515adec712e40b67929af65216a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Danilo Assets/eryne assets/environment stff/texture brain light areas.png using Guid(4fc6515adec712e40b67929af65216a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5823275dd930ea46de8b89be7fbd91ef') in 0.014636 seconds
+  Import took 0.017365 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000160 seconds.
+  path: Assets/Danilo Assets/eryne assets/environment stff/texture brain left edge .png
+  artifactKey: Guid(5694bcfc8b2f0834f9a7883de813268f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Danilo Assets/eryne assets/environment stff/texture brain left edge .png using Guid(5694bcfc8b2f0834f9a7883de813268f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '920ccd7b3f292fa1e887bfd838d0f4fc') in 0.015296 seconds
+  Import took 0.017980 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000936 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.32 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.754 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.34 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1836 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 88.7 MB.
+System memory in use after: 88.8 MB.
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 2311.
+Total: 1.631500 ms (FindLiveObjects: 0.160600 ms CreateObjectMapping: 0.059500 ms MarkObjects: 1.397400 ms  DeleteObjects: 0.013400 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 750.567105 seconds.
+  path: Assets/Danilo Assets/LevelPrefabs/SadBoss Level.prefab
+  artifactKey: Guid(8fd693c27870d2747b66b14ab321d828) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Danilo Assets/LevelPrefabs/SadBoss Level.prefab using Guid(8fd693c27870d2747b66b14ab321d828) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '138ea52f3fc5d7fc0e0314e5c349d5bd') in 0.091454 seconds
+  Import took 0.099871 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 345.430231 seconds.
+  path: Assets/Danilo Assets/Boss Stuff/BossScene.unity
+  artifactKey: Guid(fab755aa77912154baa0ad495d85fa51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Danilo Assets/Boss Stuff/BossScene.unity using Guid(fab755aa77912154baa0ad495d85fa51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3040832782d58b30024ec502525a78ad') in 0.005314 seconds
+  Import took 0.007985 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000976 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.32 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.758 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.32 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1836 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 89.0 MB.
+System memory in use after: 89.1 MB.
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 2316.
+Total: 1.598800 ms (FindLiveObjects: 0.147500 ms CreateObjectMapping: 0.055400 ms MarkObjects: 1.380200 ms  DeleteObjects: 0.014900 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001127 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.34 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.718 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.32 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1836 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 89.0 MB.
+System memory in use after: 89.1 MB.
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 2320.
+Total: 1.687600 ms (FindLiveObjects: 0.169800 ms CreateObjectMapping: 0.067700 ms MarkObjects: 1.432500 ms  DeleteObjects: 0.017000 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000915 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.35 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.737 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.33 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1836 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 89.0 MB.
+System memory in use after: 89.1 MB.
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 2324.
+Total: 1.702200 ms (FindLiveObjects: 0.156400 ms CreateObjectMapping: 0.063600 ms MarkObjects: 1.469700 ms  DeleteObjects: 0.011700 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 906.119575 seconds.
+  path: Assets/Danilo Assets/AngryBossStuff
+  artifactKey: Guid(25098a48f0519fc45afc42ded1052c92) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Danilo Assets/AngryBossStuff using Guid(25098a48f0519fc45afc42ded1052c92) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ecb6162e9dc66304fbffae3f73918b43') in 0.008355 seconds
+  Import took 0.011300 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.390322 seconds.
+  path: Assets/Danilo Assets/Boss Stuff
+  artifactKey: Guid(46b7f2113a5a981458f9ac160c53cb83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Danilo Assets/Boss Stuff using Guid(46b7f2113a5a981458f9ac160c53cb83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6600e8d6bd90f20e50c2e1d0a52786d7') in 0.005137 seconds
+  Import took 0.008137 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.708547 seconds.
+  path: Assets/Danilo Assets/Boss Stuff/BossScene
+  artifactKey: Guid(b8782ab86168906439c69c9f9da2b797) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Danilo Assets/Boss Stuff/BossScene using Guid(b8782ab86168906439c69c9f9da2b797) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c3d64ad693832ee0fb9be42d2ee54293') in 0.043633 seconds
+  Import took 0.046465 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.036602 seconds.
+  path: Assets/Danilo Assets/Boss Stuff/BossScene/NavMesh-NavMesh2D.asset
+  artifactKey: Guid(116d584a44484904f9482d397be40290) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Danilo Assets/Boss Stuff/BossScene/NavMesh-NavMesh2D.asset using Guid(116d584a44484904f9482d397be40290) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '68c32df886bb6561e0fed67142a69f0f') in 0.018271 seconds
+  Import took 0.021049 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 284.649778 seconds.
+  path: Assets/Danilo Assets/Boss Stuff/BossScene.unity
+  artifactKey: Guid(fab755aa77912154baa0ad495d85fa51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Danilo Assets/Boss Stuff/BossScene.unity using Guid(fab755aa77912154baa0ad495d85fa51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a53c1b49df706e637c9658279d178fc3') in 0.005020 seconds
+  Import took 0.008506 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000991 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.35 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.723 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.33 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1836 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 89.0 MB.
+System memory in use after: 89.2 MB.
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 2328.
+Total: 1.821000 ms (FindLiveObjects: 0.193000 ms CreateObjectMapping: 0.075500 ms MarkObjects: 1.538300 ms  DeleteObjects: 0.013400 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000970 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.34 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.719 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.35 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1836 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 89.1 MB.
+System memory in use after: 89.2 MB.
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 2332.
+Total: 1.709400 ms (FindLiveObjects: 0.169500 ms CreateObjectMapping: 0.063100 ms MarkObjects: 1.462600 ms  DeleteObjects: 0.013400 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000908 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.32 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.712 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.33 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1836 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 89.1 MB.
+System memory in use after: 89.2 MB.
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 2336.
+Total: 1.700100 ms (FindLiveObjects: 0.150300 ms CreateObjectMapping: 0.059100 ms MarkObjects: 1.478700 ms  DeleteObjects: 0.011200 ms)
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
