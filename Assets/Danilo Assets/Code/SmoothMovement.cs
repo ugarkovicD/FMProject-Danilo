@@ -73,9 +73,9 @@ public class SmoothMovement : MonoBehaviour
 
     public SpriteRenderer spriteRender;
     //UI
-    public Text HPIncreasedText;
-    public Text DamageIncreasedText;
-    public Text SpeedIncreasedText;
+    public Image HPIncreasedText;
+    public Image DamageIncreasedText;
+    public Image SpeedIncreasedText;
     public Image Panel;
     public float PopupTextTimer = 3;
     public bool HPTextYes;
@@ -309,8 +309,6 @@ public class SmoothMovement : MonoBehaviour
                 characterCombat.attackDamage = 40;
             }
             DamageIncreasedText.enabled = true;
-            Panel.enabled = true;
-            PanelYes = true;
             DamageTextYes = true;
             PopupTextTimer = 3;
         }
@@ -321,9 +319,7 @@ public class SmoothMovement : MonoBehaviour
             MaxSpeed += 0.3f;
             speedSlowed += 0.2f;
             SpeedIncreasedText.enabled = true;
-            Panel.enabled = true;
             SpeedTextYes = true;
-            PanelYes = true;
             PopupTextTimer = 3;
         }
         //mana
@@ -345,9 +341,7 @@ public class SmoothMovement : MonoBehaviour
         {
             Destroy(collision.gameObject);
             CharacterHealth.maxHp += 1;
-            Panel.enabled = true;
             HPTextYes = true;
-            PanelYes = true;
             HPIncreasedText.enabled = true;
             PopupTextTimer = 3;
         }
