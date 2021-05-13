@@ -105,5 +105,9 @@ public class CharacterHealth : MonoBehaviour
             Destroy(collision.gameObject);
             maxHp += 1;
         }
+        if (collision.name == "Angry Boss")
+        {
+            currenthp -= 2;
+        }
     }
 }

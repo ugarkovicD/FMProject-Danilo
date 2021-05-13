@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Danilo Assets/Boss Stuff/BossScene.unity
     guid: fab755aa77912154baa0ad495d85fa51
+  - enabled: 1
+    path: Assets/Danilo Assets/AngryBossStuff/AngryBossScene.unity
+    guid: 8ac1bd6d89467b8478e0ee61be3c82ab
   m_configObjects: {}
