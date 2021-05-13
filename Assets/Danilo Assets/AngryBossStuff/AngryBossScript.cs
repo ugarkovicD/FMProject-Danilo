@@ -3,12 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class AngryBossScript : MonoBehaviour
-{
+{  
     public ParticleSystem damaged20P;
     public ParticleSystem damaged30P;
     public ParticleSystem damaged40P;
     public ParticleSystem damaged50P;
-    public float currentHealth = 500;
+    public static float currentHealth = 500;
     public int dashTimes = 100;
     public float waitUntillNextDash = 1;
     public float timebeforeFreeze = 0.7f;

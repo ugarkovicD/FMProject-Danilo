@@ -13,7 +13,7 @@ public class RoomGeneration : MonoBehaviour
     public Transform SpawnPoint2;
 
     public Text levelText;
-    public int levelNumber;
+    public static int levelNumber;
 
     //Checking Which room is Spawned
     public static bool Room1;
@@ -24,9 +24,13 @@ public class RoomGeneration : MonoBehaviour
 
     public static bool SpawnWhenWalkPortal;
 
+    public GameObject AngerBossRoom;
+    public GameObject SadBossRoom;
+
     // Start is called before the first frame update
     void Start()
     {
+        levelNumber = 0;
         SpawnWhenWalkPortal = false;
         spawned = false;
         Spawn();
@@ -34,6 +38,26 @@ public class RoomGeneration : MonoBehaviour
 
     void Update()
     {
+        if (levelNumber == 5)
+        {
+            if (SpawnWhenWalkPortal == true)
+            {
+                Instantiate(AngerBossRoom, transform.position, Quaternion.identity);
+                SpawnWhenWalkPortal = false;
+                CharacterHealth.currenthp += 3;
+                levelNumber += 1;
+            }
+        }
+        if (levelNumber == 11)
+        {
+            if (SpawnWhenWalkPortal == true)
+            {
+                Instantiate(SadBossRoom, transform.position, Quaternion.identity);
+                SpawnWhenWalkPortal = false;
+                CharacterHealth.currenthp += 3;
+                levelNumber += 1;
+            }
+        }
         levelText.text = levelNumber.ToString();
         if (SpawnWhenWalkPortal == true)
         {

@@ -12,6 +12,7 @@ TagManager:
   - PassiveItem
   - Weapon
   - SadBoss
+  - AngryBoss
   layers:
   - Default
   - TransparentFX

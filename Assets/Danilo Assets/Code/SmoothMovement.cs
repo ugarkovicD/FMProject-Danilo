@@ -10,6 +10,7 @@ public class SmoothMovement : MonoBehaviour
     public Transform Level1Place;
     public Transform Level2Place;
     public Transform Level3Place;
+    public Transform LevelRageBoss;
     public bool Spawnedlvl1;
     public bool Spawnedlvl2;
     public bool Spawnedlvl3;
@@ -82,8 +83,10 @@ public class SmoothMovement : MonoBehaviour
     public bool SpeedTextYes;
     public bool PanelYes;
 
+    public bool bossroomTP;
     void Start()
     {
+        bossroomTP = false;
         //animation
         totalCells = colCount * rowCount;
         AnimationOn = false;
@@ -101,6 +104,13 @@ public class SmoothMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (bossroomTP = false)
+        {
+            if (RoomGeneration.levelNumber == 6)
+            {
+                Invoke("SpawnBossRoom", 0.001f);
+            }
+        } 
         if (Input.GetKeyDown(KeyCode.I))
         {
             SceneManager.LoadScene("BossScene");
@@ -378,6 +388,11 @@ public class SmoothMovement : MonoBehaviour
         transform.position = Level3Place.position;
         Spawnedlvl31 = false;
         RoomGeneration.rand = 8;
+    }
+    void SpawnBossRoom()
+    {
+        transform.position = LevelRageBoss.position;
+        bossroomTP = true;
     }
     public void SetSpriteAnimation(int colCount, int rowCount, int rowNumber, int colNumber, int totalCells, int fps)
     {

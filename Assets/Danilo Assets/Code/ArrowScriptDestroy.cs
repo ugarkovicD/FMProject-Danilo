@@ -22,5 +22,9 @@ public class ArrowScriptDestroy : MonoBehaviour
         {
             Destroy(this.gameObject);
         }
+        if (collision.CompareTag("AngryBoss"))
+        {
+            Destroy(this.gameObject);
+        }
     }
 }

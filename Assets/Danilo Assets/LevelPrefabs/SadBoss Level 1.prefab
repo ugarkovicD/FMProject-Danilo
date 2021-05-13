@@ -14091,8 +14091,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5158744744369048415}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.3703, y: 1.08, z: -0.00000023809}
-  m_LocalScale: {x: 0.4815016, y: 0.4815016, z: 0.4815016}
+  m_LocalPosition: {x: -0.37191, y: 1.0797, z: -0.00000023781}
+  m_LocalScale: {x: 0.8923042, y: 0.8923042, z: 0.8923042}
   m_Children:
   - {fileID: 1961388158241503932}
   - {fileID: 6388496894277283805}
@@ -17154,7 +17154,7 @@ ParticleSystem:
     donutRadius: 0.2
     m_Position: {x: 0, y: 0, z: 0}
     m_Rotation: {x: 0, y: 0, z: 0}
-    m_Scale: {x: 1, y: 1, z: 1}
+    m_Scale: {x: 0.5, y: 1, z: 0.5}
     placementMode: 0
     m_MeshMaterialIndex: 0
     m_MeshNormalOffset: 0
@@ -32570,7 +32570,7 @@ ParticleSystem:
     donutRadius: 0.2
     m_Position: {x: 0, y: 0, z: 0}
     m_Rotation: {x: 0, y: 0, z: 0}
-    m_Scale: {x: 1, y: 1, z: 1}
+    m_Scale: {x: 0.5, y: 1, z: 0.5}
     placementMode: 0
     m_MeshMaterialIndex: 0
     m_MeshNormalOffset: 0
@@ -38021,7 +38021,7 @@ ParticleSystem:
     donutRadius: 0.2
     m_Position: {x: 0, y: 0, z: 0}
     m_Rotation: {x: 0, y: 0, z: 0}
-    m_Scale: {x: 1, y: 1, z: 1}
+    m_Scale: {x: 0.5, y: 1, z: 0.5}
     placementMode: 0
     m_MeshMaterialIndex: 0
     m_MeshNormalOffset: 0

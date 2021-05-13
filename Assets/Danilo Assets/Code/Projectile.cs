@@ -7,6 +7,7 @@ public class Projectile : MonoBehaviour
     public float speed;
     private Transform Player;
     private Vector2 target;
+    public Rigidbody2D rb;
     // Start is called before the first frame update
     void Start()
     {
@@ -17,6 +18,7 @@ public class Projectile : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        
         if (SadBossCode.SpinShooting == false)
         {
             transform.position = Vector2.MoveTowards(transform.position, target, speed * Time.deltaTime);

@@ -12,12 +12,14 @@ public class RandomEnemySpawner : MonoBehaviour
     public bool Spawned;
     public static bool SpawnWhenWalkPortal;
     public Text EnemiesText;
+    public bool FoughtAngerBoss;
     // Start is called before the first frame update
     void Start()
     {       
         NumberOfEnemies = 0;
         numberToSpawn = 2;
         spawnObjects();
+        FoughtAngerBoss = false;
     }
 
     // Update is called once per frame
@@ -25,17 +27,37 @@ public class RandomEnemySpawner : MonoBehaviour
     {
 
         EnemiesText.text = NumberOfEnemies.ToString();
-        if (SpawnWhenWalkPortal == true)
+        if (RoomGeneration.levelNumber < 5)
         {
-            Spawned = false;
-            Invoke("spawnObjects", 0.1f);
-            SpawnWhenWalkPortal = false;
+            if (SpawnWhenWalkPortal == true)
+            {
+                Spawned = false;
+                Invoke("spawnObjects", 0.1f);
+                SpawnWhenWalkPortal = false;
+            }
         }
-       if (Input.GetKeyDown(KeyCode.G))
-       {
-            spawnObjects();
-       }
-       // add in when the room spawns, you spawn the enemies as well 
+        if (RoomGeneration.levelNumber > 6)
+        {
+            if (SpawnWhenWalkPortal == true)
+            {
+                Spawned = false;
+                Invoke("spawnObjects", 0.1f);
+                SpawnWhenWalkPortal = false;
+                FoughtAngerBoss = true;
+            }
+        }
+        if (FoughtAngerBoss == true)
+        {
+            if (RoomGeneration.levelNumber < 10)
+            {
+                if (SpawnWhenWalkPortal == true)
+                {
+                    Spawned = false;
+                    Invoke("spawnObjects", 0.1f);
+                    SpawnWhenWalkPortal = false;
+                }
+            }
+        }      
     }
     public void spawnObjects()
     {

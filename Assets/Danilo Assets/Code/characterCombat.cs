@@ -269,6 +269,11 @@ public class characterCombat : MonoBehaviour
                 enemy.GetComponent<SadBossCode>().TakeDamage(attackDamage);
                 Debug.Log("we hit" + enemy.name + "Bosskurac");
             }
+            if (enemy.CompareTag("AngryBoss"))
+            {
+                enemy.GetComponent<AngryBossScript>().TakeDamage(attackDamage);
+                Debug.Log("we hit" + enemy.name + "AngryBosskurac");
+            }
         }
         startTimebtwHits = 0.25f;
     }
@@ -301,6 +306,11 @@ public class characterCombat : MonoBehaviour
                 enemy.GetComponent<SadBossCode>().TakeDamage(attackDamage);
                 Debug.Log("we hit" + enemy.name + "Bosskurac");
             }
+            if (enemy.CompareTag("AngryBoss"))
+            {
+                enemy.GetComponent<AngryBossScript>().TakeDamage(attackDamage);
+                Debug.Log("we hit" + enemy.name + "AngryBosskurac");
+            }
         }
     }
     void AttackUp()
@@ -332,6 +342,11 @@ public class characterCombat : MonoBehaviour
                 enemy.GetComponent<SadBossCode>().TakeDamage(attackDamage);
                 Debug.Log("we hit SadBoss");
             }
+            if (enemy.CompareTag("AngryBoss"))
+            {
+                enemy.GetComponent<AngryBossScript>().TakeDamage(attackDamage);
+                Debug.Log("we hit" + enemy.name + "AngryBosskurac");
+            }
         }
     }
     void AttackDown()
@@ -361,6 +376,11 @@ public class characterCombat : MonoBehaviour
             {
                 enemy.GetComponent<SadBossCode>().TakeDamage(attackDamage);
                 Debug.Log("we hit" + enemy.name + "Bosskurac");
+            }
+            if (enemy.CompareTag("AngryBoss"))
+            {
+                enemy.GetComponent<AngryBossScript>().TakeDamage(attackDamage);
+                Debug.Log("we hit" + enemy.name + "AngryBosskurac");
             }
         }
     }
